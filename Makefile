@@ -1,5 +1,5 @@
 dir=${CURDIR}
-export COMPOSE_PROJECT_NAME=environment3
+export COMPOSE_PROJECT_NAME=korop_vue_lara_spa
 
 ifndef APP_ENV
 	# Determine if .env file exist

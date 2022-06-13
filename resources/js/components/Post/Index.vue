@@ -18,17 +18,23 @@
                     <th
                         class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
                     >
-                        Title
+                        <a href="#" @click.prevent="changeSort('title')">Title</a>
+                        <span v-if="this.sortField === 'title' && this.sortDirection === 'asc'">&uarr;</span>
+                        <span v-if="this.sortField === 'title' && this.sortDirection === 'desc'">&darr;</span>
                     </th>
                     <th
                         class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
                     >
-                        Text
+                        <a href="#" @click.prevent="changeSort('text')">Text</a>
+                        <span v-if="this.sortField === 'text' && this.sortDirection === 'asc'">&uarr;</span>
+                        <span v-if="this.sortField === 'text' && this.sortDirection === 'desc'">&darr;</span>
                     </th>
                     <th
                         class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
                     >
-                        Created At
+                        <a href="#" @click.prevent="changeSort('created_at')">Created At</a>
+                        <span v-if="this.sortField === 'created_at' && this.sortDirection === 'asc'">&uarr;</span>
+                        <span v-if="this.sortField === 'created_at' && this.sortDirection === 'desc'">&darr;</span>
                     </th>
 
                 </tr>
@@ -75,6 +81,8 @@ export default {
             posts:[],
             categories:[],
             categoryId:'',
+            sortField:'created_at',
+            sortDirection:'desc',
             currentPage: 1,
             perPage: 5,
             total: 20,
@@ -97,9 +105,18 @@ export default {
         this.getCategories()
     },
     methods: {
-        // Our method to GET results from a Laravel endpoint
+        changeSort(field){
+            if(this.sortField === field ){
+                this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc'
+            } else {
+                this.sortField = field
+                this.sortDirection = 'asc'
+            }
+
+            this.getPosts()
+        },
         getPosts(page = 1) {
-            axios.get(`/api/posts?page=${page}&category_id=${this.categoryId}`)
+            axios.get(`/api/posts?page=${page}&category_id=${this.categoryId}&sort_field=${this.sortField}&sort_direction=${this.sortDirection}`)
                 .then(res => {
                     this.posts = res.data.data;
                     this.total = res.data.meta.total;

@@ -1,19 +1,3105 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/@ocrv/vue-tailwind-pagination/dist/vue-tailwind-pagination.es.js":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/@ocrv/vue-tailwind-pagination/dist/vue-tailwind-pagination.es.js ***!
-  \***************************************************************************************/
+/***/ "./node_modules/@intlify/core-base/dist/core-base.esm-bundler.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@intlify/core-base/dist/core-base.esm-bundler.js ***!
+  \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "DEFAULT_MESSAGE_DATA_TYPE": () => (/* reexport safe */ _intlify_runtime__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_MESSAGE_DATA_TYPE),
+/* harmony export */   "MISSING_RESOLVE_VALUE": () => (/* binding */ MISSING_RESOLVE_VALUE),
+/* harmony export */   "NOT_REOSLVED": () => (/* binding */ NOT_REOSLVED),
+/* harmony export */   "VERSION": () => (/* binding */ VERSION),
+/* harmony export */   "clearCompileCache": () => (/* binding */ clearCompileCache),
+/* harmony export */   "clearDateTimeFormat": () => (/* binding */ clearDateTimeFormat),
+/* harmony export */   "clearNumberFormat": () => (/* binding */ clearNumberFormat),
+/* harmony export */   "compileToFunction": () => (/* binding */ compileToFunction),
+/* harmony export */   "createCompileError": () => (/* reexport safe */ _intlify_message_compiler__WEBPACK_IMPORTED_MODULE_2__.createCompileError),
+/* harmony export */   "createCoreContext": () => (/* binding */ createCoreContext),
+/* harmony export */   "createCoreError": () => (/* binding */ createCoreError),
+/* harmony export */   "createMessageContext": () => (/* reexport safe */ _intlify_runtime__WEBPACK_IMPORTED_MODULE_1__.createMessageContext),
+/* harmony export */   "datetime": () => (/* binding */ datetime),
+/* harmony export */   "getAdditionalMeta": () => (/* binding */ getAdditionalMeta),
+/* harmony export */   "getDevToolsHook": () => (/* binding */ getDevToolsHook),
+/* harmony export */   "getLocaleChain": () => (/* binding */ getLocaleChain),
+/* harmony export */   "getWarnMessage": () => (/* binding */ getWarnMessage),
+/* harmony export */   "handleFlatJson": () => (/* reexport safe */ _intlify_message_resolver__WEBPACK_IMPORTED_MODULE_0__.handleFlatJson),
+/* harmony export */   "handleMissing": () => (/* binding */ handleMissing),
+/* harmony export */   "initI18nDevTools": () => (/* binding */ initI18nDevTools),
+/* harmony export */   "isMessageFunction": () => (/* binding */ isMessageFunction),
+/* harmony export */   "isTranslateFallbackWarn": () => (/* binding */ isTranslateFallbackWarn),
+/* harmony export */   "isTranslateMissingWarn": () => (/* binding */ isTranslateMissingWarn),
+/* harmony export */   "number": () => (/* binding */ number),
+/* harmony export */   "parse": () => (/* reexport safe */ _intlify_message_resolver__WEBPACK_IMPORTED_MODULE_0__.parse),
+/* harmony export */   "parseDateTimeArgs": () => (/* binding */ parseDateTimeArgs),
+/* harmony export */   "parseNumberArgs": () => (/* binding */ parseNumberArgs),
+/* harmony export */   "parseTranslateArgs": () => (/* binding */ parseTranslateArgs),
+/* harmony export */   "registerMessageCompiler": () => (/* binding */ registerMessageCompiler),
+/* harmony export */   "resolveValue": () => (/* reexport safe */ _intlify_message_resolver__WEBPACK_IMPORTED_MODULE_0__.resolveValue),
+/* harmony export */   "setAdditionalMeta": () => (/* binding */ setAdditionalMeta),
+/* harmony export */   "setDevToolsHook": () => (/* binding */ setDevToolsHook),
+/* harmony export */   "translate": () => (/* binding */ translate),
+/* harmony export */   "translateDevTools": () => (/* binding */ translateDevTools),
+/* harmony export */   "updateFallbackLocale": () => (/* binding */ updateFallbackLocale)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-var h=(0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({name:"Vue Tailwind Pagination",props:{current:{type:Number,default:1},total:{type:Number,default:0},perPage:{type:Number,default:9},pageRange:{type:Number,default:2},textBeforeInput:{type:String,default:"Go to page"},textAfterInput:{type:String,default:"Go"}},data:()=>({input:""}),methods:{hasFirst:function(){return 1!==this.rangeStart},hasLast:function(){return this.rangeEnd<this.totalPages},hasPrev:function(){return this.current>1},hasNext:function(){return this.current<this.totalPages},changePage:function(e){e>0&&e<=this.totalPages&&this.$emit("page-changed",e)}},computed:{pages:function(){for(var e=[],t=this.rangeStart;t<=this.rangeEnd;t++)e.push(t);return e},rangeStart:function(){var e=this.current-this.pageRange;return e>0?e:1},rangeEnd:function(){var e=this.current+this.pageRange;return e<this.totalPages?e:this.totalPages},totalPages:function(){return Math.ceil(this.total/this.perPage)},nextPage:function(){return this.current+1},prevPage:function(){return this.current-1}}});const f=(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-00d7790c");(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-00d7790c");const m={class:"min-w-max"},v={class:"flex justify-between bg-white rounded-lg border border-gray-200 px-10 py-3 text-gray-700 font-montserrat"},x={class:"flex items-center"},w={key:0,class:"pr-6"},y=(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",{class:"flex items-center justify-center hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6"},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",{class:"transform -rotate-45"},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg",{class:"h-4 w-4",xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 24 24",stroke:"currentColor"},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path",{"stroke-linecap":"round","stroke-linejoin":"round","stroke-width":"2",d:"M15 19l-7-7 7-7"})])])],-1),k={key:1,class:"pr-6"},P=(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",{class:"flex hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6 items-center justify-center"},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span",{class:"transform -rotate-45"}," 1 ")],-1),b={key:2,class:"pr-6"},C={class:"pr-6"},j={class:"transform -rotate-45"},N={key:3,class:"pr-6"},B={key:4,class:"pr-6"},I={class:"flex hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6 items-center justify-center"},S={class:"transform -rotate-45"},M={key:5,class:"pr-6"},E=(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",{class:"flex items-center justify-center hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6"},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",{class:"transform -rotate-45"},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg",{class:"h-4 w-4",xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 24 24",stroke:"currentColor"},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path",{"stroke-linecap":"round","stroke-linejoin":"round","stroke-width":"2",d:"M9 5l7 7-7 7"})])])],-1),F={class:"flex items-center"},L={class:"pr-2 text-gray-400 font-medium"},R={id:"text-before-input"},A={class:"w-14 rounded-md border border-indigo-400 px-1 py-1"},G={id:"text-after-input"},V=(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg",{class:"h-4 w-4",xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 24 24",stroke:"currentColor"},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path",{"stroke-linecap":"round","stroke-linejoin":"round","stroke-width":"2",d:"M9 5l7 7-7 7"})],-1);(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();const _=f(((e,t,r,p,h,f)=>((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div",m,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section",v,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul",x,[e.hasPrev()?((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li",w,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a",{href:"#",onClick:t[1]||(t[1]=(0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)((t=>e.changePage(e.prevPage)),["prevent"]))},[y])])):(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("",!0),e.hasFirst()?((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li",k,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a",{href:"#",onClick:t[2]||(t[2]=(0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)((t=>e.changePage(1)),["prevent"]))},[P])])):(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("",!0),e.hasFirst()?((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li",b,"...")):(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("",!0),((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(!0),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment,null,(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(e.pages,(t=>((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li",C,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a",{href:"#",onClick:(0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)((r=>e.changePage(t)),["prevent"])},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",{class:[{"bg-gradient-to-r from-blue-400 to-indigo-400":e.current==t},"flex hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6 items-center justify-center"]},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span",j,(0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(t),1)],2)],8,["onClick"])])))),256)),e.hasLast()?((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li",N,"...")):(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("",!0),e.hasLast()?((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li",B,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a",{href:"#",onClick:t[3]||(t[3]=(0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)((t=>e.changePage(e.totalPages)),["prevent"]))},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",I,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span",S,(0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(e.totalPages),1)])])])):(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("",!0),e.hasNext()?((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li",M,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a",{href:"#",onClick:t[4]||(t[4]=(0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)((t=>e.changePage(e.nextPage)),["prevent"]))},[E])])):(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("",!0)]),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",F,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",L,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span",R,(0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(e.textBeforeInput),1)]),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",A,[(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input",{"onUpdate:modelValue":t[5]||(t[5]=t=>e.input=t),class:"w-12 focus:outline-none px-2",type:"text"},null,512),[[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText,e.input,void 0,{number:!0}]])]),(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div",{onClick:t[6]||(t[6]=(0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)((t=>e.changePage(e.input)),["prevent"])),class:"flex items-center pl-4 font-medium cursor-pointer"},[(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span",G,(0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(e.textAfterInput),1),V])])])]))));h.render=_,h.__scopeId="data-v-00d7790c";/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (h);
+/* harmony import */ var _intlify_shared__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @intlify/shared */ "./node_modules/@intlify/shared/dist/shared.esm-bundler.js");
+/* harmony import */ var _intlify_message_resolver__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @intlify/message-resolver */ "./node_modules/@intlify/message-resolver/dist/message-resolver.esm-bundler.js");
+/* harmony import */ var _intlify_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @intlify/runtime */ "./node_modules/@intlify/runtime/dist/runtime.esm-bundler.js");
+/* harmony import */ var _intlify_message_compiler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @intlify/message-compiler */ "./node_modules/@intlify/message-compiler/dist/message-compiler.esm-bundler.js");
+/* harmony import */ var _intlify_devtools_if__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @intlify/devtools-if */ "./node_modules/@intlify/devtools-if/dist/devtools-if.esm-bundler.js");
+/*!
+  * @intlify/core-base v9.1.10
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+
+
+
+
+
+
+
+
+let devtools = null;
+function setDevToolsHook(hook) {
+    devtools = hook;
+}
+function getDevToolsHook() {
+    return devtools;
+}
+function initI18nDevTools(i18n, version, meta) {
+    // TODO: queue if devtools is undefined
+    devtools &&
+        devtools.emit(_intlify_devtools_if__WEBPACK_IMPORTED_MODULE_3__.IntlifyDevToolsHooks.I18nInit, {
+            timestamp: Date.now(),
+            i18n,
+            version,
+            meta
+        });
+}
+const translateDevTools = /* #__PURE__*/ createDevToolsHook(_intlify_devtools_if__WEBPACK_IMPORTED_MODULE_3__.IntlifyDevToolsHooks.FunctionTranslate);
+function createDevToolsHook(hook) {
+    return (payloads) => devtools && devtools.emit(hook, payloads);
+}
+
+/** @internal */
+const warnMessages = {
+    [0 /* NOT_FOUND_KEY */]: `Not found '{key}' key in '{locale}' locale messages.`,
+    [1 /* FALLBACK_TO_TRANSLATE */]: `Fall back to translate '{key}' key with '{target}' locale.`,
+    [2 /* CANNOT_FORMAT_NUMBER */]: `Cannot format a number value due to not supported Intl.NumberFormat.`,
+    [3 /* FALLBACK_TO_NUMBER_FORMAT */]: `Fall back to number format '{key}' key with '{target}' locale.`,
+    [4 /* CANNOT_FORMAT_DATE */]: `Cannot format a date value due to not supported Intl.DateTimeFormat.`,
+    [5 /* FALLBACK_TO_DATE_FORMAT */]: `Fall back to datetime format '{key}' key with '{target}' locale.`
+};
+function getWarnMessage(code, ...args) {
+    return (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.format)(warnMessages[code], ...args);
+}
+
+/**
+ * Intlify core-base version
+ * @internal
+ */
+const VERSION = '9.1.10';
+const NOT_REOSLVED = -1;
+const MISSING_RESOLVE_VALUE = '';
+function getDefaultLinkedModifiers() {
+    return {
+        upper: (val) => ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(val) ? val.toUpperCase() : val),
+        lower: (val) => ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(val) ? val.toLowerCase() : val),
+        // prettier-ignore
+        capitalize: (val) => ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(val)
+            ? `${val.charAt(0).toLocaleUpperCase()}${val.substr(1)}`
+            : val)
+    };
+}
+let _compiler;
+function registerMessageCompiler(compiler) {
+    _compiler = compiler;
+}
+// Additional Meta for Intlify DevTools
+let _additionalMeta = null;
+const setAdditionalMeta = /* #__PURE__*/ (meta) => {
+    _additionalMeta = meta;
+};
+const getAdditionalMeta = /* #__PURE__*/ () => _additionalMeta;
+// ID for CoreContext
+let _cid = 0;
+function createCoreContext(options = {}) {
+    // setup options
+    const version = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(options.version) ? options.version : VERSION;
+    const locale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(options.locale) ? options.locale : 'en-US';
+    const fallbackLocale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isArray)(options.fallbackLocale) ||
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(options.fallbackLocale) ||
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(options.fallbackLocale) ||
+        options.fallbackLocale === false
+        ? options.fallbackLocale
+        : locale;
+    const messages = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(options.messages)
+        ? options.messages
+        : { [locale]: {} };
+    const datetimeFormats = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(options.datetimeFormats)
+        ? options.datetimeFormats
+        : { [locale]: {} };
+    const numberFormats = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(options.numberFormats)
+        ? options.numberFormats
+        : { [locale]: {} };
+    const modifiers = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.assign)({}, options.modifiers || {}, getDefaultLinkedModifiers());
+    const pluralRules = options.pluralRules || {};
+    const missing = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isFunction)(options.missing) ? options.missing : null;
+    const missingWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.missingWarn) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isRegExp)(options.missingWarn)
+        ? options.missingWarn
+        : true;
+    const fallbackWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.fallbackWarn) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isRegExp)(options.fallbackWarn)
+        ? options.fallbackWarn
+        : true;
+    const fallbackFormat = !!options.fallbackFormat;
+    const unresolving = !!options.unresolving;
+    const postTranslation = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isFunction)(options.postTranslation)
+        ? options.postTranslation
+        : null;
+    const processor = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(options.processor) ? options.processor : null;
+    const warnHtmlMessage = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.warnHtmlMessage)
+        ? options.warnHtmlMessage
+        : true;
+    const escapeParameter = !!options.escapeParameter;
+    const messageCompiler = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isFunction)(options.messageCompiler)
+        ? options.messageCompiler
+        : _compiler;
+    const onWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isFunction)(options.onWarn) ? options.onWarn : _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.warn;
+    // setup internal options
+    const internalOptions = options;
+    const __datetimeFormatters = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isObject)(internalOptions.__datetimeFormatters)
+        ? internalOptions.__datetimeFormatters
+        : new Map();
+    const __numberFormatters = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isObject)(internalOptions.__numberFormatters)
+        ? internalOptions.__numberFormatters
+        : new Map();
+    const __meta = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isObject)(internalOptions.__meta) ? internalOptions.__meta : {};
+    _cid++;
+    const context = {
+        version,
+        cid: _cid,
+        locale,
+        fallbackLocale,
+        messages,
+        datetimeFormats,
+        numberFormats,
+        modifiers,
+        pluralRules,
+        missing,
+        missingWarn,
+        fallbackWarn,
+        fallbackFormat,
+        unresolving,
+        postTranslation,
+        processor,
+        warnHtmlMessage,
+        escapeParameter,
+        messageCompiler,
+        onWarn,
+        __datetimeFormatters,
+        __numberFormatters,
+        __meta
+    };
+    // for vue-devtools timeline event
+    if ((true)) {
+        context.__v_emitter =
+            internalOptions.__v_emitter != null
+                ? internalOptions.__v_emitter
+                : undefined;
+    }
+    // NOTE: experimental !!
+    if (true) {
+        initI18nDevTools(context, version, __meta);
+    }
+    return context;
+}
+/** @internal */
+function isTranslateFallbackWarn(fallback, key) {
+    return fallback instanceof RegExp ? fallback.test(key) : fallback;
+}
+/** @internal */
+function isTranslateMissingWarn(missing, key) {
+    return missing instanceof RegExp ? missing.test(key) : missing;
+}
+/** @internal */
+function handleMissing(context, key, locale, missingWarn, type) {
+    const { missing, onWarn } = context;
+    // for vue-devtools timeline event
+    if ((true)) {
+        const emitter = context.__v_emitter;
+        if (emitter) {
+            emitter.emit("missing" /* MISSING */, {
+                locale,
+                key,
+                type,
+                groupId: `${type}:${key}`
+            });
+        }
+    }
+    if (missing !== null) {
+        const ret = missing(context, locale, key, type);
+        return (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(ret) ? ret : key;
+    }
+    else {
+        if (( true) && isTranslateMissingWarn(missingWarn, key)) {
+            onWarn(getWarnMessage(0 /* NOT_FOUND_KEY */, { key, locale }));
+        }
+        return key;
+    }
+}
+/** @internal */
+function getLocaleChain(ctx, fallback, start) {
+    const context = ctx;
+    if (!context.__localeChainCache) {
+        context.__localeChainCache = new Map();
+    }
+    let chain = context.__localeChainCache.get(start);
+    if (!chain) {
+        chain = [];
+        // first block defined by start
+        let block = [start];
+        // while any intervening block found
+        while ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isArray)(block)) {
+            block = appendBlockToChain(chain, block, fallback);
+        }
+        // prettier-ignore
+        // last block defined by default
+        const defaults = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isArray)(fallback)
+            ? fallback
+            : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(fallback)
+                ? fallback['default']
+                    ? fallback['default']
+                    : null
+                : fallback;
+        // convert defaults to array
+        block = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(defaults) ? [defaults] : defaults;
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isArray)(block)) {
+            appendBlockToChain(chain, block, false);
+        }
+        context.__localeChainCache.set(start, chain);
+    }
+    return chain;
+}
+function appendBlockToChain(chain, block, blocks) {
+    let follow = true;
+    for (let i = 0; i < block.length && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(follow); i++) {
+        const locale = block[i];
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(locale)) {
+            follow = appendLocaleToChain(chain, block[i], blocks);
+        }
+    }
+    return follow;
+}
+function appendLocaleToChain(chain, locale, blocks) {
+    let follow;
+    const tokens = locale.split('-');
+    do {
+        const target = tokens.join('-');
+        follow = appendItemToChain(chain, target, blocks);
+        tokens.splice(-1, 1);
+    } while (tokens.length && follow === true);
+    return follow;
+}
+function appendItemToChain(chain, target, blocks) {
+    let follow = false;
+    if (!chain.includes(target)) {
+        follow = true;
+        if (target) {
+            follow = target[target.length - 1] !== '!';
+            const locale = target.replace(/!/g, '');
+            chain.push(locale);
+            if (((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isArray)(blocks) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(blocks)) &&
+                blocks[locale] // eslint-disable-line @typescript-eslint/no-explicit-any
+            ) {
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                follow = blocks[locale];
+            }
+        }
+    }
+    return follow;
+}
+/** @internal */
+function updateFallbackLocale(ctx, locale, fallback) {
+    const context = ctx;
+    context.__localeChainCache = new Map();
+    getLocaleChain(ctx, fallback, locale);
+}
+
+const RE_HTML_TAG = /<\/?[\w\s="/.':;#-\/]+>/;
+const WARN_MESSAGE = `Detected HTML in '{source}' message. Recommend not using HTML messages to avoid XSS.`;
+function checkHtmlMessage(source, options) {
+    const warnHtmlMessage = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.warnHtmlMessage)
+        ? options.warnHtmlMessage
+        : true;
+    if (warnHtmlMessage && RE_HTML_TAG.test(source)) {
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.warn)((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.format)(WARN_MESSAGE, { source }));
+    }
+}
+const defaultOnCacheKey = (source) => source;
+let compileCache = Object.create(null);
+function clearCompileCache() {
+    compileCache = Object.create(null);
+}
+function compileToFunction(source, options = {}) {
+    {
+        // check HTML message
+        ( true) && checkHtmlMessage(source, options);
+        // check caches
+        const onCacheKey = options.onCacheKey || defaultOnCacheKey;
+        const key = onCacheKey(source);
+        const cached = compileCache[key];
+        if (cached) {
+            return cached;
+        }
+        // compile error detecting
+        let occurred = false;
+        const onError = options.onError || _intlify_message_compiler__WEBPACK_IMPORTED_MODULE_2__.defaultOnError;
+        options.onError = (err) => {
+            occurred = true;
+            onError(err);
+        };
+        // compile
+        const { code } = (0,_intlify_message_compiler__WEBPACK_IMPORTED_MODULE_2__.baseCompile)(source, options);
+        // evaluate function
+        const msg = new Function(`return ${code}`)();
+        // if occurred compile error, don't cache
+        return !occurred ? (compileCache[key] = msg) : msg;
+    }
+}
+
+function createCoreError(code) {
+    return (0,_intlify_message_compiler__WEBPACK_IMPORTED_MODULE_2__.createCompileError)(code, null, ( true) ? { messages: errorMessages } : 0);
+}
+/** @internal */
+const errorMessages = {
+    [14 /* INVALID_ARGUMENT */]: 'Invalid arguments',
+    [15 /* INVALID_DATE_ARGUMENT */]: 'The date provided is an invalid Date object.' +
+        'Make sure your Date represents a valid date.',
+    [16 /* INVALID_ISO_DATE_ARGUMENT */]: 'The argument provided is not a valid ISO date string'
+};
+
+const NOOP_MESSAGE_FUNCTION = () => '';
+const isMessageFunction = (val) => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isFunction)(val);
+// implementation of `translate` function
+function translate(context, ...args) {
+    const { fallbackFormat, postTranslation, unresolving, fallbackLocale, messages } = context;
+    const [key, options] = parseTranslateArgs(...args);
+    const missingWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.missingWarn)
+        ? options.missingWarn
+        : context.missingWarn;
+    const fallbackWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.fallbackWarn)
+        ? options.fallbackWarn
+        : context.fallbackWarn;
+    const escapeParameter = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.escapeParameter)
+        ? options.escapeParameter
+        : context.escapeParameter;
+    const resolvedMessage = !!options.resolvedMessage;
+    // prettier-ignore
+    const defaultMsgOrKey = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(options.default) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.default) // default by function option
+        ? !(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.default)
+            ? options.default
+            : key
+        : fallbackFormat // default by `fallbackFormat` option
+            ? key
+            : '';
+    const enableDefaultMsg = fallbackFormat || defaultMsgOrKey !== '';
+    const locale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(options.locale) ? options.locale : context.locale;
+    // escape params
+    escapeParameter && escapeParams(options);
+    // resolve message format
+    // eslint-disable-next-line prefer-const
+    let [format, targetLocale, message] = !resolvedMessage
+        ? resolveMessageFormat(context, key, locale, fallbackLocale, fallbackWarn, missingWarn)
+        : [
+            key,
+            locale,
+            messages[locale] || {}
+        ];
+    // if you use default message, set it as message format!
+    let cacheBaseKey = key;
+    if (!resolvedMessage &&
+        !((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(format) || isMessageFunction(format))) {
+        if (enableDefaultMsg) {
+            format = defaultMsgOrKey;
+            cacheBaseKey = format;
+        }
+    }
+    // checking message format and target locale
+    if (!resolvedMessage &&
+        (!((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(format) || isMessageFunction(format)) ||
+            !(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(targetLocale))) {
+        return unresolving ? NOT_REOSLVED : key;
+    }
+    if (( true) && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(format) && context.messageCompiler == null) {
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.warn)(`The message format compilation is not supported in this build. ` +
+            `Because message compiler isn't included. ` +
+            `You need to pre-compilation all message format. ` +
+            `So translate function return '${key}'.`);
+        return key;
+    }
+    // setup compile error detecting
+    let occurred = false;
+    const errorDetector = () => {
+        occurred = true;
+    };
+    // compile message format
+    const msg = !isMessageFunction(format)
+        ? compileMessageFormat(context, key, targetLocale, format, cacheBaseKey, errorDetector)
+        : format;
+    // if occurred compile error, return the message format
+    if (occurred) {
+        return format;
+    }
+    // evaluate message with context
+    const ctxOptions = getMessageContextOptions(context, targetLocale, message, options);
+    const msgContext = (0,_intlify_runtime__WEBPACK_IMPORTED_MODULE_1__.createMessageContext)(ctxOptions);
+    const messaged = evaluateMessage(context, msg, msgContext);
+    // if use post translation option, proceed it with handler
+    const ret = postTranslation ? postTranslation(messaged) : messaged;
+    // NOTE: experimental !!
+    if (true) {
+        // prettier-ignore
+        const payloads = {
+            timestamp: Date.now(),
+            key: (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(key)
+                ? key
+                : isMessageFunction(format)
+                    ? format.key
+                    : '',
+            locale: targetLocale || (isMessageFunction(format)
+                ? format.locale
+                : ''),
+            format: (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(format)
+                ? format
+                : isMessageFunction(format)
+                    ? format.source
+                    : '',
+            message: ret
+        };
+        payloads.meta = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.assign)({}, context.__meta, getAdditionalMeta() || {});
+        translateDevTools(payloads);
+    }
+    return ret;
+}
+function escapeParams(options) {
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isArray)(options.list)) {
+        options.list = options.list.map(item => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(item) ? (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.escapeHtml)(item) : item);
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isObject)(options.named)) {
+        Object.keys(options.named).forEach(key => {
+            if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(options.named[key])) {
+                options.named[key] = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.escapeHtml)(options.named[key]);
+            }
+        });
+    }
+}
+function resolveMessageFormat(context, key, locale, fallbackLocale, fallbackWarn, missingWarn) {
+    const { messages, onWarn } = context;
+    const locales = getLocaleChain(context, fallbackLocale, locale);
+    let message = {};
+    let targetLocale;
+    let format = null;
+    let from = locale;
+    let to = null;
+    const type = 'translate';
+    for (let i = 0; i < locales.length; i++) {
+        targetLocale = to = locales[i];
+        if (( true) &&
+            locale !== targetLocale &&
+            isTranslateFallbackWarn(fallbackWarn, key)) {
+            onWarn(getWarnMessage(1 /* FALLBACK_TO_TRANSLATE */, {
+                key,
+                target: targetLocale
+            }));
+        }
+        // for vue-devtools timeline event
+        if (( true) && locale !== targetLocale) {
+            const emitter = context.__v_emitter;
+            if (emitter) {
+                emitter.emit("fallback" /* FALBACK */, {
+                    type,
+                    key,
+                    from,
+                    to,
+                    groupId: `${type}:${key}`
+                });
+            }
+        }
+        message =
+            messages[targetLocale] || {};
+        // for vue-devtools timeline event
+        let start = null;
+        let startTag;
+        let endTag;
+        if (( true) && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.inBrowser) {
+            start = window.performance.now();
+            startTag = 'intlify-message-resolve-start';
+            endTag = 'intlify-message-resolve-end';
+            _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark)(startTag);
+        }
+        if ((format = (0,_intlify_message_resolver__WEBPACK_IMPORTED_MODULE_0__.resolveValue)(message, key)) === null) {
+            // if null, resolve with object key path
+            format = message[key]; // eslint-disable-line @typescript-eslint/no-explicit-any
+        }
+        // for vue-devtools timeline event
+        if (( true) && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.inBrowser) {
+            const end = window.performance.now();
+            const emitter = context.__v_emitter;
+            if (emitter && start && format) {
+                emitter.emit("message-resolve" /* MESSAGE_RESOLVE */, {
+                    type: "message-resolve" /* MESSAGE_RESOLVE */,
+                    key,
+                    message: format,
+                    time: end - start,
+                    groupId: `${type}:${key}`
+                });
+            }
+            if (startTag && endTag && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.measure) {
+                (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark)(endTag);
+                (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.measure)('intlify message resolve', startTag, endTag);
+            }
+        }
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(format) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isFunction)(format))
+            break;
+        const missingRet = handleMissing(context, key, targetLocale, missingWarn, type);
+        if (missingRet !== key) {
+            format = missingRet;
+        }
+        from = to;
+    }
+    return [format, targetLocale, message];
+}
+function compileMessageFormat(context, key, targetLocale, format, cacheBaseKey, errorDetector) {
+    const { messageCompiler, warnHtmlMessage } = context;
+    if (isMessageFunction(format)) {
+        const msg = format;
+        msg.locale = msg.locale || targetLocale;
+        msg.key = msg.key || key;
+        return msg;
+    }
+    // for vue-devtools timeline event
+    let start = null;
+    let startTag;
+    let endTag;
+    if (( true) && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.inBrowser) {
+        start = window.performance.now();
+        startTag = 'intlify-message-compilation-start';
+        endTag = 'intlify-message-compilation-end';
+        _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark)(startTag);
+    }
+    const msg = messageCompiler(format, getCompileOptions(context, targetLocale, cacheBaseKey, format, warnHtmlMessage, errorDetector));
+    // for vue-devtools timeline event
+    if (( true) && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.inBrowser) {
+        const end = window.performance.now();
+        const emitter = context.__v_emitter;
+        if (emitter && start) {
+            emitter.emit("message-compilation" /* MESSAGE_COMPILATION */, {
+                type: "message-compilation" /* MESSAGE_COMPILATION */,
+                message: format,
+                time: end - start,
+                groupId: `${'translate'}:${key}`
+            });
+        }
+        if (startTag && endTag && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.measure) {
+            (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark)(endTag);
+            (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.measure)('intlify message compilation', startTag, endTag);
+        }
+    }
+    msg.locale = targetLocale;
+    msg.key = key;
+    msg.source = format;
+    return msg;
+}
+function evaluateMessage(context, msg, msgCtx) {
+    // for vue-devtools timeline event
+    let start = null;
+    let startTag;
+    let endTag;
+    if (( true) && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.inBrowser) {
+        start = window.performance.now();
+        startTag = 'intlify-message-evaluation-start';
+        endTag = 'intlify-message-evaluation-end';
+        _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark)(startTag);
+    }
+    const messaged = msg(msgCtx);
+    // for vue-devtools timeline event
+    if (( true) && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.inBrowser) {
+        const end = window.performance.now();
+        const emitter = context.__v_emitter;
+        if (emitter && start) {
+            emitter.emit("message-evaluation" /* MESSAGE_EVALUATION */, {
+                type: "message-evaluation" /* MESSAGE_EVALUATION */,
+                value: messaged,
+                time: end - start,
+                groupId: `${'translate'}:${msg.key}`
+            });
+        }
+        if (startTag && endTag && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark && _intlify_shared__WEBPACK_IMPORTED_MODULE_4__.measure) {
+            (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.mark)(endTag);
+            (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.measure)('intlify message evaluation', startTag, endTag);
+        }
+    }
+    return messaged;
+}
+/** @internal */
+function parseTranslateArgs(...args) {
+    const [arg1, arg2, arg3] = args;
+    const options = {};
+    if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(arg1) && !(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isNumber)(arg1) && !isMessageFunction(arg1)) {
+        throw createCoreError(14 /* INVALID_ARGUMENT */);
+    }
+    // prettier-ignore
+    const key = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isNumber)(arg1)
+        ? String(arg1)
+        : isMessageFunction(arg1)
+            ? arg1
+            : arg1;
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isNumber)(arg2)) {
+        options.plural = arg2;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(arg2)) {
+        options.default = arg2;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(arg2) && !(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isEmptyObject)(arg2)) {
+        options.named = arg2;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isArray)(arg2)) {
+        options.list = arg2;
+    }
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isNumber)(arg3)) {
+        options.plural = arg3;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(arg3)) {
+        options.default = arg3;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(arg3)) {
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.assign)(options, arg3);
+    }
+    return [key, options];
+}
+function getCompileOptions(context, locale, key, source, warnHtmlMessage, errorDetector) {
+    return {
+        warnHtmlMessage,
+        onError: (err) => {
+            errorDetector && errorDetector(err);
+            if ((true)) {
+                const message = `Message compilation error: ${err.message}`;
+                const codeFrame = err.location &&
+                    (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.generateCodeFrame)(source, err.location.start.offset, err.location.end.offset);
+                const emitter = context
+                    .__v_emitter;
+                if (emitter) {
+                    emitter.emit("compile-error" /* COMPILE_ERROR */, {
+                        message: source,
+                        error: err.message,
+                        start: err.location && err.location.start.offset,
+                        end: err.location && err.location.end.offset,
+                        groupId: `${'translate'}:${key}`
+                    });
+                }
+                console.error(codeFrame ? `${message}\n${codeFrame}` : message);
+            }
+            else {}
+        },
+        onCacheKey: (source) => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.generateFormatCacheKey)(locale, key, source)
+    };
+}
+function getMessageContextOptions(context, locale, message, options) {
+    const { modifiers, pluralRules } = context;
+    const resolveMessage = (key) => {
+        const val = (0,_intlify_message_resolver__WEBPACK_IMPORTED_MODULE_0__.resolveValue)(message, key);
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(val)) {
+            let occurred = false;
+            const errorDetector = () => {
+                occurred = true;
+            };
+            const msg = compileMessageFormat(context, key, locale, val, key, errorDetector);
+            return !occurred
+                ? msg
+                : NOOP_MESSAGE_FUNCTION;
+        }
+        else if (isMessageFunction(val)) {
+            return val;
+        }
+        else {
+            // TODO: should be implemented warning message
+            return NOOP_MESSAGE_FUNCTION;
+        }
+    };
+    const ctxOptions = {
+        locale,
+        modifiers,
+        pluralRules,
+        messages: resolveMessage
+    };
+    if (context.processor) {
+        ctxOptions.processor = context.processor;
+    }
+    if (options.list) {
+        ctxOptions.list = options.list;
+    }
+    if (options.named) {
+        ctxOptions.named = options.named;
+    }
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isNumber)(options.plural)) {
+        ctxOptions.pluralIndex = options.plural;
+    }
+    return ctxOptions;
+}
+
+const intlDefined = typeof Intl !== 'undefined';
+const Availabilities = {
+    dateTimeFormat: intlDefined && typeof Intl.DateTimeFormat !== 'undefined',
+    numberFormat: intlDefined && typeof Intl.NumberFormat !== 'undefined'
+};
+
+// implementation of `datetime` function
+function datetime(context, ...args) {
+    const { datetimeFormats, unresolving, fallbackLocale, onWarn } = context;
+    const { __datetimeFormatters } = context;
+    if (( true) && !Availabilities.dateTimeFormat) {
+        onWarn(getWarnMessage(4 /* CANNOT_FORMAT_DATE */));
+        return MISSING_RESOLVE_VALUE;
+    }
+    const [key, value, options, overrides] = parseDateTimeArgs(...args);
+    const missingWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.missingWarn)
+        ? options.missingWarn
+        : context.missingWarn;
+    const fallbackWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.fallbackWarn)
+        ? options.fallbackWarn
+        : context.fallbackWarn;
+    const part = !!options.part;
+    const locale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(options.locale) ? options.locale : context.locale;
+    const locales = getLocaleChain(context, fallbackLocale, locale);
+    if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(key) || key === '') {
+        return new Intl.DateTimeFormat(locale).format(value);
+    }
+    // resolve format
+    let datetimeFormat = {};
+    let targetLocale;
+    let format = null;
+    let from = locale;
+    let to = null;
+    const type = 'datetime format';
+    for (let i = 0; i < locales.length; i++) {
+        targetLocale = to = locales[i];
+        if (( true) &&
+            locale !== targetLocale &&
+            isTranslateFallbackWarn(fallbackWarn, key)) {
+            onWarn(getWarnMessage(5 /* FALLBACK_TO_DATE_FORMAT */, {
+                key,
+                target: targetLocale
+            }));
+        }
+        // for vue-devtools timeline event
+        if (( true) && locale !== targetLocale) {
+            const emitter = context.__v_emitter;
+            if (emitter) {
+                emitter.emit("fallback" /* FALBACK */, {
+                    type,
+                    key,
+                    from,
+                    to,
+                    groupId: `${type}:${key}`
+                });
+            }
+        }
+        datetimeFormat =
+            datetimeFormats[targetLocale] || {};
+        format = datetimeFormat[key];
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(format))
+            break;
+        handleMissing(context, key, targetLocale, missingWarn, type);
+        from = to;
+    }
+    // checking format and target locale
+    if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(format) || !(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(targetLocale)) {
+        return unresolving ? NOT_REOSLVED : key;
+    }
+    let id = `${targetLocale}__${key}`;
+    if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isEmptyObject)(overrides)) {
+        id = `${id}__${JSON.stringify(overrides)}`;
+    }
+    let formatter = __datetimeFormatters.get(id);
+    if (!formatter) {
+        formatter = new Intl.DateTimeFormat(targetLocale, (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.assign)({}, format, overrides));
+        __datetimeFormatters.set(id, formatter);
+    }
+    return !part ? formatter.format(value) : formatter.formatToParts(value);
+}
+/** @internal */
+function parseDateTimeArgs(...args) {
+    const [arg1, arg2, arg3, arg4] = args;
+    let options = {};
+    let overrides = {};
+    let value;
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(arg1)) {
+        // Only allow ISO strings - other date formats are often supported,
+        // but may cause different results in different browsers.
+        if (!/\d{4}-\d{2}-\d{2}(T.*)?/.test(arg1)) {
+            throw createCoreError(16 /* INVALID_ISO_DATE_ARGUMENT */);
+        }
+        value = new Date(arg1);
+        try {
+            // This will fail if the date is not valid
+            value.toISOString();
+        }
+        catch (e) {
+            throw createCoreError(16 /* INVALID_ISO_DATE_ARGUMENT */);
+        }
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isDate)(arg1)) {
+        if (isNaN(arg1.getTime())) {
+            throw createCoreError(15 /* INVALID_DATE_ARGUMENT */);
+        }
+        value = arg1;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isNumber)(arg1)) {
+        value = arg1;
+    }
+    else {
+        throw createCoreError(14 /* INVALID_ARGUMENT */);
+    }
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(arg2)) {
+        options.key = arg2;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(arg2)) {
+        options = arg2;
+    }
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(arg3)) {
+        options.locale = arg3;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(arg3)) {
+        overrides = arg3;
+    }
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(arg4)) {
+        overrides = arg4;
+    }
+    return [options.key || '', value, options, overrides];
+}
+/** @internal */
+function clearDateTimeFormat(ctx, locale, format) {
+    const context = ctx;
+    for (const key in format) {
+        const id = `${locale}__${key}`;
+        if (!context.__datetimeFormatters.has(id)) {
+            continue;
+        }
+        context.__datetimeFormatters.delete(id);
+    }
+}
+
+// implementation of `number` function
+function number(context, ...args) {
+    const { numberFormats, unresolving, fallbackLocale, onWarn } = context;
+    const { __numberFormatters } = context;
+    if (( true) && !Availabilities.numberFormat) {
+        onWarn(getWarnMessage(2 /* CANNOT_FORMAT_NUMBER */));
+        return MISSING_RESOLVE_VALUE;
+    }
+    const [key, value, options, overrides] = parseNumberArgs(...args);
+    const missingWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.missingWarn)
+        ? options.missingWarn
+        : context.missingWarn;
+    const fallbackWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(options.fallbackWarn)
+        ? options.fallbackWarn
+        : context.fallbackWarn;
+    const part = !!options.part;
+    const locale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(options.locale) ? options.locale : context.locale;
+    const locales = getLocaleChain(context, fallbackLocale, locale);
+    if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(key) || key === '') {
+        return new Intl.NumberFormat(locale).format(value);
+    }
+    // resolve format
+    let numberFormat = {};
+    let targetLocale;
+    let format = null;
+    let from = locale;
+    let to = null;
+    const type = 'number format';
+    for (let i = 0; i < locales.length; i++) {
+        targetLocale = to = locales[i];
+        if (( true) &&
+            locale !== targetLocale &&
+            isTranslateFallbackWarn(fallbackWarn, key)) {
+            onWarn(getWarnMessage(3 /* FALLBACK_TO_NUMBER_FORMAT */, {
+                key,
+                target: targetLocale
+            }));
+        }
+        // for vue-devtools timeline event
+        if (( true) && locale !== targetLocale) {
+            const emitter = context.__v_emitter;
+            if (emitter) {
+                emitter.emit("fallback" /* FALBACK */, {
+                    type,
+                    key,
+                    from,
+                    to,
+                    groupId: `${type}:${key}`
+                });
+            }
+        }
+        numberFormat =
+            numberFormats[targetLocale] || {};
+        format = numberFormat[key];
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(format))
+            break;
+        handleMissing(context, key, targetLocale, missingWarn, type);
+        from = to;
+    }
+    // checking format and target locale
+    if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(format) || !(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(targetLocale)) {
+        return unresolving ? NOT_REOSLVED : key;
+    }
+    let id = `${targetLocale}__${key}`;
+    if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isEmptyObject)(overrides)) {
+        id = `${id}__${JSON.stringify(overrides)}`;
+    }
+    let formatter = __numberFormatters.get(id);
+    if (!formatter) {
+        formatter = new Intl.NumberFormat(targetLocale, (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.assign)({}, format, overrides));
+        __numberFormatters.set(id, formatter);
+    }
+    return !part ? formatter.format(value) : formatter.formatToParts(value);
+}
+/** @internal */
+function parseNumberArgs(...args) {
+    const [arg1, arg2, arg3, arg4] = args;
+    let options = {};
+    let overrides = {};
+    if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isNumber)(arg1)) {
+        throw createCoreError(14 /* INVALID_ARGUMENT */);
+    }
+    const value = arg1;
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(arg2)) {
+        options.key = arg2;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(arg2)) {
+        options = arg2;
+    }
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isString)(arg3)) {
+        options.locale = arg3;
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(arg3)) {
+        overrides = arg3;
+    }
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.isPlainObject)(arg4)) {
+        overrides = arg4;
+    }
+    return [options.key || '', value, options, overrides];
+}
+/** @internal */
+function clearNumberFormat(ctx, locale, format) {
+    const context = ctx;
+    for (const key in format) {
+        const id = `${locale}__${key}`;
+        if (!context.__numberFormatters.has(id)) {
+            continue;
+        }
+        context.__numberFormatters.delete(id);
+    }
+}
+
+{
+    if (typeof __INTLIFY_PROD_DEVTOOLS__ !== 'boolean') {
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_4__.getGlobalThis)().__INTLIFY_PROD_DEVTOOLS__ = false;
+    }
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@intlify/devtools-if/dist/devtools-if.esm-bundler.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@intlify/devtools-if/dist/devtools-if.esm-bundler.js ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "IntlifyDevToolsHooks": () => (/* binding */ IntlifyDevToolsHooks)
+/* harmony export */ });
+/*!
+  * @intlify/devtools-if v9.1.10
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+const IntlifyDevToolsHooks = {
+    I18nInit: 'i18n:init',
+    FunctionTranslate: 'function:translate'
+};
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@intlify/message-compiler/dist/message-compiler.esm-bundler.js":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/@intlify/message-compiler/dist/message-compiler.esm-bundler.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ERROR_DOMAIN": () => (/* binding */ ERROR_DOMAIN),
+/* harmony export */   "LocationStub": () => (/* binding */ LocationStub),
+/* harmony export */   "baseCompile": () => (/* binding */ baseCompile),
+/* harmony export */   "createCompileError": () => (/* binding */ createCompileError),
+/* harmony export */   "createLocation": () => (/* binding */ createLocation),
+/* harmony export */   "createParser": () => (/* binding */ createParser),
+/* harmony export */   "createPosition": () => (/* binding */ createPosition),
+/* harmony export */   "defaultOnError": () => (/* binding */ defaultOnError),
+/* harmony export */   "errorMessages": () => (/* binding */ errorMessages)
+/* harmony export */ });
+/* harmony import */ var _intlify_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @intlify/shared */ "./node_modules/@intlify/shared/dist/shared.esm-bundler.js");
+/*!
+  * @intlify/message-compiler v9.1.10
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+
+/** @internal */
+const errorMessages = {
+    // tokenizer error messages
+    [0 /* EXPECTED_TOKEN */]: `Expected token: '{0}'`,
+    [1 /* INVALID_TOKEN_IN_PLACEHOLDER */]: `Invalid token in placeholder: '{0}'`,
+    [2 /* UNTERMINATED_SINGLE_QUOTE_IN_PLACEHOLDER */]: `Unterminated single quote in placeholder`,
+    [3 /* UNKNOWN_ESCAPE_SEQUENCE */]: `Unknown escape sequence: \\{0}`,
+    [4 /* INVALID_UNICODE_ESCAPE_SEQUENCE */]: `Invalid unicode escape sequence: {0}`,
+    [5 /* UNBALANCED_CLOSING_BRACE */]: `Unbalanced closing brace`,
+    [6 /* UNTERMINATED_CLOSING_BRACE */]: `Unterminated closing brace`,
+    [7 /* EMPTY_PLACEHOLDER */]: `Empty placeholder`,
+    [8 /* NOT_ALLOW_NEST_PLACEHOLDER */]: `Not allowed nest placeholder`,
+    [9 /* INVALID_LINKED_FORMAT */]: `Invalid linked format`,
+    // parser error messages
+    [10 /* MUST_HAVE_MESSAGES_IN_PLURAL */]: `Plural must have messages`,
+    [11 /* UNEXPECTED_EMPTY_LINKED_MODIFIER */]: `Unexpected empty linked modifier`,
+    [12 /* UNEXPECTED_EMPTY_LINKED_KEY */]: `Unexpected empty linked key`,
+    [13 /* UNEXPECTED_LEXICAL_ANALYSIS */]: `Unexpected lexical analysis in token: '{0}'`
+};
+function createCompileError(code, loc, options = {}) {
+    const { domain, messages, args } = options;
+    const msg = ( true)
+        ? (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.format)((messages || errorMessages)[code] || '', ...(args || []))
+        : 0;
+    const error = new SyntaxError(String(msg));
+    error.code = code;
+    if (loc) {
+        error.location = loc;
+    }
+    error.domain = domain;
+    return error;
+}
+/** @internal */
+function defaultOnError(error) {
+    throw error;
+}
+
+const LocationStub = {
+    start: { line: 1, column: 1, offset: 0 },
+    end: { line: 1, column: 1, offset: 0 }
+};
+function createPosition(line, column, offset) {
+    return { line, column, offset };
+}
+function createLocation(start, end, source) {
+    const loc = { start, end };
+    if (source != null) {
+        loc.source = source;
+    }
+    return loc;
+}
+
+const CHAR_SP = ' ';
+const CHAR_CR = '\r';
+const CHAR_LF = '\n';
+const CHAR_LS = String.fromCharCode(0x2028);
+const CHAR_PS = String.fromCharCode(0x2029);
+function createScanner(str) {
+    const _buf = str;
+    let _index = 0;
+    let _line = 1;
+    let _column = 1;
+    let _peekOffset = 0;
+    const isCRLF = (index) => _buf[index] === CHAR_CR && _buf[index + 1] === CHAR_LF;
+    const isLF = (index) => _buf[index] === CHAR_LF;
+    const isPS = (index) => _buf[index] === CHAR_PS;
+    const isLS = (index) => _buf[index] === CHAR_LS;
+    const isLineEnd = (index) => isCRLF(index) || isLF(index) || isPS(index) || isLS(index);
+    const index = () => _index;
+    const line = () => _line;
+    const column = () => _column;
+    const peekOffset = () => _peekOffset;
+    const charAt = (offset) => isCRLF(offset) || isPS(offset) || isLS(offset) ? CHAR_LF : _buf[offset];
+    const currentChar = () => charAt(_index);
+    const currentPeek = () => charAt(_index + _peekOffset);
+    function next() {
+        _peekOffset = 0;
+        if (isLineEnd(_index)) {
+            _line++;
+            _column = 0;
+        }
+        if (isCRLF(_index)) {
+            _index++;
+        }
+        _index++;
+        _column++;
+        return _buf[_index];
+    }
+    function peek() {
+        if (isCRLF(_index + _peekOffset)) {
+            _peekOffset++;
+        }
+        _peekOffset++;
+        return _buf[_index + _peekOffset];
+    }
+    function reset() {
+        _index = 0;
+        _line = 1;
+        _column = 1;
+        _peekOffset = 0;
+    }
+    function resetPeek(offset = 0) {
+        _peekOffset = offset;
+    }
+    function skipToPeek() {
+        const target = _index + _peekOffset;
+        // eslint-disable-next-line no-unmodified-loop-condition
+        while (target !== _index) {
+            next();
+        }
+        _peekOffset = 0;
+    }
+    return {
+        index,
+        line,
+        column,
+        peekOffset,
+        charAt,
+        currentChar,
+        currentPeek,
+        next,
+        peek,
+        reset,
+        resetPeek,
+        skipToPeek
+    };
+}
+
+const EOF = undefined;
+const LITERAL_DELIMITER = "'";
+const ERROR_DOMAIN$1 = 'tokenizer';
+function createTokenizer(source, options = {}) {
+    const location = options.location !== false;
+    const _scnr = createScanner(source);
+    const currentOffset = () => _scnr.index();
+    const currentPosition = () => createPosition(_scnr.line(), _scnr.column(), _scnr.index());
+    const _initLoc = currentPosition();
+    const _initOffset = currentOffset();
+    const _context = {
+        currentType: 14 /* EOF */,
+        offset: _initOffset,
+        startLoc: _initLoc,
+        endLoc: _initLoc,
+        lastType: 14 /* EOF */,
+        lastOffset: _initOffset,
+        lastStartLoc: _initLoc,
+        lastEndLoc: _initLoc,
+        braceNest: 0,
+        inLinked: false,
+        text: ''
+    };
+    const context = () => _context;
+    const { onError } = options;
+    function emitError(code, pos, offset, ...args) {
+        const ctx = context();
+        pos.column += offset;
+        pos.offset += offset;
+        if (onError) {
+            const loc = createLocation(ctx.startLoc, pos);
+            const err = createCompileError(code, loc, {
+                domain: ERROR_DOMAIN$1,
+                args
+            });
+            onError(err);
+        }
+    }
+    function getToken(context, type, value) {
+        context.endLoc = currentPosition();
+        context.currentType = type;
+        const token = { type };
+        if (location) {
+            token.loc = createLocation(context.startLoc, context.endLoc);
+        }
+        if (value != null) {
+            token.value = value;
+        }
+        return token;
+    }
+    const getEndToken = (context) => getToken(context, 14 /* EOF */);
+    function eat(scnr, ch) {
+        if (scnr.currentChar() === ch) {
+            scnr.next();
+            return ch;
+        }
+        else {
+            emitError(0 /* EXPECTED_TOKEN */, currentPosition(), 0, ch);
+            return '';
+        }
+    }
+    function peekSpaces(scnr) {
+        let buf = '';
+        while (scnr.currentPeek() === CHAR_SP || scnr.currentPeek() === CHAR_LF) {
+            buf += scnr.currentPeek();
+            scnr.peek();
+        }
+        return buf;
+    }
+    function skipSpaces(scnr) {
+        const buf = peekSpaces(scnr);
+        scnr.skipToPeek();
+        return buf;
+    }
+    function isIdentifierStart(ch) {
+        if (ch === EOF) {
+            return false;
+        }
+        const cc = ch.charCodeAt(0);
+        return ((cc >= 97 && cc <= 122) || // a-z
+            (cc >= 65 && cc <= 90) || // A-Z
+            cc === 95 // _
+        );
+    }
+    function isNumberStart(ch) {
+        if (ch === EOF) {
+            return false;
+        }
+        const cc = ch.charCodeAt(0);
+        return cc >= 48 && cc <= 57; // 0-9
+    }
+    function isNamedIdentifierStart(scnr, context) {
+        const { currentType } = context;
+        if (currentType !== 2 /* BraceLeft */) {
+            return false;
+        }
+        peekSpaces(scnr);
+        const ret = isIdentifierStart(scnr.currentPeek());
+        scnr.resetPeek();
+        return ret;
+    }
+    function isListIdentifierStart(scnr, context) {
+        const { currentType } = context;
+        if (currentType !== 2 /* BraceLeft */) {
+            return false;
+        }
+        peekSpaces(scnr);
+        const ch = scnr.currentPeek() === '-' ? scnr.peek() : scnr.currentPeek();
+        const ret = isNumberStart(ch);
+        scnr.resetPeek();
+        return ret;
+    }
+    function isLiteralStart(scnr, context) {
+        const { currentType } = context;
+        if (currentType !== 2 /* BraceLeft */) {
+            return false;
+        }
+        peekSpaces(scnr);
+        const ret = scnr.currentPeek() === LITERAL_DELIMITER;
+        scnr.resetPeek();
+        return ret;
+    }
+    function isLinkedDotStart(scnr, context) {
+        const { currentType } = context;
+        if (currentType !== 8 /* LinkedAlias */) {
+            return false;
+        }
+        peekSpaces(scnr);
+        const ret = scnr.currentPeek() === "." /* LinkedDot */;
+        scnr.resetPeek();
+        return ret;
+    }
+    function isLinkedModifierStart(scnr, context) {
+        const { currentType } = context;
+        if (currentType !== 9 /* LinkedDot */) {
+            return false;
+        }
+        peekSpaces(scnr);
+        const ret = isIdentifierStart(scnr.currentPeek());
+        scnr.resetPeek();
+        return ret;
+    }
+    function isLinkedDelimiterStart(scnr, context) {
+        const { currentType } = context;
+        if (!(currentType === 8 /* LinkedAlias */ ||
+            currentType === 12 /* LinkedModifier */)) {
+            return false;
+        }
+        peekSpaces(scnr);
+        const ret = scnr.currentPeek() === ":" /* LinkedDelimiter */;
+        scnr.resetPeek();
+        return ret;
+    }
+    function isLinkedReferStart(scnr, context) {
+        const { currentType } = context;
+        if (currentType !== 10 /* LinkedDelimiter */) {
+            return false;
+        }
+        const fn = () => {
+            const ch = scnr.currentPeek();
+            if (ch === "{" /* BraceLeft */) {
+                return isIdentifierStart(scnr.peek());
+            }
+            else if (ch === "@" /* LinkedAlias */ ||
+                ch === "%" /* Modulo */ ||
+                ch === "|" /* Pipe */ ||
+                ch === ":" /* LinkedDelimiter */ ||
+                ch === "." /* LinkedDot */ ||
+                ch === CHAR_SP ||
+                !ch) {
+                return false;
+            }
+            else if (ch === CHAR_LF) {
+                scnr.peek();
+                return fn();
+            }
+            else {
+                // other characters
+                return isIdentifierStart(ch);
+            }
+        };
+        const ret = fn();
+        scnr.resetPeek();
+        return ret;
+    }
+    function isPluralStart(scnr) {
+        peekSpaces(scnr);
+        const ret = scnr.currentPeek() === "|" /* Pipe */;
+        scnr.resetPeek();
+        return ret;
+    }
+    function isTextStart(scnr, reset = true) {
+        const fn = (hasSpace = false, prev = '', detectModulo = false) => {
+            const ch = scnr.currentPeek();
+            if (ch === "{" /* BraceLeft */) {
+                return prev === "%" /* Modulo */ ? false : hasSpace;
+            }
+            else if (ch === "@" /* LinkedAlias */ || !ch) {
+                return prev === "%" /* Modulo */ ? true : hasSpace;
+            }
+            else if (ch === "%" /* Modulo */) {
+                scnr.peek();
+                return fn(hasSpace, "%" /* Modulo */, true);
+            }
+            else if (ch === "|" /* Pipe */) {
+                return prev === "%" /* Modulo */ || detectModulo
+                    ? true
+                    : !(prev === CHAR_SP || prev === CHAR_LF);
+            }
+            else if (ch === CHAR_SP) {
+                scnr.peek();
+                return fn(true, CHAR_SP, detectModulo);
+            }
+            else if (ch === CHAR_LF) {
+                scnr.peek();
+                return fn(true, CHAR_LF, detectModulo);
+            }
+            else {
+                return true;
+            }
+        };
+        const ret = fn();
+        reset && scnr.resetPeek();
+        return ret;
+    }
+    function takeChar(scnr, fn) {
+        const ch = scnr.currentChar();
+        if (ch === EOF) {
+            return EOF;
+        }
+        if (fn(ch)) {
+            scnr.next();
+            return ch;
+        }
+        return null;
+    }
+    function takeIdentifierChar(scnr) {
+        const closure = (ch) => {
+            const cc = ch.charCodeAt(0);
+            return ((cc >= 97 && cc <= 122) || // a-z
+                (cc >= 65 && cc <= 90) || // A-Z
+                (cc >= 48 && cc <= 57) || // 0-9
+                cc === 95 || // _
+                cc === 36 // $
+            );
+        };
+        return takeChar(scnr, closure);
+    }
+    function takeDigit(scnr) {
+        const closure = (ch) => {
+            const cc = ch.charCodeAt(0);
+            return cc >= 48 && cc <= 57; // 0-9
+        };
+        return takeChar(scnr, closure);
+    }
+    function takeHexDigit(scnr) {
+        const closure = (ch) => {
+            const cc = ch.charCodeAt(0);
+            return ((cc >= 48 && cc <= 57) || // 0-9
+                (cc >= 65 && cc <= 70) || // A-F
+                (cc >= 97 && cc <= 102)); // a-f
+        };
+        return takeChar(scnr, closure);
+    }
+    function getDigits(scnr) {
+        let ch = '';
+        let num = '';
+        while ((ch = takeDigit(scnr))) {
+            num += ch;
+        }
+        return num;
+    }
+    function readText(scnr) {
+        let buf = '';
+        while (true) {
+            const ch = scnr.currentChar();
+            if (ch === "{" /* BraceLeft */ ||
+                ch === "}" /* BraceRight */ ||
+                ch === "@" /* LinkedAlias */ ||
+                ch === "|" /* Pipe */ ||
+                !ch) {
+                break;
+            }
+            else if (ch === "%" /* Modulo */) {
+                if (isTextStart(scnr)) {
+                    buf += ch;
+                    scnr.next();
+                }
+                else {
+                    break;
+                }
+            }
+            else if (ch === CHAR_SP || ch === CHAR_LF) {
+                if (isTextStart(scnr)) {
+                    buf += ch;
+                    scnr.next();
+                }
+                else if (isPluralStart(scnr)) {
+                    break;
+                }
+                else {
+                    buf += ch;
+                    scnr.next();
+                }
+            }
+            else {
+                buf += ch;
+                scnr.next();
+            }
+        }
+        return buf;
+    }
+    function readNamedIdentifier(scnr) {
+        skipSpaces(scnr);
+        let ch = '';
+        let name = '';
+        while ((ch = takeIdentifierChar(scnr))) {
+            name += ch;
+        }
+        if (scnr.currentChar() === EOF) {
+            emitError(6 /* UNTERMINATED_CLOSING_BRACE */, currentPosition(), 0);
+        }
+        return name;
+    }
+    function readListIdentifier(scnr) {
+        skipSpaces(scnr);
+        let value = '';
+        if (scnr.currentChar() === '-') {
+            scnr.next();
+            value += `-${getDigits(scnr)}`;
+        }
+        else {
+            value += getDigits(scnr);
+        }
+        if (scnr.currentChar() === EOF) {
+            emitError(6 /* UNTERMINATED_CLOSING_BRACE */, currentPosition(), 0);
+        }
+        return value;
+    }
+    function readLiteral(scnr) {
+        skipSpaces(scnr);
+        eat(scnr, `\'`);
+        let ch = '';
+        let literal = '';
+        const fn = (x) => x !== LITERAL_DELIMITER && x !== CHAR_LF;
+        while ((ch = takeChar(scnr, fn))) {
+            if (ch === '\\') {
+                literal += readEscapeSequence(scnr);
+            }
+            else {
+                literal += ch;
+            }
+        }
+        const current = scnr.currentChar();
+        if (current === CHAR_LF || current === EOF) {
+            emitError(2 /* UNTERMINATED_SINGLE_QUOTE_IN_PLACEHOLDER */, currentPosition(), 0);
+            // TODO: Is it correct really?
+            if (current === CHAR_LF) {
+                scnr.next();
+                eat(scnr, `\'`);
+            }
+            return literal;
+        }
+        eat(scnr, `\'`);
+        return literal;
+    }
+    function readEscapeSequence(scnr) {
+        const ch = scnr.currentChar();
+        switch (ch) {
+            case '\\':
+            case `\'`:
+                scnr.next();
+                return `\\${ch}`;
+            case 'u':
+                return readUnicodeEscapeSequence(scnr, ch, 4);
+            case 'U':
+                return readUnicodeEscapeSequence(scnr, ch, 6);
+            default:
+                emitError(3 /* UNKNOWN_ESCAPE_SEQUENCE */, currentPosition(), 0, ch);
+                return '';
+        }
+    }
+    function readUnicodeEscapeSequence(scnr, unicode, digits) {
+        eat(scnr, unicode);
+        let sequence = '';
+        for (let i = 0; i < digits; i++) {
+            const ch = takeHexDigit(scnr);
+            if (!ch) {
+                emitError(4 /* INVALID_UNICODE_ESCAPE_SEQUENCE */, currentPosition(), 0, `\\${unicode}${sequence}${scnr.currentChar()}`);
+                break;
+            }
+            sequence += ch;
+        }
+        return `\\${unicode}${sequence}`;
+    }
+    function readInvalidIdentifier(scnr) {
+        skipSpaces(scnr);
+        let ch = '';
+        let identifiers = '';
+        const closure = (ch) => ch !== "{" /* BraceLeft */ &&
+            ch !== "}" /* BraceRight */ &&
+            ch !== CHAR_SP &&
+            ch !== CHAR_LF;
+        while ((ch = takeChar(scnr, closure))) {
+            identifiers += ch;
+        }
+        return identifiers;
+    }
+    function readLinkedModifier(scnr) {
+        let ch = '';
+        let name = '';
+        while ((ch = takeIdentifierChar(scnr))) {
+            name += ch;
+        }
+        return name;
+    }
+    function readLinkedRefer(scnr) {
+        const fn = (detect = false, buf) => {
+            const ch = scnr.currentChar();
+            if (ch === "{" /* BraceLeft */ ||
+                ch === "%" /* Modulo */ ||
+                ch === "@" /* LinkedAlias */ ||
+                ch === "|" /* Pipe */ ||
+                !ch) {
+                return buf;
+            }
+            else if (ch === CHAR_SP) {
+                return buf;
+            }
+            else if (ch === CHAR_LF) {
+                buf += ch;
+                scnr.next();
+                return fn(detect, buf);
+            }
+            else {
+                buf += ch;
+                scnr.next();
+                return fn(true, buf);
+            }
+        };
+        return fn(false, '');
+    }
+    function readPlural(scnr) {
+        skipSpaces(scnr);
+        const plural = eat(scnr, "|" /* Pipe */);
+        skipSpaces(scnr);
+        return plural;
+    }
+    // TODO: We need refactoring of token parsing ...
+    function readTokenInPlaceholder(scnr, context) {
+        let token = null;
+        const ch = scnr.currentChar();
+        switch (ch) {
+            case "{" /* BraceLeft */:
+                if (context.braceNest >= 1) {
+                    emitError(8 /* NOT_ALLOW_NEST_PLACEHOLDER */, currentPosition(), 0);
+                }
+                scnr.next();
+                token = getToken(context, 2 /* BraceLeft */, "{" /* BraceLeft */);
+                skipSpaces(scnr);
+                context.braceNest++;
+                return token;
+            case "}" /* BraceRight */:
+                if (context.braceNest > 0 &&
+                    context.currentType === 2 /* BraceLeft */) {
+                    emitError(7 /* EMPTY_PLACEHOLDER */, currentPosition(), 0);
+                }
+                scnr.next();
+                token = getToken(context, 3 /* BraceRight */, "}" /* BraceRight */);
+                context.braceNest--;
+                context.braceNest > 0 && skipSpaces(scnr);
+                if (context.inLinked && context.braceNest === 0) {
+                    context.inLinked = false;
+                }
+                return token;
+            case "@" /* LinkedAlias */:
+                if (context.braceNest > 0) {
+                    emitError(6 /* UNTERMINATED_CLOSING_BRACE */, currentPosition(), 0);
+                }
+                token = readTokenInLinked(scnr, context) || getEndToken(context);
+                context.braceNest = 0;
+                return token;
+            default:
+                let validNamedIdentifier = true;
+                let validListIdentifier = true;
+                let validLiteral = true;
+                if (isPluralStart(scnr)) {
+                    if (context.braceNest > 0) {
+                        emitError(6 /* UNTERMINATED_CLOSING_BRACE */, currentPosition(), 0);
+                    }
+                    token = getToken(context, 1 /* Pipe */, readPlural(scnr));
+                    // reset
+                    context.braceNest = 0;
+                    context.inLinked = false;
+                    return token;
+                }
+                if (context.braceNest > 0 &&
+                    (context.currentType === 5 /* Named */ ||
+                        context.currentType === 6 /* List */ ||
+                        context.currentType === 7 /* Literal */)) {
+                    emitError(6 /* UNTERMINATED_CLOSING_BRACE */, currentPosition(), 0);
+                    context.braceNest = 0;
+                    return readToken(scnr, context);
+                }
+                if ((validNamedIdentifier = isNamedIdentifierStart(scnr, context))) {
+                    token = getToken(context, 5 /* Named */, readNamedIdentifier(scnr));
+                    skipSpaces(scnr);
+                    return token;
+                }
+                if ((validListIdentifier = isListIdentifierStart(scnr, context))) {
+                    token = getToken(context, 6 /* List */, readListIdentifier(scnr));
+                    skipSpaces(scnr);
+                    return token;
+                }
+                if ((validLiteral = isLiteralStart(scnr, context))) {
+                    token = getToken(context, 7 /* Literal */, readLiteral(scnr));
+                    skipSpaces(scnr);
+                    return token;
+                }
+                if (!validNamedIdentifier && !validListIdentifier && !validLiteral) {
+                    // TODO: we should be re-designed invalid cases, when we will extend message syntax near the future ...
+                    token = getToken(context, 13 /* InvalidPlace */, readInvalidIdentifier(scnr));
+                    emitError(1 /* INVALID_TOKEN_IN_PLACEHOLDER */, currentPosition(), 0, token.value);
+                    skipSpaces(scnr);
+                    return token;
+                }
+                break;
+        }
+        return token;
+    }
+    // TODO: We need refactoring of token parsing ...
+    function readTokenInLinked(scnr, context) {
+        const { currentType } = context;
+        let token = null;
+        const ch = scnr.currentChar();
+        if ((currentType === 8 /* LinkedAlias */ ||
+            currentType === 9 /* LinkedDot */ ||
+            currentType === 12 /* LinkedModifier */ ||
+            currentType === 10 /* LinkedDelimiter */) &&
+            (ch === CHAR_LF || ch === CHAR_SP)) {
+            emitError(9 /* INVALID_LINKED_FORMAT */, currentPosition(), 0);
+        }
+        switch (ch) {
+            case "@" /* LinkedAlias */:
+                scnr.next();
+                token = getToken(context, 8 /* LinkedAlias */, "@" /* LinkedAlias */);
+                context.inLinked = true;
+                return token;
+            case "." /* LinkedDot */:
+                skipSpaces(scnr);
+                scnr.next();
+                return getToken(context, 9 /* LinkedDot */, "." /* LinkedDot */);
+            case ":" /* LinkedDelimiter */:
+                skipSpaces(scnr);
+                scnr.next();
+                return getToken(context, 10 /* LinkedDelimiter */, ":" /* LinkedDelimiter */);
+            default:
+                if (isPluralStart(scnr)) {
+                    token = getToken(context, 1 /* Pipe */, readPlural(scnr));
+                    // reset
+                    context.braceNest = 0;
+                    context.inLinked = false;
+                    return token;
+                }
+                if (isLinkedDotStart(scnr, context) ||
+                    isLinkedDelimiterStart(scnr, context)) {
+                    skipSpaces(scnr);
+                    return readTokenInLinked(scnr, context);
+                }
+                if (isLinkedModifierStart(scnr, context)) {
+                    skipSpaces(scnr);
+                    return getToken(context, 12 /* LinkedModifier */, readLinkedModifier(scnr));
+                }
+                if (isLinkedReferStart(scnr, context)) {
+                    skipSpaces(scnr);
+                    if (ch === "{" /* BraceLeft */) {
+                        // scan the placeholder
+                        return readTokenInPlaceholder(scnr, context) || token;
+                    }
+                    else {
+                        return getToken(context, 11 /* LinkedKey */, readLinkedRefer(scnr));
+                    }
+                }
+                if (currentType === 8 /* LinkedAlias */) {
+                    emitError(9 /* INVALID_LINKED_FORMAT */, currentPosition(), 0);
+                }
+                context.braceNest = 0;
+                context.inLinked = false;
+                return readToken(scnr, context);
+        }
+    }
+    // TODO: We need refactoring of token parsing ...
+    function readToken(scnr, context) {
+        let token = { type: 14 /* EOF */ };
+        if (context.braceNest > 0) {
+            return readTokenInPlaceholder(scnr, context) || getEndToken(context);
+        }
+        if (context.inLinked) {
+            return readTokenInLinked(scnr, context) || getEndToken(context);
+        }
+        const ch = scnr.currentChar();
+        switch (ch) {
+            case "{" /* BraceLeft */:
+                return readTokenInPlaceholder(scnr, context) || getEndToken(context);
+            case "}" /* BraceRight */:
+                emitError(5 /* UNBALANCED_CLOSING_BRACE */, currentPosition(), 0);
+                scnr.next();
+                return getToken(context, 3 /* BraceRight */, "}" /* BraceRight */);
+            case "@" /* LinkedAlias */:
+                return readTokenInLinked(scnr, context) || getEndToken(context);
+            default:
+                if (isPluralStart(scnr)) {
+                    token = getToken(context, 1 /* Pipe */, readPlural(scnr));
+                    // reset
+                    context.braceNest = 0;
+                    context.inLinked = false;
+                    return token;
+                }
+                if (isTextStart(scnr)) {
+                    return getToken(context, 0 /* Text */, readText(scnr));
+                }
+                if (ch === "%" /* Modulo */) {
+                    scnr.next();
+                    return getToken(context, 4 /* Modulo */, "%" /* Modulo */);
+                }
+                break;
+        }
+        return token;
+    }
+    function nextToken() {
+        const { currentType, offset, startLoc, endLoc } = _context;
+        _context.lastType = currentType;
+        _context.lastOffset = offset;
+        _context.lastStartLoc = startLoc;
+        _context.lastEndLoc = endLoc;
+        _context.offset = currentOffset();
+        _context.startLoc = currentPosition();
+        if (_scnr.currentChar() === EOF) {
+            return getToken(_context, 14 /* EOF */);
+        }
+        return readToken(_scnr, _context);
+    }
+    return {
+        nextToken,
+        currentOffset,
+        currentPosition,
+        context
+    };
+}
+
+const ERROR_DOMAIN = 'parser';
+// Backslash backslash, backslash quote, uHHHH, UHHHHHH.
+const KNOWN_ESCAPES = /(?:\\\\|\\'|\\u([0-9a-fA-F]{4})|\\U([0-9a-fA-F]{6}))/g;
+function fromEscapeSequence(match, codePoint4, codePoint6) {
+    switch (match) {
+        case `\\\\`:
+            return `\\`;
+        case `\\\'`:
+            return `\'`;
+        default: {
+            const codePoint = parseInt(codePoint4 || codePoint6, 16);
+            if (codePoint <= 0xd7ff || codePoint >= 0xe000) {
+                return String.fromCodePoint(codePoint);
+            }
+            // invalid ...
+            // Replace them with U+FFFD REPLACEMENT CHARACTER.
+            return '�';
+        }
+    }
+}
+function createParser(options = {}) {
+    const location = options.location !== false;
+    const { onError } = options;
+    function emitError(tokenzer, code, start, offset, ...args) {
+        const end = tokenzer.currentPosition();
+        end.offset += offset;
+        end.column += offset;
+        if (onError) {
+            const loc = createLocation(start, end);
+            const err = createCompileError(code, loc, {
+                domain: ERROR_DOMAIN,
+                args
+            });
+            onError(err);
+        }
+    }
+    function startNode(type, offset, loc) {
+        const node = {
+            type,
+            start: offset,
+            end: offset
+        };
+        if (location) {
+            node.loc = { start: loc, end: loc };
+        }
+        return node;
+    }
+    function endNode(node, offset, pos, type) {
+        node.end = offset;
+        if (type) {
+            node.type = type;
+        }
+        if (location && node.loc) {
+            node.loc.end = pos;
+        }
+    }
+    function parseText(tokenizer, value) {
+        const context = tokenizer.context();
+        const node = startNode(3 /* Text */, context.offset, context.startLoc);
+        node.value = value;
+        endNode(node, tokenizer.currentOffset(), tokenizer.currentPosition());
+        return node;
+    }
+    function parseList(tokenizer, index) {
+        const context = tokenizer.context();
+        const { lastOffset: offset, lastStartLoc: loc } = context; // get brace left loc
+        const node = startNode(5 /* List */, offset, loc);
+        node.index = parseInt(index, 10);
+        tokenizer.nextToken(); // skip brach right
+        endNode(node, tokenizer.currentOffset(), tokenizer.currentPosition());
+        return node;
+    }
+    function parseNamed(tokenizer, key) {
+        const context = tokenizer.context();
+        const { lastOffset: offset, lastStartLoc: loc } = context; // get brace left loc
+        const node = startNode(4 /* Named */, offset, loc);
+        node.key = key;
+        tokenizer.nextToken(); // skip brach right
+        endNode(node, tokenizer.currentOffset(), tokenizer.currentPosition());
+        return node;
+    }
+    function parseLiteral(tokenizer, value) {
+        const context = tokenizer.context();
+        const { lastOffset: offset, lastStartLoc: loc } = context; // get brace left loc
+        const node = startNode(9 /* Literal */, offset, loc);
+        node.value = value.replace(KNOWN_ESCAPES, fromEscapeSequence);
+        tokenizer.nextToken(); // skip brach right
+        endNode(node, tokenizer.currentOffset(), tokenizer.currentPosition());
+        return node;
+    }
+    function parseLinkedModifier(tokenizer) {
+        const token = tokenizer.nextToken();
+        const context = tokenizer.context();
+        const { lastOffset: offset, lastStartLoc: loc } = context; // get linked dot loc
+        const node = startNode(8 /* LinkedModifier */, offset, loc);
+        if (token.type !== 12 /* LinkedModifier */) {
+            // empty modifier
+            emitError(tokenizer, 11 /* UNEXPECTED_EMPTY_LINKED_MODIFIER */, context.lastStartLoc, 0);
+            node.value = '';
+            endNode(node, offset, loc);
+            return {
+                nextConsumeToken: token,
+                node
+            };
+        }
+        // check token
+        if (token.value == null) {
+            emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+        }
+        node.value = token.value || '';
+        endNode(node, tokenizer.currentOffset(), tokenizer.currentPosition());
+        return {
+            node
+        };
+    }
+    function parseLinkedKey(tokenizer, value) {
+        const context = tokenizer.context();
+        const node = startNode(7 /* LinkedKey */, context.offset, context.startLoc);
+        node.value = value;
+        endNode(node, tokenizer.currentOffset(), tokenizer.currentPosition());
+        return node;
+    }
+    function parseLinked(tokenizer) {
+        const context = tokenizer.context();
+        const linkedNode = startNode(6 /* Linked */, context.offset, context.startLoc);
+        let token = tokenizer.nextToken();
+        if (token.type === 9 /* LinkedDot */) {
+            const parsed = parseLinkedModifier(tokenizer);
+            linkedNode.modifier = parsed.node;
+            token = parsed.nextConsumeToken || tokenizer.nextToken();
+        }
+        // asset check token
+        if (token.type !== 10 /* LinkedDelimiter */) {
+            emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+        }
+        token = tokenizer.nextToken();
+        // skip brace left
+        if (token.type === 2 /* BraceLeft */) {
+            token = tokenizer.nextToken();
+        }
+        switch (token.type) {
+            case 11 /* LinkedKey */:
+                if (token.value == null) {
+                    emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+                }
+                linkedNode.key = parseLinkedKey(tokenizer, token.value || '');
+                break;
+            case 5 /* Named */:
+                if (token.value == null) {
+                    emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+                }
+                linkedNode.key = parseNamed(tokenizer, token.value || '');
+                break;
+            case 6 /* List */:
+                if (token.value == null) {
+                    emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+                }
+                linkedNode.key = parseList(tokenizer, token.value || '');
+                break;
+            case 7 /* Literal */:
+                if (token.value == null) {
+                    emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+                }
+                linkedNode.key = parseLiteral(tokenizer, token.value || '');
+                break;
+            default:
+                // empty key
+                emitError(tokenizer, 12 /* UNEXPECTED_EMPTY_LINKED_KEY */, context.lastStartLoc, 0);
+                const nextContext = tokenizer.context();
+                const emptyLinkedKeyNode = startNode(7 /* LinkedKey */, nextContext.offset, nextContext.startLoc);
+                emptyLinkedKeyNode.value = '';
+                endNode(emptyLinkedKeyNode, nextContext.offset, nextContext.startLoc);
+                linkedNode.key = emptyLinkedKeyNode;
+                endNode(linkedNode, nextContext.offset, nextContext.startLoc);
+                return {
+                    nextConsumeToken: token,
+                    node: linkedNode
+                };
+        }
+        endNode(linkedNode, tokenizer.currentOffset(), tokenizer.currentPosition());
+        return {
+            node: linkedNode
+        };
+    }
+    function parseMessage(tokenizer) {
+        const context = tokenizer.context();
+        const startOffset = context.currentType === 1 /* Pipe */
+            ? tokenizer.currentOffset()
+            : context.offset;
+        const startLoc = context.currentType === 1 /* Pipe */
+            ? context.endLoc
+            : context.startLoc;
+        const node = startNode(2 /* Message */, startOffset, startLoc);
+        node.items = [];
+        let nextToken = null;
+        do {
+            const token = nextToken || tokenizer.nextToken();
+            nextToken = null;
+            switch (token.type) {
+                case 0 /* Text */:
+                    if (token.value == null) {
+                        emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+                    }
+                    node.items.push(parseText(tokenizer, token.value || ''));
+                    break;
+                case 6 /* List */:
+                    if (token.value == null) {
+                        emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+                    }
+                    node.items.push(parseList(tokenizer, token.value || ''));
+                    break;
+                case 5 /* Named */:
+                    if (token.value == null) {
+                        emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+                    }
+                    node.items.push(parseNamed(tokenizer, token.value || ''));
+                    break;
+                case 7 /* Literal */:
+                    if (token.value == null) {
+                        emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, getTokenCaption(token));
+                    }
+                    node.items.push(parseLiteral(tokenizer, token.value || ''));
+                    break;
+                case 8 /* LinkedAlias */:
+                    const parsed = parseLinked(tokenizer);
+                    node.items.push(parsed.node);
+                    nextToken = parsed.nextConsumeToken || null;
+                    break;
+            }
+        } while (context.currentType !== 14 /* EOF */ &&
+            context.currentType !== 1 /* Pipe */);
+        // adjust message node loc
+        const endOffset = context.currentType === 1 /* Pipe */
+            ? context.lastOffset
+            : tokenizer.currentOffset();
+        const endLoc = context.currentType === 1 /* Pipe */
+            ? context.lastEndLoc
+            : tokenizer.currentPosition();
+        endNode(node, endOffset, endLoc);
+        return node;
+    }
+    function parsePlural(tokenizer, offset, loc, msgNode) {
+        const context = tokenizer.context();
+        let hasEmptyMessage = msgNode.items.length === 0;
+        const node = startNode(1 /* Plural */, offset, loc);
+        node.cases = [];
+        node.cases.push(msgNode);
+        do {
+            const msg = parseMessage(tokenizer);
+            if (!hasEmptyMessage) {
+                hasEmptyMessage = msg.items.length === 0;
+            }
+            node.cases.push(msg);
+        } while (context.currentType !== 14 /* EOF */);
+        if (hasEmptyMessage) {
+            emitError(tokenizer, 10 /* MUST_HAVE_MESSAGES_IN_PLURAL */, loc, 0);
+        }
+        endNode(node, tokenizer.currentOffset(), tokenizer.currentPosition());
+        return node;
+    }
+    function parseResource(tokenizer) {
+        const context = tokenizer.context();
+        const { offset, startLoc } = context;
+        const msgNode = parseMessage(tokenizer);
+        if (context.currentType === 14 /* EOF */) {
+            return msgNode;
+        }
+        else {
+            return parsePlural(tokenizer, offset, startLoc, msgNode);
+        }
+    }
+    function parse(source) {
+        const tokenizer = createTokenizer(source, (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.assign)({}, options));
+        const context = tokenizer.context();
+        const node = startNode(0 /* Resource */, context.offset, context.startLoc);
+        if (location && node.loc) {
+            node.loc.source = source;
+        }
+        node.body = parseResource(tokenizer);
+        // assert whether achieved to EOF
+        if (context.currentType !== 14 /* EOF */) {
+            emitError(tokenizer, 13 /* UNEXPECTED_LEXICAL_ANALYSIS */, context.lastStartLoc, 0, source[context.offset] || '');
+        }
+        endNode(node, tokenizer.currentOffset(), tokenizer.currentPosition());
+        return node;
+    }
+    return { parse };
+}
+function getTokenCaption(token) {
+    if (token.type === 14 /* EOF */) {
+        return 'EOF';
+    }
+    const name = (token.value || '').replace(/\r?\n/gu, '\\n');
+    return name.length > 10 ? name.slice(0, 9) + '…' : name;
+}
+
+function createTransformer(ast, options = {} // eslint-disable-line
+) {
+    const _context = {
+        ast,
+        helpers: new Set()
+    };
+    const context = () => _context;
+    const helper = (name) => {
+        _context.helpers.add(name);
+        return name;
+    };
+    return { context, helper };
+}
+function traverseNodes(nodes, transformer) {
+    for (let i = 0; i < nodes.length; i++) {
+        traverseNode(nodes[i], transformer);
+    }
+}
+function traverseNode(node, transformer) {
+    // TODO: if we need pre-hook of transform, should be implemented to here
+    switch (node.type) {
+        case 1 /* Plural */:
+            traverseNodes(node.cases, transformer);
+            transformer.helper("plural" /* PLURAL */);
+            break;
+        case 2 /* Message */:
+            traverseNodes(node.items, transformer);
+            break;
+        case 6 /* Linked */:
+            const linked = node;
+            traverseNode(linked.key, transformer);
+            transformer.helper("linked" /* LINKED */);
+            break;
+        case 5 /* List */:
+            transformer.helper("interpolate" /* INTERPOLATE */);
+            transformer.helper("list" /* LIST */);
+            break;
+        case 4 /* Named */:
+            transformer.helper("interpolate" /* INTERPOLATE */);
+            transformer.helper("named" /* NAMED */);
+            break;
+    }
+    // TODO: if we need post-hook of transform, should be implemented to here
+}
+// transform AST
+function transform(ast, options = {} // eslint-disable-line
+) {
+    const transformer = createTransformer(ast);
+    transformer.helper("normalize" /* NORMALIZE */);
+    // traverse
+    ast.body && traverseNode(ast.body, transformer);
+    // set meta information
+    const context = transformer.context();
+    ast.helpers = Array.from(context.helpers);
+}
+
+function createCodeGenerator(ast, options) {
+    const { sourceMap, filename, breakLineCode, needIndent: _needIndent } = options;
+    const _context = {
+        source: ast.loc.source,
+        filename,
+        code: '',
+        column: 1,
+        line: 1,
+        offset: 0,
+        map: undefined,
+        breakLineCode,
+        needIndent: _needIndent,
+        indentLevel: 0
+    };
+    const context = () => _context;
+    function push(code, node) {
+        _context.code += code;
+    }
+    function _newline(n, withBreakLine = true) {
+        const _breakLineCode = withBreakLine ? breakLineCode : '';
+        push(_needIndent ? _breakLineCode + `  `.repeat(n) : _breakLineCode);
+    }
+    function indent(withNewLine = true) {
+        const level = ++_context.indentLevel;
+        withNewLine && _newline(level);
+    }
+    function deindent(withNewLine = true) {
+        const level = --_context.indentLevel;
+        withNewLine && _newline(level);
+    }
+    function newline() {
+        _newline(_context.indentLevel);
+    }
+    const helper = (key) => `_${key}`;
+    const needIndent = () => _context.needIndent;
+    return {
+        context,
+        push,
+        indent,
+        deindent,
+        newline,
+        helper,
+        needIndent
+    };
+}
+function generateLinkedNode(generator, node) {
+    const { helper } = generator;
+    generator.push(`${helper("linked" /* LINKED */)}(`);
+    generateNode(generator, node.key);
+    if (node.modifier) {
+        generator.push(`, `);
+        generateNode(generator, node.modifier);
+    }
+    generator.push(`)`);
+}
+function generateMessageNode(generator, node) {
+    const { helper, needIndent } = generator;
+    generator.push(`${helper("normalize" /* NORMALIZE */)}([`);
+    generator.indent(needIndent());
+    const length = node.items.length;
+    for (let i = 0; i < length; i++) {
+        generateNode(generator, node.items[i]);
+        if (i === length - 1) {
+            break;
+        }
+        generator.push(', ');
+    }
+    generator.deindent(needIndent());
+    generator.push('])');
+}
+function generatePluralNode(generator, node) {
+    const { helper, needIndent } = generator;
+    if (node.cases.length > 1) {
+        generator.push(`${helper("plural" /* PLURAL */)}([`);
+        generator.indent(needIndent());
+        const length = node.cases.length;
+        for (let i = 0; i < length; i++) {
+            generateNode(generator, node.cases[i]);
+            if (i === length - 1) {
+                break;
+            }
+            generator.push(', ');
+        }
+        generator.deindent(needIndent());
+        generator.push(`])`);
+    }
+}
+function generateResource(generator, node) {
+    if (node.body) {
+        generateNode(generator, node.body);
+    }
+    else {
+        generator.push('null');
+    }
+}
+function generateNode(generator, node) {
+    const { helper } = generator;
+    switch (node.type) {
+        case 0 /* Resource */:
+            generateResource(generator, node);
+            break;
+        case 1 /* Plural */:
+            generatePluralNode(generator, node);
+            break;
+        case 2 /* Message */:
+            generateMessageNode(generator, node);
+            break;
+        case 6 /* Linked */:
+            generateLinkedNode(generator, node);
+            break;
+        case 8 /* LinkedModifier */:
+            generator.push(JSON.stringify(node.value), node);
+            break;
+        case 7 /* LinkedKey */:
+            generator.push(JSON.stringify(node.value), node);
+            break;
+        case 5 /* List */:
+            generator.push(`${helper("interpolate" /* INTERPOLATE */)}(${helper("list" /* LIST */)}(${node.index}))`, node);
+            break;
+        case 4 /* Named */:
+            generator.push(`${helper("interpolate" /* INTERPOLATE */)}(${helper("named" /* NAMED */)}(${JSON.stringify(node.key)}))`, node);
+            break;
+        case 9 /* Literal */:
+            generator.push(JSON.stringify(node.value), node);
+            break;
+        case 3 /* Text */:
+            generator.push(JSON.stringify(node.value), node);
+            break;
+        default:
+            if ((true)) {
+                throw new Error(`unhandled codegen node type: ${node.type}`);
+            }
+    }
+}
+// generate code from AST
+const generate = (ast, options = {} // eslint-disable-line
+) => {
+    const mode = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(options.mode) ? options.mode : 'normal';
+    const filename = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(options.filename)
+        ? options.filename
+        : 'message.intl';
+    const sourceMap = !!options.sourceMap;
+    // prettier-ignore
+    const breakLineCode = options.breakLineCode != null
+        ? options.breakLineCode
+        : mode === 'arrow'
+            ? ';'
+            : '\n';
+    const needIndent = options.needIndent ? options.needIndent : mode !== 'arrow';
+    const helpers = ast.helpers || [];
+    const generator = createCodeGenerator(ast, {
+        mode,
+        filename,
+        sourceMap,
+        breakLineCode,
+        needIndent
+    });
+    generator.push(mode === 'normal' ? `function __msg__ (ctx) {` : `(ctx) => {`);
+    generator.indent(needIndent);
+    if (helpers.length > 0) {
+        generator.push(`const { ${helpers.map(s => `${s}: _${s}`).join(', ')} } = ctx`);
+        generator.newline();
+    }
+    generator.push(`return `);
+    generateNode(generator, ast);
+    generator.deindent(needIndent);
+    generator.push(`}`);
+    const { code, map } = generator.context();
+    return {
+        ast,
+        code,
+        map: map ? map.toJSON() : undefined // eslint-disable-line @typescript-eslint/no-explicit-any
+    };
+};
+
+function baseCompile(source, options = {}) {
+    const assignedOptions = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.assign)({}, options);
+    // parse source codes
+    const parser = createParser(assignedOptions);
+    const ast = parser.parse(source);
+    // transform ASTs
+    transform(ast, assignedOptions);
+    // generate javascript codes
+    return generate(ast, assignedOptions);
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@intlify/message-resolver/dist/message-resolver.esm-bundler.js":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/@intlify/message-resolver/dist/message-resolver.esm-bundler.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "handleFlatJson": () => (/* binding */ handleFlatJson),
+/* harmony export */   "parse": () => (/* binding */ parse),
+/* harmony export */   "resolveValue": () => (/* binding */ resolveValue)
+/* harmony export */ });
+/*!
+  * @intlify/message-resolver v9.1.10
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+/**
+ * Original Utilities
+ * written by kazuya kawaguchi
+ */
+if ((true)) ;
+const hasOwnProperty = Object.prototype.hasOwnProperty;
+function hasOwn(obj, key) {
+    return hasOwnProperty.call(obj, key);
+}
+const isObject = (val) => // eslint-disable-line
+ val !== null && typeof val === 'object';
+
+const pathStateMachine = [];
+pathStateMachine[0 /* BEFORE_PATH */] = {
+    ["w" /* WORKSPACE */]: [0 /* BEFORE_PATH */],
+    ["i" /* IDENT */]: [3 /* IN_IDENT */, 0 /* APPEND */],
+    ["[" /* LEFT_BRACKET */]: [4 /* IN_SUB_PATH */],
+    ["o" /* END_OF_FAIL */]: [7 /* AFTER_PATH */]
+};
+pathStateMachine[1 /* IN_PATH */] = {
+    ["w" /* WORKSPACE */]: [1 /* IN_PATH */],
+    ["." /* DOT */]: [2 /* BEFORE_IDENT */],
+    ["[" /* LEFT_BRACKET */]: [4 /* IN_SUB_PATH */],
+    ["o" /* END_OF_FAIL */]: [7 /* AFTER_PATH */]
+};
+pathStateMachine[2 /* BEFORE_IDENT */] = {
+    ["w" /* WORKSPACE */]: [2 /* BEFORE_IDENT */],
+    ["i" /* IDENT */]: [3 /* IN_IDENT */, 0 /* APPEND */],
+    ["0" /* ZERO */]: [3 /* IN_IDENT */, 0 /* APPEND */]
+};
+pathStateMachine[3 /* IN_IDENT */] = {
+    ["i" /* IDENT */]: [3 /* IN_IDENT */, 0 /* APPEND */],
+    ["0" /* ZERO */]: [3 /* IN_IDENT */, 0 /* APPEND */],
+    ["w" /* WORKSPACE */]: [1 /* IN_PATH */, 1 /* PUSH */],
+    ["." /* DOT */]: [2 /* BEFORE_IDENT */, 1 /* PUSH */],
+    ["[" /* LEFT_BRACKET */]: [4 /* IN_SUB_PATH */, 1 /* PUSH */],
+    ["o" /* END_OF_FAIL */]: [7 /* AFTER_PATH */, 1 /* PUSH */]
+};
+pathStateMachine[4 /* IN_SUB_PATH */] = {
+    ["'" /* SINGLE_QUOTE */]: [5 /* IN_SINGLE_QUOTE */, 0 /* APPEND */],
+    ["\"" /* DOUBLE_QUOTE */]: [6 /* IN_DOUBLE_QUOTE */, 0 /* APPEND */],
+    ["[" /* LEFT_BRACKET */]: [
+        4 /* IN_SUB_PATH */,
+        2 /* INC_SUB_PATH_DEPTH */
+    ],
+    ["]" /* RIGHT_BRACKET */]: [1 /* IN_PATH */, 3 /* PUSH_SUB_PATH */],
+    ["o" /* END_OF_FAIL */]: 8 /* ERROR */,
+    ["l" /* ELSE */]: [4 /* IN_SUB_PATH */, 0 /* APPEND */]
+};
+pathStateMachine[5 /* IN_SINGLE_QUOTE */] = {
+    ["'" /* SINGLE_QUOTE */]: [4 /* IN_SUB_PATH */, 0 /* APPEND */],
+    ["o" /* END_OF_FAIL */]: 8 /* ERROR */,
+    ["l" /* ELSE */]: [5 /* IN_SINGLE_QUOTE */, 0 /* APPEND */]
+};
+pathStateMachine[6 /* IN_DOUBLE_QUOTE */] = {
+    ["\"" /* DOUBLE_QUOTE */]: [4 /* IN_SUB_PATH */, 0 /* APPEND */],
+    ["o" /* END_OF_FAIL */]: 8 /* ERROR */,
+    ["l" /* ELSE */]: [6 /* IN_DOUBLE_QUOTE */, 0 /* APPEND */]
+};
+/**
+ * Check if an expression is a literal value.
+ */
+const literalValueRE = /^\s?(?:true|false|-?[\d.]+|'[^']*'|"[^"]*")\s?$/;
+function isLiteral(exp) {
+    return literalValueRE.test(exp);
+}
+/**
+ * Strip quotes from a string
+ */
+function stripQuotes(str) {
+    const a = str.charCodeAt(0);
+    const b = str.charCodeAt(str.length - 1);
+    return a === b && (a === 0x22 || a === 0x27) ? str.slice(1, -1) : str;
+}
+/**
+ * Determine the type of a character in a keypath.
+ */
+function getPathCharType(ch) {
+    if (ch === undefined || ch === null) {
+        return "o" /* END_OF_FAIL */;
+    }
+    const code = ch.charCodeAt(0);
+    switch (code) {
+        case 0x5b: // [
+        case 0x5d: // ]
+        case 0x2e: // .
+        case 0x22: // "
+        case 0x27: // '
+            return ch;
+        case 0x5f: // _
+        case 0x24: // $
+        case 0x2d: // -
+            return "i" /* IDENT */;
+        case 0x09: // Tab (HT)
+        case 0x0a: // Newline (LF)
+        case 0x0d: // Return (CR)
+        case 0xa0: // No-break space (NBSP)
+        case 0xfeff: // Byte Order Mark (BOM)
+        case 0x2028: // Line Separator (LS)
+        case 0x2029: // Paragraph Separator (PS)
+            return "w" /* WORKSPACE */;
+    }
+    return "i" /* IDENT */;
+}
+/**
+ * Format a subPath, return its plain form if it is
+ * a literal string or number. Otherwise prepend the
+ * dynamic indicator (*).
+ */
+function formatSubPath(path) {
+    const trimmed = path.trim();
+    // invalid leading 0
+    if (path.charAt(0) === '0' && isNaN(parseInt(path))) {
+        return false;
+    }
+    return isLiteral(trimmed)
+        ? stripQuotes(trimmed)
+        : "*" /* ASTARISK */ + trimmed;
+}
+/**
+ * Parse a string path into an array of segments
+ */
+function parse(path) {
+    const keys = [];
+    let index = -1;
+    let mode = 0 /* BEFORE_PATH */;
+    let subPathDepth = 0;
+    let c;
+    let key; // eslint-disable-line
+    let newChar;
+    let type;
+    let transition;
+    let action;
+    let typeMap;
+    const actions = [];
+    actions[0 /* APPEND */] = () => {
+        if (key === undefined) {
+            key = newChar;
+        }
+        else {
+            key += newChar;
+        }
+    };
+    actions[1 /* PUSH */] = () => {
+        if (key !== undefined) {
+            keys.push(key);
+            key = undefined;
+        }
+    };
+    actions[2 /* INC_SUB_PATH_DEPTH */] = () => {
+        actions[0 /* APPEND */]();
+        subPathDepth++;
+    };
+    actions[3 /* PUSH_SUB_PATH */] = () => {
+        if (subPathDepth > 0) {
+            subPathDepth--;
+            mode = 4 /* IN_SUB_PATH */;
+            actions[0 /* APPEND */]();
+        }
+        else {
+            subPathDepth = 0;
+            if (key === undefined) {
+                return false;
+            }
+            key = formatSubPath(key);
+            if (key === false) {
+                return false;
+            }
+            else {
+                actions[1 /* PUSH */]();
+            }
+        }
+    };
+    function maybeUnescapeQuote() {
+        const nextChar = path[index + 1];
+        if ((mode === 5 /* IN_SINGLE_QUOTE */ &&
+            nextChar === "'" /* SINGLE_QUOTE */) ||
+            (mode === 6 /* IN_DOUBLE_QUOTE */ &&
+                nextChar === "\"" /* DOUBLE_QUOTE */)) {
+            index++;
+            newChar = '\\' + nextChar;
+            actions[0 /* APPEND */]();
+            return true;
+        }
+    }
+    while (mode !== null) {
+        index++;
+        c = path[index];
+        if (c === '\\' && maybeUnescapeQuote()) {
+            continue;
+        }
+        type = getPathCharType(c);
+        typeMap = pathStateMachine[mode];
+        transition = typeMap[type] || typeMap["l" /* ELSE */] || 8 /* ERROR */;
+        // check parse error
+        if (transition === 8 /* ERROR */) {
+            return;
+        }
+        mode = transition[0];
+        if (transition[1] !== undefined) {
+            action = actions[transition[1]];
+            if (action) {
+                newChar = c;
+                if (action() === false) {
+                    return;
+                }
+            }
+        }
+        // check parse finish
+        if (mode === 7 /* AFTER_PATH */) {
+            return keys;
+        }
+    }
+}
+// path token cache
+const cache = new Map();
+function resolveValue(obj, path) {
+    // check object
+    if (!isObject(obj)) {
+        return null;
+    }
+    // parse path
+    let hit = cache.get(path);
+    if (!hit) {
+        hit = parse(path);
+        if (hit) {
+            cache.set(path, hit);
+        }
+    }
+    // check hit
+    if (!hit) {
+        return null;
+    }
+    // resolve path value
+    const len = hit.length;
+    let last = obj;
+    let i = 0;
+    while (i < len) {
+        const val = last[hit[i]];
+        if (val === undefined) {
+            return null;
+        }
+        last = val;
+        i++;
+    }
+    return last;
+}
+/**
+ * Transform flat json in obj to normal json in obj
+ */
+function handleFlatJson(obj) {
+    // check obj
+    if (!isObject(obj)) {
+        return obj;
+    }
+    for (const key in obj) {
+        // check key
+        if (!hasOwn(obj, key)) {
+            continue;
+        }
+        // handle for normal json
+        if (!key.includes("." /* DOT */)) {
+            // recursive process value if value is also a object
+            if (isObject(obj[key])) {
+                handleFlatJson(obj[key]);
+            }
+        }
+        // handle for flat json, transform to normal json
+        else {
+            // go to the last object
+            const subKeys = key.split("." /* DOT */);
+            const lastIndex = subKeys.length - 1;
+            let currentObj = obj;
+            for (let i = 0; i < lastIndex; i++) {
+                if (!(subKeys[i] in currentObj)) {
+                    currentObj[subKeys[i]] = {};
+                }
+                currentObj = currentObj[subKeys[i]];
+            }
+            // update last object value, delete old property
+            currentObj[subKeys[lastIndex]] = obj[key];
+            delete obj[key];
+            // recursive process value if value is also a object
+            if (isObject(currentObj[subKeys[lastIndex]])) {
+                handleFlatJson(currentObj[subKeys[lastIndex]]);
+            }
+        }
+    }
+    return obj;
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@intlify/runtime/dist/runtime.esm-bundler.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@intlify/runtime/dist/runtime.esm-bundler.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DEFAULT_MESSAGE_DATA_TYPE": () => (/* binding */ DEFAULT_MESSAGE_DATA_TYPE),
+/* harmony export */   "createMessageContext": () => (/* binding */ createMessageContext)
+/* harmony export */ });
+/* harmony import */ var _intlify_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @intlify/shared */ "./node_modules/@intlify/shared/dist/shared.esm-bundler.js");
+/*!
+  * @intlify/runtime v9.1.10
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+
+const DEFAULT_MODIFIER = (str) => str;
+const DEFAULT_MESSAGE = (ctx) => ''; // eslint-disable-line
+const DEFAULT_MESSAGE_DATA_TYPE = 'text';
+const DEFAULT_NORMALIZE = (values) => values.length === 0 ? '' : values.join('');
+const DEFAULT_INTERPOLATE = _intlify_shared__WEBPACK_IMPORTED_MODULE_0__.toDisplayString;
+function pluralDefault(choice, choicesLength) {
+    choice = Math.abs(choice);
+    if (choicesLength === 2) {
+        // prettier-ignore
+        return choice
+            ? choice > 1
+                ? 1
+                : 0
+            : 1;
+    }
+    return choice ? Math.min(choice, 2) : 0;
+}
+function getPluralIndex(options) {
+    // prettier-ignore
+    const index = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isNumber)(options.pluralIndex)
+        ? options.pluralIndex
+        : -1;
+    // prettier-ignore
+    return options.named && ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isNumber)(options.named.count) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isNumber)(options.named.n))
+        ? (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isNumber)(options.named.count)
+            ? options.named.count
+            : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isNumber)(options.named.n)
+                ? options.named.n
+                : index
+        : index;
+}
+function normalizeNamed(pluralIndex, props) {
+    if (!props.count) {
+        props.count = pluralIndex;
+    }
+    if (!props.n) {
+        props.n = pluralIndex;
+    }
+}
+function createMessageContext(options = {}) {
+    const locale = options.locale;
+    const pluralIndex = getPluralIndex(options);
+    const pluralRule = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isObject)(options.pluralRules) &&
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(locale) &&
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(options.pluralRules[locale])
+        ? options.pluralRules[locale]
+        : pluralDefault;
+    const orgPluralRule = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isObject)(options.pluralRules) &&
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(locale) &&
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(options.pluralRules[locale])
+        ? pluralDefault
+        : undefined;
+    const plural = (messages) => messages[pluralRule(pluralIndex, messages.length, orgPluralRule)];
+    const _list = options.list || [];
+    const list = (index) => _list[index];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const _named = options.named || {};
+    (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isNumber)(options.pluralIndex) && normalizeNamed(pluralIndex, _named);
+    const named = (key) => _named[key];
+    // TODO: need to design resolve message function?
+    function message(key) {
+        // prettier-ignore
+        const msg = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(options.messages)
+            ? options.messages(key)
+            : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isObject)(options.messages)
+                ? options.messages[key]
+                : false;
+        return !msg
+            ? options.parent
+                ? options.parent.message(key) // resolve from parent messages
+                : DEFAULT_MESSAGE
+            : msg;
+    }
+    const _modifier = (name) => options.modifiers
+        ? options.modifiers[name]
+        : DEFAULT_MODIFIER;
+    const normalize = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isPlainObject)(options.processor) && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(options.processor.normalize)
+        ? options.processor.normalize
+        : DEFAULT_NORMALIZE;
+    const interpolate = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isPlainObject)(options.processor) &&
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isFunction)(options.processor.interpolate)
+        ? options.processor.interpolate
+        : DEFAULT_INTERPOLATE;
+    const type = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isPlainObject)(options.processor) && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(options.processor.type)
+        ? options.processor.type
+        : DEFAULT_MESSAGE_DATA_TYPE;
+    const ctx = {
+        ["list" /* LIST */]: list,
+        ["named" /* NAMED */]: named,
+        ["plural" /* PLURAL */]: plural,
+        ["linked" /* LINKED */]: (key, modifier) => {
+            // TODO: should check `key`
+            const msg = message(key)(ctx);
+            return (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_0__.isString)(modifier) ? _modifier(modifier)(msg) : msg;
+        },
+        ["message" /* MESSAGE */]: message,
+        ["type" /* TYPE */]: type,
+        ["interpolate" /* INTERPOLATE */]: interpolate,
+        ["normalize" /* NORMALIZE */]: normalize
+    };
+    return ctx;
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@intlify/shared/dist/shared.esm-bundler.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@intlify/shared/dist/shared.esm-bundler.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "assign": () => (/* binding */ assign),
+/* harmony export */   "createEmitter": () => (/* binding */ createEmitter),
+/* harmony export */   "escapeHtml": () => (/* binding */ escapeHtml),
+/* harmony export */   "format": () => (/* binding */ format),
+/* harmony export */   "friendlyJSONstringify": () => (/* binding */ friendlyJSONstringify),
+/* harmony export */   "generateCodeFrame": () => (/* binding */ generateCodeFrame),
+/* harmony export */   "generateFormatCacheKey": () => (/* binding */ generateFormatCacheKey),
+/* harmony export */   "getGlobalThis": () => (/* binding */ getGlobalThis),
+/* harmony export */   "hasOwn": () => (/* binding */ hasOwn),
+/* harmony export */   "inBrowser": () => (/* binding */ inBrowser),
+/* harmony export */   "isArray": () => (/* binding */ isArray),
+/* harmony export */   "isBoolean": () => (/* binding */ isBoolean),
+/* harmony export */   "isDate": () => (/* binding */ isDate),
+/* harmony export */   "isEmptyObject": () => (/* binding */ isEmptyObject),
+/* harmony export */   "isFunction": () => (/* binding */ isFunction),
+/* harmony export */   "isNumber": () => (/* binding */ isNumber),
+/* harmony export */   "isObject": () => (/* binding */ isObject),
+/* harmony export */   "isPlainObject": () => (/* binding */ isPlainObject),
+/* harmony export */   "isPromise": () => (/* binding */ isPromise),
+/* harmony export */   "isRegExp": () => (/* binding */ isRegExp),
+/* harmony export */   "isString": () => (/* binding */ isString),
+/* harmony export */   "isSymbol": () => (/* binding */ isSymbol),
+/* harmony export */   "makeSymbol": () => (/* binding */ makeSymbol),
+/* harmony export */   "mark": () => (/* binding */ mark),
+/* harmony export */   "measure": () => (/* binding */ measure),
+/* harmony export */   "objectToString": () => (/* binding */ objectToString),
+/* harmony export */   "toDisplayString": () => (/* binding */ toDisplayString),
+/* harmony export */   "toTypeString": () => (/* binding */ toTypeString),
+/* harmony export */   "warn": () => (/* binding */ warn)
+/* harmony export */ });
+/*!
+  * @intlify/shared v9.1.10
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+/**
+ * Original Utilities
+ * written by kazuya kawaguchi
+ */
+const inBrowser = typeof window !== 'undefined';
+let mark;
+let measure;
+if ((true)) {
+    const perf = inBrowser && window.performance;
+    if (perf &&
+        perf.mark &&
+        perf.measure &&
+        perf.clearMarks &&
+        perf.clearMeasures) {
+        mark = (tag) => perf.mark(tag);
+        measure = (name, startTag, endTag) => {
+            perf.measure(name, startTag, endTag);
+            perf.clearMarks(startTag);
+            perf.clearMarks(endTag);
+        };
+    }
+}
+const RE_ARGS = /\{([0-9a-zA-Z]+)\}/g;
+/* eslint-disable */
+function format(message, ...args) {
+    if (args.length === 1 && isObject(args[0])) {
+        args = args[0];
+    }
+    if (!args || !args.hasOwnProperty) {
+        args = {};
+    }
+    return message.replace(RE_ARGS, (match, identifier) => {
+        return args.hasOwnProperty(identifier) ? args[identifier] : '';
+    });
+}
+const hasSymbol = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
+const makeSymbol = (name) => hasSymbol ? Symbol(name) : name;
+const generateFormatCacheKey = (locale, key, source) => friendlyJSONstringify({ l: locale, k: key, s: source });
+const friendlyJSONstringify = (json) => JSON.stringify(json)
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029')
+    .replace(/\u0027/g, '\\u0027');
+const isNumber = (val) => typeof val === 'number' && isFinite(val);
+const isDate = (val) => toTypeString(val) === '[object Date]';
+const isRegExp = (val) => toTypeString(val) === '[object RegExp]';
+const isEmptyObject = (val) => isPlainObject(val) && Object.keys(val).length === 0;
+function warn(msg, err) {
+    if (typeof console !== 'undefined') {
+        console.warn(`[intlify] ` + msg);
+        /* istanbul ignore if */
+        if (err) {
+            console.warn(err.stack);
+        }
+    }
+}
+const assign = Object.assign;
+let _globalThis;
+const getGlobalThis = () => {
+    // prettier-ignore
+    return (_globalThis ||
+        (_globalThis =
+            typeof globalThis !== 'undefined'
+                ? globalThis
+                : typeof self !== 'undefined'
+                    ? self
+                    : typeof window !== 'undefined'
+                        ? window
+                        : typeof __webpack_require__.g !== 'undefined'
+                            ? __webpack_require__.g
+                            : {}));
+};
+function escapeHtml(rawText) {
+    return rawText
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+}
+const hasOwnProperty = Object.prototype.hasOwnProperty;
+function hasOwn(obj, key) {
+    return hasOwnProperty.call(obj, key);
+}
+/* eslint-enable */
+/**
+ * Useful Utilities By Evan you
+ * Modified by kazuya kawaguchi
+ * MIT License
+ * https://github.com/vuejs/vue-next/blob/master/packages/shared/src/index.ts
+ * https://github.com/vuejs/vue-next/blob/master/packages/shared/src/codeframe.ts
+ */
+const isArray = Array.isArray;
+const isFunction = (val) => typeof val === 'function';
+const isString = (val) => typeof val === 'string';
+const isBoolean = (val) => typeof val === 'boolean';
+const isSymbol = (val) => typeof val === 'symbol';
+const isObject = (val) => // eslint-disable-line
+ val !== null && typeof val === 'object';
+const isPromise = (val) => {
+    return isObject(val) && isFunction(val.then) && isFunction(val.catch);
+};
+const objectToString = Object.prototype.toString;
+const toTypeString = (value) => objectToString.call(value);
+const isPlainObject = (val) => toTypeString(val) === '[object Object]';
+// for converting list and named values to displayed strings.
+const toDisplayString = (val) => {
+    return val == null
+        ? ''
+        : isArray(val) || (isPlainObject(val) && val.toString === objectToString)
+            ? JSON.stringify(val, null, 2)
+            : String(val);
+};
+const RANGE = 2;
+function generateCodeFrame(source, start = 0, end = source.length) {
+    const lines = source.split(/\r?\n/);
+    let count = 0;
+    const res = [];
+    for (let i = 0; i < lines.length; i++) {
+        count += lines[i].length + 1;
+        if (count >= start) {
+            for (let j = i - RANGE; j <= i + RANGE || end > count; j++) {
+                if (j < 0 || j >= lines.length)
+                    continue;
+                const line = j + 1;
+                res.push(`${line}${' '.repeat(3 - String(line).length)}|  ${lines[j]}`);
+                const lineLength = lines[j].length;
+                if (j === i) {
+                    // push underline
+                    const pad = start - (count - lineLength) + 1;
+                    const length = Math.max(1, end > count ? lineLength - pad : end - start);
+                    res.push(`   |  ` + ' '.repeat(pad) + '^'.repeat(length));
+                }
+                else if (j > i) {
+                    if (end > count) {
+                        const length = Math.max(Math.min(end - count, lineLength), 1);
+                        res.push(`   |  ` + '^'.repeat(length));
+                    }
+                    count += lineLength + 1;
+                }
+            }
+            break;
+        }
+    }
+    return res.join('\n');
+}
+
+/**
+ * Event emitter, forked from the below:
+ * - original repository url: https://github.com/developit/mitt
+ * - code url: https://github.com/developit/mitt/blob/master/src/index.ts
+ * - author: Jason Miller (https://github.com/developit)
+ * - license: MIT
+ */
+/**
+ * Create a event emitter
+ *
+ * @returns An event emitter
+ */
+function createEmitter() {
+    const events = new Map();
+    const emitter = {
+        events,
+        on(event, handler) {
+            const handlers = events.get(event);
+            const added = handlers && handlers.push(handler);
+            if (!added) {
+                events.set(event, [handler]);
+            }
+        },
+        off(event, handler) {
+            const handlers = events.get(event);
+            if (handlers) {
+                handlers.splice(handlers.indexOf(handler) >>> 0, 1);
+            }
+        },
+        emit(event, payload) {
+            (events.get(event) || [])
+                .slice()
+                .map(handler => handler(payload));
+            (events.get('*') || [])
+                .slice()
+                .map(handler => handler(event, payload));
+        }
+    };
+    return emitter;
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@intlify/vue-devtools/dist/vue-devtools.esm-bundler.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@intlify/vue-devtools/dist/vue-devtools.esm-bundler.js ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "VueDevToolsLabels": () => (/* binding */ VueDevToolsLabels),
+/* harmony export */   "VueDevToolsPlaceholders": () => (/* binding */ VueDevToolsPlaceholders),
+/* harmony export */   "VueDevToolsTimelineColors": () => (/* binding */ VueDevToolsTimelineColors)
+/* harmony export */ });
+/*!
+  * @intlify/vue-devtools v9.1.10
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+const VueDevToolsLabels = {
+    ["vue-devtools-plugin-vue-i18n" /* PLUGIN */]: 'Vue I18n devtools',
+    ["vue-i18n-resource-inspector" /* CUSTOM_INSPECTOR */]: 'I18n Resources',
+    ["vue-i18n-timeline" /* TIMELINE */]: 'Vue I18n'
+};
+const VueDevToolsPlaceholders = {
+    ["vue-i18n-resource-inspector" /* CUSTOM_INSPECTOR */]: 'Search for scopes ...'
+};
+const VueDevToolsTimelineColors = {
+    ["vue-i18n-timeline" /* TIMELINE */]: 0xffcd19
+};
+
+
 
 
 /***/ }),
@@ -5654,6 +8740,263 @@ function parse(template, options = {}) {
 }
 
 
+
+
+/***/ }),
+
+/***/ "./node_modules/@vue/devtools-api/lib/esm/const.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/const.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HOOK_PLUGIN_SETTINGS_SET": () => (/* binding */ HOOK_PLUGIN_SETTINGS_SET),
+/* harmony export */   "HOOK_SETUP": () => (/* binding */ HOOK_SETUP)
+/* harmony export */ });
+const HOOK_SETUP = 'devtools-plugin:setup';
+const HOOK_PLUGIN_SETTINGS_SET = 'plugin:settings:set';
+
+
+/***/ }),
+
+/***/ "./node_modules/@vue/devtools-api/lib/esm/env.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/env.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getDevtoolsGlobalHook": () => (/* binding */ getDevtoolsGlobalHook),
+/* harmony export */   "getTarget": () => (/* binding */ getTarget),
+/* harmony export */   "isProxyAvailable": () => (/* binding */ isProxyAvailable)
+/* harmony export */ });
+function getDevtoolsGlobalHook() {
+    return getTarget().__VUE_DEVTOOLS_GLOBAL_HOOK__;
+}
+function getTarget() {
+    // @ts-ignore
+    return (typeof navigator !== 'undefined' && typeof window !== 'undefined')
+        ? window
+        : typeof __webpack_require__.g !== 'undefined'
+            ? __webpack_require__.g
+            : {};
+}
+const isProxyAvailable = typeof Proxy === 'function';
+
+
+/***/ }),
+
+/***/ "./node_modules/@vue/devtools-api/lib/esm/index.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/index.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "isPerformanceSupported": () => (/* reexport safe */ _time__WEBPACK_IMPORTED_MODULE_0__.isPerformanceSupported),
+/* harmony export */   "now": () => (/* reexport safe */ _time__WEBPACK_IMPORTED_MODULE_0__.now),
+/* harmony export */   "setupDevtoolsPlugin": () => (/* binding */ setupDevtoolsPlugin)
+/* harmony export */ });
+/* harmony import */ var _env__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./env */ "./node_modules/@vue/devtools-api/lib/esm/env.js");
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./const */ "./node_modules/@vue/devtools-api/lib/esm/const.js");
+/* harmony import */ var _proxy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./proxy */ "./node_modules/@vue/devtools-api/lib/esm/proxy.js");
+/* harmony import */ var _time__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./time */ "./node_modules/@vue/devtools-api/lib/esm/time.js");
+
+
+
+
+
+
+function setupDevtoolsPlugin(pluginDescriptor, setupFn) {
+    const descriptor = pluginDescriptor;
+    const target = (0,_env__WEBPACK_IMPORTED_MODULE_1__.getTarget)();
+    const hook = (0,_env__WEBPACK_IMPORTED_MODULE_1__.getDevtoolsGlobalHook)();
+    const enableProxy = _env__WEBPACK_IMPORTED_MODULE_1__.isProxyAvailable && descriptor.enableEarlyProxy;
+    if (hook && (target.__VUE_DEVTOOLS_PLUGIN_API_AVAILABLE__ || !enableProxy)) {
+        hook.emit(_const__WEBPACK_IMPORTED_MODULE_2__.HOOK_SETUP, pluginDescriptor, setupFn);
+    }
+    else {
+        const proxy = enableProxy ? new _proxy__WEBPACK_IMPORTED_MODULE_3__.ApiProxy(descriptor, hook) : null;
+        const list = target.__VUE_DEVTOOLS_PLUGINS__ = target.__VUE_DEVTOOLS_PLUGINS__ || [];
+        list.push({
+            pluginDescriptor: descriptor,
+            setupFn,
+            proxy,
+        });
+        if (proxy)
+            setupFn(proxy.proxiedTarget);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@vue/devtools-api/lib/esm/proxy.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/proxy.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ApiProxy": () => (/* binding */ ApiProxy)
+/* harmony export */ });
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./const */ "./node_modules/@vue/devtools-api/lib/esm/const.js");
+/* harmony import */ var _time__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./time */ "./node_modules/@vue/devtools-api/lib/esm/time.js");
+
+
+class ApiProxy {
+    constructor(plugin, hook) {
+        this.target = null;
+        this.targetQueue = [];
+        this.onQueue = [];
+        this.plugin = plugin;
+        this.hook = hook;
+        const defaultSettings = {};
+        if (plugin.settings) {
+            for (const id in plugin.settings) {
+                const item = plugin.settings[id];
+                defaultSettings[id] = item.defaultValue;
+            }
+        }
+        const localSettingsSaveId = `__vue-devtools-plugin-settings__${plugin.id}`;
+        let currentSettings = Object.assign({}, defaultSettings);
+        try {
+            const raw = localStorage.getItem(localSettingsSaveId);
+            const data = JSON.parse(raw);
+            Object.assign(currentSettings, data);
+        }
+        catch (e) {
+            // noop
+        }
+        this.fallbacks = {
+            getSettings() {
+                return currentSettings;
+            },
+            setSettings(value) {
+                try {
+                    localStorage.setItem(localSettingsSaveId, JSON.stringify(value));
+                }
+                catch (e) {
+                    // noop
+                }
+                currentSettings = value;
+            },
+            now() {
+                return (0,_time__WEBPACK_IMPORTED_MODULE_0__.now)();
+            },
+        };
+        if (hook) {
+            hook.on(_const__WEBPACK_IMPORTED_MODULE_1__.HOOK_PLUGIN_SETTINGS_SET, (pluginId, value) => {
+                if (pluginId === this.plugin.id) {
+                    this.fallbacks.setSettings(value);
+                }
+            });
+        }
+        this.proxiedOn = new Proxy({}, {
+            get: (_target, prop) => {
+                if (this.target) {
+                    return this.target.on[prop];
+                }
+                else {
+                    return (...args) => {
+                        this.onQueue.push({
+                            method: prop,
+                            args,
+                        });
+                    };
+                }
+            },
+        });
+        this.proxiedTarget = new Proxy({}, {
+            get: (_target, prop) => {
+                if (this.target) {
+                    return this.target[prop];
+                }
+                else if (prop === 'on') {
+                    return this.proxiedOn;
+                }
+                else if (Object.keys(this.fallbacks).includes(prop)) {
+                    return (...args) => {
+                        this.targetQueue.push({
+                            method: prop,
+                            args,
+                            resolve: () => { },
+                        });
+                        return this.fallbacks[prop](...args);
+                    };
+                }
+                else {
+                    return (...args) => {
+                        return new Promise(resolve => {
+                            this.targetQueue.push({
+                                method: prop,
+                                args,
+                                resolve,
+                            });
+                        });
+                    };
+                }
+            },
+        });
+    }
+    async setRealTarget(target) {
+        this.target = target;
+        for (const item of this.onQueue) {
+            this.target.on[item.method](...item.args);
+        }
+        for (const item of this.targetQueue) {
+            item.resolve(await this.target[item.method](...item.args));
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@vue/devtools-api/lib/esm/time.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@vue/devtools-api/lib/esm/time.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "isPerformanceSupported": () => (/* binding */ isPerformanceSupported),
+/* harmony export */   "now": () => (/* binding */ now)
+/* harmony export */ });
+let supported;
+let perf;
+function isPerformanceSupported() {
+    var _a;
+    if (supported !== undefined) {
+        return supported;
+    }
+    if (typeof window !== 'undefined' && window.performance) {
+        supported = true;
+        perf = window.performance;
+    }
+    else if (typeof __webpack_require__.g !== 'undefined' && ((_a = __webpack_require__.g.perf_hooks) === null || _a === void 0 ? void 0 : _a.performance)) {
+        supported = true;
+        perf = __webpack_require__.g.perf_hooks.performance;
+    }
+    else {
+        supported = false;
+    }
+    return supported;
+}
+function now() {
+    return isPerformanceSupported() ? perf.now() : Date.now();
+}
 
 
 /***/ }),
@@ -19586,10 +22929,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Post/Index.vue?vue&type=script&lang=js":
-/*!****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Post/Index.vue?vue&type=script&lang=js ***!
-  \****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=script&lang=js":
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=script&lang=js ***!
+  \***********************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19597,86 +22940,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _ocrv_vue_tailwind_pagination_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ocrv/vue-tailwind-pagination/styles */ "./node_modules/@ocrv/vue-tailwind-pagination/dist/style.css");
-/* harmony import */ var _ocrv_vue_tailwind_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ocrv/vue-tailwind-pagination */ "./node_modules/@ocrv/vue-tailwind-pagination/dist/vue-tailwind-pagination.es.js");
-
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Index",
-  components: {
-    VueTailwindPagination: _ocrv_vue_tailwind_pagination__WEBPACK_IMPORTED_MODULE_1__["default"]
-  },
-  data: function data() {
-    return {
-      posts: [],
-      categories: [],
-      categoryId: '',
-      sortField: 'created_at',
-      sortDirection: 'desc',
-      currentPage: 1,
-      perPage: 5,
-      total: 20
-    };
-  },
-  watch: {
-    categoryId: function categoryId(value) {
-      this.getPosts();
-    }
-  },
-  computed: {
-    queryPage: function queryPage() {
-      var params = new URLSearchParams(document.location.search);
-      var page = params.get('page');
-      return page;
-    }
-  },
-  mounted: function mounted() {
-    var _this$queryPage;
-
-    this.getPosts((_this$queryPage = this.queryPage) !== null && _this$queryPage !== void 0 ? _this$queryPage : 1);
-    this.getCategories();
-  },
-  methods: {
-    changeSort: function changeSort(field) {
-      if (this.sortField === field) {
-        this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
-      } else {
-        this.sortField = field;
-        this.sortDirection = 'asc';
-      }
-
-      this.getPosts();
-    },
-    getPosts: function getPosts() {
-      var _this = this;
-
-      var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-      axios.get("/api/posts?page=".concat(page, "&category_id=").concat(this.categoryId, "&sort_field=").concat(this.sortField, "&sort_direction=").concat(this.sortDirection)).then(function (res) {
-        _this.posts = res.data.data;
-        _this.total = res.data.meta.total;
-        _this.perPage = res.data.meta.per_page;
-        _this.currentPage = res.data.meta.current_page;
-        var url = new URL(window.location);
-        url.searchParams.set('page', _this.currentPage);
-        window.history.pushState({}, '', url);
-      });
-    },
-    getCategories: function getCategories() {
-      var _this2 = this;
-
-      axios.get('/api/categories').then(function (res) {
-        _this2.categories = res.data.data;
-      });
-    }
-  }
+  name: "Index"
 });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Post/Index.vue?vue&type=template&id=56975ca4":
-/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Post/Index.vue?vue&type=template&id=56975ca4 ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=template&id=bb962f12":
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=template&id=bb962f12 ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19687,115 +22960,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "w-full max-w-screen-md mx-auto"
-};
-var _hoisted_2 = {
-  "class": "my-5"
+  "class": "container mx-auto flex gap-x-4 my-5"
 };
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
-  value: ""
-}, "-- select a category --", -1
-/* HOISTED */
-);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Home");
 
-var _hoisted_4 = ["value"];
-var _hoisted_5 = {
-  "class": "w-full table-auto rounded-sm"
-};
-var _hoisted_6 = {
-  "class": "px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
-};
-var _hoisted_7 = {
-  key: 0
-};
-var _hoisted_8 = {
-  key: 1
-};
-var _hoisted_9 = {
-  "class": "px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
-};
-var _hoisted_10 = {
-  key: 0
-};
-var _hoisted_11 = {
-  key: 1
-};
-var _hoisted_12 = {
-  "class": "px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
-};
-var _hoisted_13 = {
-  key: 0
-};
-var _hoisted_14 = {
-  key: 1
-};
-var _hoisted_15 = {
-  "class": "border-gray-300"
-};
-var _hoisted_16 = {
-  "class": "px-4 py-8 border-t border-b border-gray-300 text-sm"
-};
-var _hoisted_17 = {
-  "class": "px-4 py-8 border-t border-b border-gray-300 text-sm"
-};
-var _hoisted_18 = {
-  "class": "px-4 py-8 border-t border-b border-gray-300 text-sm"
-};
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Posts");
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_VueTailwindPagination = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("VueTailwindPagination");
+  var _component_localized_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("localized-link");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
-    "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
-      return $data.categoryId = $event;
-    })
-  }, [_hoisted_3, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
-      value: category.id
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(category.name), 9
-    /* TEXT, PROPS */
-    , _hoisted_4);
-  }), 256
-  /* UNKEYED_FRAGMENT */
-  ))], 512
-  /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.categoryId]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#",
-    onClick: _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
-      return $options.changeSort('title');
-    }, ["prevent"]))
-  }, "Title"), this.sortField === 'title' && this.sortDirection === 'asc' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_7, "↑")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), this.sortField === 'title' && this.sortDirection === 'desc' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_8, "↓")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#",
-    onClick: _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
-      return $options.changeSort('text');
-    }, ["prevent"]))
-  }, "Text"), this.sortField === 'text' && this.sortDirection === 'asc' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_10, "↑")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), this.sortField === 'text' && this.sortDirection === 'desc' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_11, "↓")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#",
-    onClick: _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
-      return $options.changeSort('created_at');
-    }, ["prevent"]))
-  }, "Created At"), this.sortField === 'created_at' && this.sortDirection === 'asc' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_13, "↑")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), this.sortField === 'created_at' && this.sortDirection === 'desc' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_14, "↓")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.posts, function (post) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(post.title), 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(post.text.substring(0, 50)), 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(post.created_at), 1
-    /* TEXT */
-    )]);
-  }), 256
-  /* UNKEYED_FRAGMENT */
-  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_VueTailwindPagination, {
-    current: $data.currentPage,
-    total: $data.total,
-    "per-page": $data.perPage,
-    onPageChanged: _cache[4] || (_cache[4] = function ($event) {
-      return $options.getPosts($data.currentPage = $event);
+  var _component_router_view = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-view");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_localized_link, {
+    to: {
+      name: 'home'
+    }
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_2];
     }),
-    "text-before-input": "Page",
-    "text-after-input": "Go"
-  }, null, 8
-  /* PROPS */
-  , ["current", "total", "per-page"])])]);
+    _: 1
+    /* STABLE */
+
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_localized_link, {
+    to: {
+      name: 'posts'
+    }
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_3];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view)]);
 }
 
 /***/ }),
@@ -19809,16 +23008,22 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _components_Post_Index_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Post/Index.vue */ "./resources/js/components/Post/Index.vue");
+/* harmony import */ var _components_Index_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Index.vue */ "./resources/js/components/Index.vue");
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./router */ "./resources/js/router/index.js");
+/* harmony import */ var vue_lang_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-lang-router */ "./node_modules/vue-lang-router/dist/lang-router.esm.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+
 
 
 
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
   components: {
-    Index: _components_Post_Index_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    Index: _components_Index_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
-}).mount("#app");
+});
+app.use(_router__WEBPACK_IMPORTED_MODULE_2__["default"]).use(vue_lang_router__WEBPACK_IMPORTED_MODULE_3__.i18n);
+app.mount("#app");
 
 /***/ }),
 
@@ -19853,103 +23058,87 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/@ocrv/vue-tailwind-pagination/dist/style.css":
-/*!***************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/@ocrv/vue-tailwind-pagination/dist/style.css ***!
-  \***************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./resources/js/lang/translations/index.js":
+/*!*************************************************!*\
+  !*** ./resources/js/lang/translations/index.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com *//*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */*,::after,::before{box-sizing:border-box}:root{-moz-tab-size:4;-o-tab-size:4;tab-size:4}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}hr{height:0;color:inherit}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],button{-webkit-appearance:button}legend{padding:0}progress{vertical-align:baseline}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset{margin:0;padding:0}ol,ul{list-style:none;margin:0;padding:0}html{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";line-height:1.5}body{font-family:inherit;line-height:inherit}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input:-ms-input-placeholder,textarea:-ms-input-placeholder{opacity:1;color:#9ca3af}input::-moz-placeholder, textarea::-moz-placeholder{opacity:1;color:#9ca3af}input:-ms-input-placeholder, textarea:-ms-input-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inherit}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}.bg-white{--tw-bg-opacity:1;background-color:rgba(255,255,255,var(--tw-bg-opacity))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgba(239,246,255,var(--tw-bg-opacity))}.hover\\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgba(229,231,235,var(--tw-bg-opacity))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-blue-400{--tw-gradient-from:#60a5fa;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to, rgba(96, 165, 250, 0))}.to-indigo-400{--tw-gradient-to:#818cf8}.border-gray-200{--tw-border-opacity:1;border-color:rgba(229,231,235,var(--tw-border-opacity))}.border-indigo-400{--tw-border-opacity:1;border-color:rgba(129,140,248,var(--tw-border-opacity))}.rounded-md{border-radius:.375rem}.rounded-lg{border-radius:.5rem}.border{border-width:1px}.cursor-pointer{cursor:pointer}.flex{display:flex}.table{display:table}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.font-montserrat{font-family:Montserrat}.font-medium{font-weight:500}.h-4{height:1rem}.h-6{height:1.5rem}.min-h-screen{min-height:100vh}.min-w-max{min-width:-webkit-max-content;min-width:-moz-max-content;min-width:max-content}.focus\\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.p-5{padding:1.25rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.pr-2{padding-right:.5rem}.pl-4{padding-left:1rem}.pr-6{padding-right:1.5rem}*{--tw-shadow:0 0 #0000}*{--tw-ring-inset:var(--tw-empty, );/*!*//*!*/--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59, 130, 246, 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000}.text-gray-400{--tw-text-opacity:1;color:rgba(156,163,175,var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgba(55,65,81,var(--tw-text-opacity))}.w-4{width:1rem}.w-6{width:1.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.transform{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-45{--tw-rotate:45deg}.-rotate-45{--tw-rotate:-45deg}@-webkit-keyframes spin{to{transform:rotate(360deg)}}@keyframes spin{to{transform:rotate(360deg)}}@-webkit-keyframes ping{100%,75%{transform:scale(2);opacity:0}}@keyframes ping{100%,75%{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{50%{opacity:.5}}@keyframes pulse{50%{opacity:.5}}@-webkit-keyframes bounce{0%,100%{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,100%{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  uk: {
+    name: 'Українська',
+    load: function load() {
+      return __webpack_require__.e(/*! import() */ "resources_js_lang_translations_uk_json").then(__webpack_require__.t.bind(__webpack_require__, /*! ./uk.json */ "./resources/js/lang/translations/uk.json", 19));
+    }
+  },
+  en: {
+    name: 'English',
+    load: function load() {
+      return __webpack_require__.e(/*! import() */ "resources_js_lang_translations_en_json").then(__webpack_require__.t.bind(__webpack_require__, /*! ./en.json */ "./resources/js/lang/translations/en.json", 19));
+    }
+  }
+});
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/***/ ((module) => {
+/***/ "./resources/js/router/index.js":
+/*!**************************************!*\
+  !*** ./resources/js/router/index.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
+/* harmony import */ var vue_lang_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-lang-router */ "./node_modules/vue-lang-router/dist/lang-router.esm.js");
+/* harmony import */ var _lang_translations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lang/translations */ "./resources/js/lang/translations/index.js");
 
 
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-// eslint-disable-next-line func-names
-module.exports = function (cssWithMappingToString) {
-  var list = []; // return the list of modules as css string
+ // import localizedURLs from "../lang/localized-urls";
 
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = cssWithMappingToString(item);
-
-      if (item[2]) {
-        return "@media ".concat(item[2], " {").concat(content, "}");
-      }
-
-      return content;
-    }).join("");
-  }; // import a list of modules into the list
-  // eslint-disable-next-line func-names
-
-
-  list.i = function (modules, mediaQuery, dedupe) {
-    if (typeof modules === "string") {
-      // eslint-disable-next-line no-param-reassign
-      modules = [[null, modules, ""]];
+var routerOptions = {
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_2__.createWebHistory)(),
+  routes: [{
+    path: '/',
+    name: 'home',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_components_Home_Index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/Home/Index */ "./resources/js/components/Home/Index.vue"));
     }
-
-    var alreadyImportedModules = {};
-
-    if (dedupe) {
-      for (var i = 0; i < this.length; i++) {
-        // eslint-disable-next-line prefer-destructuring
-        var id = this[i][0];
-
-        if (id != null) {
-          alreadyImportedModules[id] = true;
-        }
-      }
+  }, {
+    path: '/posts',
+    name: 'posts',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_components_Post_Index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/Post/Index */ "./resources/js/components/Post/Index.vue"));
     }
-
-    for (var _i = 0; _i < modules.length; _i++) {
-      var item = [].concat(modules[_i]);
-
-      if (dedupe && alreadyImportedModules[item[0]]) {
-        // eslint-disable-next-line no-continue
-        continue;
-      }
-
-      if (mediaQuery) {
-        if (!item[2]) {
-          item[2] = mediaQuery;
-        } else {
-          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
-        }
-      }
-
-      list.push(item);
-    }
-  };
-
-  return list;
+  } // {
+  //     path: '/:pathMatch(.*)*',
+  //     name: '404',
+  //     component: () => import('../views/NotFoundView.vue'),
+  // },
+  ],
+  scrollBehavior: function scrollBehavior(to) {
+    return {
+      el: '#app',
+      top: 0,
+      behavior: 'smooth'
+    };
+  }
 };
+var langRouterOptions = {
+  defaultLanguage: 'uk',
+  translations: _lang_translations__WEBPACK_IMPORTED_MODULE_1__["default"] // localizedURLs,
+
+};
+var router = (0,vue_lang_router__WEBPACK_IMPORTED_MODULE_0__.createLangRouter)(langRouterOptions, routerOptions);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);
 
 /***/ }),
 
@@ -37372,312 +40561,2616 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "./node_modules/@ocrv/vue-tailwind-pagination/dist/style.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@ocrv/vue-tailwind-pagination/dist/style.css ***!
-  \*******************************************************************/
+/***/ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js":
+/*!************************************************************!*\
+  !*** ./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js ***!
+  \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "DatetimeFormat": () => (/* binding */ DatetimeFormat),
+/* harmony export */   "NumberFormat": () => (/* binding */ NumberFormat),
+/* harmony export */   "Translation": () => (/* binding */ Translation),
+/* harmony export */   "VERSION": () => (/* binding */ VERSION),
+/* harmony export */   "createI18n": () => (/* binding */ createI18n),
+/* harmony export */   "useI18n": () => (/* binding */ useI18n),
+/* harmony export */   "vTDirective": () => (/* binding */ vTDirective)
 /* harmony export */ });
-/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./style.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/@ocrv/vue-tailwind-pagination/dist/style.css");
+/* harmony import */ var _intlify_shared__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @intlify/shared */ "./node_modules/@intlify/shared/dist/shared.esm-bundler.js");
+/* harmony import */ var _intlify_core_base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @intlify/core-base */ "./node_modules/@intlify/message-compiler/dist/message-compiler.esm-bundler.js");
+/* harmony import */ var _intlify_core_base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @intlify/core-base */ "./node_modules/@intlify/message-resolver/dist/message-resolver.esm-bundler.js");
+/* harmony import */ var _intlify_core_base__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @intlify/core-base */ "./node_modules/@intlify/core-base/dist/core-base.esm-bundler.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _vue_devtools_api__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @vue/devtools-api */ "./node_modules/@vue/devtools-api/lib/esm/index.js");
+/* harmony import */ var _intlify_vue_devtools__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @intlify/vue-devtools */ "./node_modules/@intlify/vue-devtools/dist/vue-devtools.esm-bundler.js");
+/*!
+  * vue-i18n v9.1.10
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
 
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_style_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+
+/**
+ * Vue I18n Version
+ *
+ * @remarks
+ * Semver format. Same format as the package.json `version` field.
+ *
+ * @VueI18nGeneral
+ */
+const VERSION = '9.1.10';
+/**
+ * This is only called in esm-bundler builds.
+ * istanbul-ignore-next
+ */
+function initFeatureFlags() {
+    let needWarn = false;
+    if (typeof __VUE_I18N_FULL_INSTALL__ !== 'boolean') {
+        needWarn = true;
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.getGlobalThis)().__VUE_I18N_FULL_INSTALL__ = true;
+    }
+    if (typeof __VUE_I18N_LEGACY_API__ !== 'boolean') {
+        needWarn = true;
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.getGlobalThis)().__VUE_I18N_LEGACY_API__ = true;
+    }
+    if (typeof __INTLIFY_PROD_DEVTOOLS__ !== 'boolean') {
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.getGlobalThis)().__INTLIFY_PROD_DEVTOOLS__ = false;
+    }
+    if (( true) && needWarn) {
+        console.warn(`You are running the esm-bundler build of vue-i18n. It is recommended to ` +
+            `configure your bundler to explicitly replace feature flag globals ` +
+            `with boolean literals to get proper tree-shaking in the final bundle.`);
+    }
+}
+
+const warnMessages = {
+    [6 /* FALLBACK_TO_ROOT */]: `Fall back to {type} '{key}' with root locale.`,
+    [7 /* NOT_SUPPORTED_PRESERVE */]: `Not supported 'preserve'.`,
+    [8 /* NOT_SUPPORTED_FORMATTER */]: `Not supported 'formatter'.`,
+    [9 /* NOT_SUPPORTED_PRESERVE_DIRECTIVE */]: `Not supported 'preserveDirectiveContent'.`,
+    [10 /* NOT_SUPPORTED_GET_CHOICE_INDEX */]: `Not supported 'getChoiceIndex'.`,
+    [11 /* COMPONENT_NAME_LEGACY_COMPATIBLE */]: `Component name legacy compatible: '{name}' -> 'i18n'`,
+    [12 /* NOT_FOUND_PARENT_SCOPE */]: `Not found parent scope. use the global scope.`
+};
+function getWarnMessage(code, ...args) {
+    return (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.format)(warnMessages[code], ...args);
+}
+
+function createI18nError(code, ...args) {
+    return (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_2__.createCompileError)(code, null, ( true) ? { messages: errorMessages, args } : 0);
+}
+const errorMessages = {
+    [14 /* UNEXPECTED_RETURN_TYPE */]: 'Unexpected return type in composer',
+    [15 /* INVALID_ARGUMENT */]: 'Invalid argument',
+    [16 /* MUST_BE_CALL_SETUP_TOP */]: 'Must be called at the top of a `setup` function',
+    [17 /* NOT_INSLALLED */]: 'Need to install with `app.use` function',
+    [22 /* UNEXPECTED_ERROR */]: 'Unexpected error',
+    [18 /* NOT_AVAILABLE_IN_LEGACY_MODE */]: 'Not available in legacy mode',
+    [19 /* REQUIRED_VALUE */]: `Required in value: {0}`,
+    [20 /* INVALID_VALUE */]: `Invalid value`,
+    [21 /* CANNOT_SETUP_VUE_DEVTOOLS_PLUGIN */]: `Cannot setup vue-devtools plugin`
+};
+
+const DEVTOOLS_META = '__INTLIFY_META__';
+const TransrateVNodeSymbol = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.makeSymbol)('__transrateVNode');
+const DatetimePartsSymbol = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.makeSymbol)('__datetimeParts');
+const NumberPartsSymbol = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.makeSymbol)('__numberParts');
+const EnableEmitter = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.makeSymbol)('__enableEmitter');
+const DisableEmitter = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.makeSymbol)('__disableEmitter');
+const SetPluralRulesSymbol = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.makeSymbol)('__setPluralRules');
+(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.makeSymbol)('__intlifyMeta');
+const InejctWithOption = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.makeSymbol)('__injectWithOption');
+let composerID = 0;
+function defineCoreMissingHandler(missing) {
+    return ((ctx, locale, key, type) => {
+        return missing(locale, key, (0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)() || undefined, type);
+    });
+}
+function getLocaleMessages(locale, options) {
+    const { messages, __i18n } = options;
+    // prettier-ignore
+    const ret = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(messages)
+        ? messages
+        : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(__i18n)
+            ? {}
+            : { [locale]: {} };
+    // merge locale messages of i18n custom block
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(__i18n)) {
+        __i18n.forEach(({ locale, resource }) => {
+            if (locale) {
+                ret[locale] = ret[locale] || {};
+                deepCopy(resource, ret[locale]);
+            }
+            else {
+                deepCopy(resource, ret);
+            }
+        });
+    }
+    // handle messages for flat json
+    if (options.flatJson) {
+        for (const key in ret) {
+            if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.hasOwn)(ret, key)) {
+                (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_3__.handleFlatJson)(ret[key]);
+            }
+        }
+    }
+    return ret;
+}
+const isNotObjectOrIsArray = (val) => !(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(val) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(val);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function deepCopy(src, des) {
+    // src and des should both be objects, and non of then can be a array
+    if (isNotObjectOrIsArray(src) || isNotObjectOrIsArray(des)) {
+        throw createI18nError(20 /* INVALID_VALUE */);
+    }
+    for (const key in src) {
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.hasOwn)(src, key)) {
+            if (isNotObjectOrIsArray(src[key]) || isNotObjectOrIsArray(des[key])) {
+                // replace with src[key] when:
+                // src[key] or des[key] is not a object, or
+                // src[key] or des[key] is a array
+                des[key] = src[key];
+            }
+            else {
+                // src[key] and des[key] are both object, merge them
+                deepCopy(src[key], des[key]);
+            }
+        }
+    }
+}
+// for Intlify DevTools
+const getMetaInfo = /* #__PURE__*/ () => {
+    const instance = (0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)();
+    return instance && instance.type[DEVTOOLS_META] // eslint-disable-line @typescript-eslint/no-explicit-any
+        ? { [DEVTOOLS_META]: instance.type[DEVTOOLS_META] } // eslint-disable-line @typescript-eslint/no-explicit-any
+        : null;
+};
+/**
+ * Create composer interface factory
+ *
+ * @internal
+ */
+function createComposer(options = {}) {
+    const { __root } = options;
+    const _isGlobal = __root === undefined;
+    let _inheritLocale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.inheritLocale)
+        ? options.inheritLocale
+        : true;
+    const _locale = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(
+    // prettier-ignore
+    __root && _inheritLocale
+        ? __root.locale.value
+        : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(options.locale)
+            ? options.locale
+            : 'en-US');
+    const _fallbackLocale = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(
+    // prettier-ignore
+    __root && _inheritLocale
+        ? __root.fallbackLocale.value
+        : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(options.fallbackLocale) ||
+            (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(options.fallbackLocale) ||
+            (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(options.fallbackLocale) ||
+            options.fallbackLocale === false
+            ? options.fallbackLocale
+            : _locale.value);
+    const _messages = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(getLocaleMessages(_locale.value, options));
+    const _datetimeFormats = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(options.datetimeFormats)
+        ? options.datetimeFormats
+        : { [_locale.value]: {} });
+    const _numberFormats = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(options.numberFormats)
+        ? options.numberFormats
+        : { [_locale.value]: {} });
+    // warning suppress options
+    // prettier-ignore
+    let _missingWarn = __root
+        ? __root.missingWarn
+        : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.missingWarn) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isRegExp)(options.missingWarn)
+            ? options.missingWarn
+            : true;
+    // prettier-ignore
+    let _fallbackWarn = __root
+        ? __root.fallbackWarn
+        : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.fallbackWarn) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isRegExp)(options.fallbackWarn)
+            ? options.fallbackWarn
+            : true;
+    // prettier-ignore
+    let _fallbackRoot = __root
+        ? __root.fallbackRoot
+        : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.fallbackRoot)
+            ? options.fallbackRoot
+            : true;
+    // configure fall back to root
+    let _fallbackFormat = !!options.fallbackFormat;
+    // runtime missing
+    let _missing = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isFunction)(options.missing) ? options.missing : null;
+    let _runtimeMissing = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isFunction)(options.missing)
+        ? defineCoreMissingHandler(options.missing)
+        : null;
+    // postTranslation handler
+    let _postTranslation = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isFunction)(options.postTranslation)
+        ? options.postTranslation
+        : null;
+    let _warnHtmlMessage = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.warnHtmlMessage)
+        ? options.warnHtmlMessage
+        : true;
+    let _escapeParameter = !!options.escapeParameter;
+    // custom linked modifiers
+    // prettier-ignore
+    const _modifiers = __root
+        ? __root.modifiers
+        : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(options.modifiers)
+            ? options.modifiers
+            : {};
+    // pluralRules
+    let _pluralRules = options.pluralRules || (__root && __root.pluralRules);
+    // runtime context
+    // eslint-disable-next-line prefer-const
+    let _context;
+    function getCoreContext() {
+        return (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.createCoreContext)({
+            version: VERSION,
+            locale: _locale.value,
+            fallbackLocale: _fallbackLocale.value,
+            messages: _messages.value,
+            datetimeFormats: _datetimeFormats.value,
+            numberFormats: _numberFormats.value,
+            modifiers: _modifiers,
+            pluralRules: _pluralRules,
+            missing: _runtimeMissing === null ? undefined : _runtimeMissing,
+            missingWarn: _missingWarn,
+            fallbackWarn: _fallbackWarn,
+            fallbackFormat: _fallbackFormat,
+            unresolving: true,
+            postTranslation: _postTranslation === null ? undefined : _postTranslation,
+            warnHtmlMessage: _warnHtmlMessage,
+            escapeParameter: _escapeParameter,
+            __datetimeFormatters: (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(_context)
+                ? _context.__datetimeFormatters
+                : undefined,
+            __numberFormatters: (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(_context)
+                ? _context.__numberFormatters
+                : undefined,
+            __v_emitter: (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(_context)
+                ? _context.__v_emitter
+                : undefined,
+            __meta: { framework: 'vue' }
+        });
+    }
+    _context = getCoreContext();
+    (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.updateFallbackLocale)(_context, _locale.value, _fallbackLocale.value);
+    // track reactivity
+    function trackReactivityValues() {
+        return [
+            _locale.value,
+            _fallbackLocale.value,
+            _messages.value,
+            _datetimeFormats.value,
+            _numberFormats.value
+        ];
+    }
+    // locale
+    const locale = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)({
+        get: () => _locale.value,
+        set: val => {
+            _locale.value = val;
+            _context.locale = _locale.value;
+        }
+    });
+    // fallbackLocale
+    const fallbackLocale = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)({
+        get: () => _fallbackLocale.value,
+        set: val => {
+            _fallbackLocale.value = val;
+            _context.fallbackLocale = _fallbackLocale.value;
+            (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.updateFallbackLocale)(_context, _locale.value, val);
+        }
+    });
+    // messages
+    const messages = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => _messages.value);
+    // datetimeFormats
+    const datetimeFormats = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => _datetimeFormats.value);
+    // numberFormats
+    const numberFormats = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => _numberFormats.value);
+    // getPostTranslationHandler
+    function getPostTranslationHandler() {
+        return (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isFunction)(_postTranslation) ? _postTranslation : null;
+    }
+    // setPostTranslationHandler
+    function setPostTranslationHandler(handler) {
+        _postTranslation = handler;
+        _context.postTranslation = handler;
+    }
+    // getMissingHandler
+    function getMissingHandler() {
+        return _missing;
+    }
+    // setMissingHandler
+    function setMissingHandler(handler) {
+        if (handler !== null) {
+            _runtimeMissing = defineCoreMissingHandler(handler);
+        }
+        _missing = handler;
+        _context.missing = _runtimeMissing;
+    }
+    function isResolvedTranslateMessage(type, arg // eslint-disable-line @typescript-eslint/no-explicit-any
+    ) {
+        return type !== 'translate' || !!arg.resolvedMessage === false;
+    }
+    function wrapWithDeps(fn, argumentParser, warnType, fallbackSuccess, fallbackFail, successCondition) {
+        trackReactivityValues(); // track reactive dependency
+        // NOTE: experimental !!
+        let ret;
+        if (true) {
+            try {
+                (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.setAdditionalMeta)(getMetaInfo());
+                ret = fn(_context);
+            }
+            finally {
+                (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.setAdditionalMeta)(null);
+            }
+        }
+        else {}
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isNumber)(ret) && ret === _intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.NOT_REOSLVED) {
+            const [key, arg2] = argumentParser();
+            if (( true) &&
+                __root &&
+                (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(key) &&
+                isResolvedTranslateMessage(warnType, arg2)) {
+                if (_fallbackRoot &&
+                    ((0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.isTranslateFallbackWarn)(_fallbackWarn, key) ||
+                        (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.isTranslateMissingWarn)(_missingWarn, key))) {
+                    (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(6 /* FALLBACK_TO_ROOT */, {
+                        key,
+                        type: warnType
+                    }));
+                }
+                // for vue-devtools timeline event
+                if ((true)) {
+                    const { __v_emitter: emitter } = _context;
+                    if (emitter && _fallbackRoot) {
+                        emitter.emit("fallback" /* FALBACK */, {
+                            type: warnType,
+                            key,
+                            to: 'global',
+                            groupId: `${warnType}:${key}`
+                        });
+                    }
+                }
+            }
+            return __root && _fallbackRoot
+                ? fallbackSuccess(__root)
+                : fallbackFail(key);
+        }
+        else if (successCondition(ret)) {
+            return ret;
+        }
+        else {
+            /* istanbul ignore next */
+            throw createI18nError(14 /* UNEXPECTED_RETURN_TYPE */);
+        }
+    }
+    // t
+    function t(...args) {
+        return wrapWithDeps(context => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.translate)(context, ...args), () => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.parseTranslateArgs)(...args), 'translate', root => root.t(...args), key => key, val => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(val));
+    }
+    // rt
+    function rt(...args) {
+        const [arg1, arg2, arg3] = args;
+        if (arg3 && !(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(arg3)) {
+            throw createI18nError(15 /* INVALID_ARGUMENT */);
+        }
+        return t(...[arg1, arg2, (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)({ resolvedMessage: true }, arg3 || {})]);
+    }
+    // d
+    function d(...args) {
+        return wrapWithDeps(context => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.datetime)(context, ...args), () => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.parseDateTimeArgs)(...args), 'datetime format', root => root.d(...args), () => _intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.MISSING_RESOLVE_VALUE, val => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(val));
+    }
+    // n
+    function n(...args) {
+        return wrapWithDeps(context => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.number)(context, ...args), () => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.parseNumberArgs)(...args), 'number format', root => root.n(...args), () => _intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.MISSING_RESOLVE_VALUE, val => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(val));
+    }
+    // for custom processor
+    function normalize(values) {
+        return values.map(val => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(val) ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Text, null, val, 0) : val);
+    }
+    const interpolate = (val) => val;
+    const processor = {
+        normalize,
+        interpolate,
+        type: 'vnode'
+    };
+    // transrateVNode, using for `i18n-t` component
+    function transrateVNode(...args) {
+        return wrapWithDeps(context => {
+            let ret;
+            const _context = context;
+            try {
+                _context.processor = processor;
+                ret = (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.translate)(_context, ...args);
+            }
+            finally {
+                _context.processor = null;
+            }
+            return ret;
+        }, () => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.parseTranslateArgs)(...args), 'translate', 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        root => root[TransrateVNodeSymbol](...args), key => [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Text, null, key, 0)], val => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(val));
+    }
+    // numberParts, using for `i18n-n` component
+    function numberParts(...args) {
+        return wrapWithDeps(context => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.number)(context, ...args), () => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.parseNumberArgs)(...args), 'number format', 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        root => root[NumberPartsSymbol](...args), () => [], val => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(val) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(val));
+    }
+    // datetimeParts, using for `i18n-d` component
+    function datetimeParts(...args) {
+        return wrapWithDeps(context => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.datetime)(context, ...args), () => (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.parseDateTimeArgs)(...args), 'datetime format', 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        root => root[DatetimePartsSymbol](...args), () => [], val => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(val) || (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(val));
+    }
+    function setPluralRules(rules) {
+        _pluralRules = rules;
+        _context.pluralRules = _pluralRules;
+    }
+    // te
+    function te(key, locale) {
+        const targetLocale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(locale) ? locale : _locale.value;
+        const message = getLocaleMessage(targetLocale);
+        return (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_3__.resolveValue)(message, key) !== null;
+    }
+    function resolveMessages(key) {
+        let messages = null;
+        const locales = (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.getLocaleChain)(_context, _fallbackLocale.value, _locale.value);
+        for (let i = 0; i < locales.length; i++) {
+            const targetLocaleMessages = _messages.value[locales[i]] || {};
+            const messageValue = (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_3__.resolveValue)(targetLocaleMessages, key);
+            if (messageValue != null) {
+                messages = messageValue;
+                break;
+            }
+        }
+        return messages;
+    }
+    // tm
+    function tm(key) {
+        const messages = resolveMessages(key);
+        // prettier-ignore
+        return messages != null
+            ? messages
+            : __root
+                ? __root.tm(key) || {}
+                : {};
+    }
+    // getLocaleMessage
+    function getLocaleMessage(locale) {
+        return (_messages.value[locale] || {});
+    }
+    // setLocaleMessage
+    function setLocaleMessage(locale, message) {
+        _messages.value[locale] = message;
+        _context.messages = _messages.value;
+    }
+    // mergeLocaleMessage
+    function mergeLocaleMessage(locale, message) {
+        _messages.value[locale] = _messages.value[locale] || {};
+        deepCopy(message, _messages.value[locale]);
+        _context.messages = _messages.value;
+    }
+    // getDateTimeFormat
+    function getDateTimeFormat(locale) {
+        return _datetimeFormats.value[locale] || {};
+    }
+    // setDateTimeFormat
+    function setDateTimeFormat(locale, format) {
+        _datetimeFormats.value[locale] = format;
+        _context.datetimeFormats = _datetimeFormats.value;
+        (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.clearDateTimeFormat)(_context, locale, format);
+    }
+    // mergeDateTimeFormat
+    function mergeDateTimeFormat(locale, format) {
+        _datetimeFormats.value[locale] = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)(_datetimeFormats.value[locale] || {}, format);
+        _context.datetimeFormats = _datetimeFormats.value;
+        (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.clearDateTimeFormat)(_context, locale, format);
+    }
+    // getNumberFormat
+    function getNumberFormat(locale) {
+        return _numberFormats.value[locale] || {};
+    }
+    // setNumberFormat
+    function setNumberFormat(locale, format) {
+        _numberFormats.value[locale] = format;
+        _context.numberFormats = _numberFormats.value;
+        (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.clearNumberFormat)(_context, locale, format);
+    }
+    // mergeNumberFormat
+    function mergeNumberFormat(locale, format) {
+        _numberFormats.value[locale] = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)(_numberFormats.value[locale] || {}, format);
+        _context.numberFormats = _numberFormats.value;
+        (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.clearNumberFormat)(_context, locale, format);
+    }
+    // for debug
+    composerID++;
+    // watch root locale & fallbackLocale
+    if (__root) {
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(__root.locale, (val) => {
+            if (_inheritLocale) {
+                _locale.value = val;
+                _context.locale = val;
+                (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.updateFallbackLocale)(_context, _locale.value, _fallbackLocale.value);
+            }
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(__root.fallbackLocale, (val) => {
+            if (_inheritLocale) {
+                _fallbackLocale.value = val;
+                _context.fallbackLocale = val;
+                (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.updateFallbackLocale)(_context, _locale.value, _fallbackLocale.value);
+            }
+        });
+    }
+    // define composition API!
+    const composer = {
+        id: composerID,
+        locale,
+        fallbackLocale,
+        get inheritLocale() {
+            return _inheritLocale;
+        },
+        set inheritLocale(val) {
+            _inheritLocale = val;
+            if (val && __root) {
+                _locale.value = __root.locale.value;
+                _fallbackLocale.value = __root.fallbackLocale.value;
+                (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.updateFallbackLocale)(_context, _locale.value, _fallbackLocale.value);
+            }
+        },
+        get availableLocales() {
+            return Object.keys(_messages.value).sort();
+        },
+        messages,
+        datetimeFormats,
+        numberFormats,
+        get modifiers() {
+            return _modifiers;
+        },
+        get pluralRules() {
+            return _pluralRules || {};
+        },
+        get isGlobal() {
+            return _isGlobal;
+        },
+        get missingWarn() {
+            return _missingWarn;
+        },
+        set missingWarn(val) {
+            _missingWarn = val;
+            _context.missingWarn = _missingWarn;
+        },
+        get fallbackWarn() {
+            return _fallbackWarn;
+        },
+        set fallbackWarn(val) {
+            _fallbackWarn = val;
+            _context.fallbackWarn = _fallbackWarn;
+        },
+        get fallbackRoot() {
+            return _fallbackRoot;
+        },
+        set fallbackRoot(val) {
+            _fallbackRoot = val;
+        },
+        get fallbackFormat() {
+            return _fallbackFormat;
+        },
+        set fallbackFormat(val) {
+            _fallbackFormat = val;
+            _context.fallbackFormat = _fallbackFormat;
+        },
+        get warnHtmlMessage() {
+            return _warnHtmlMessage;
+        },
+        set warnHtmlMessage(val) {
+            _warnHtmlMessage = val;
+            _context.warnHtmlMessage = val;
+        },
+        get escapeParameter() {
+            return _escapeParameter;
+        },
+        set escapeParameter(val) {
+            _escapeParameter = val;
+            _context.escapeParameter = val;
+        },
+        t,
+        rt,
+        d,
+        n,
+        te,
+        tm,
+        getLocaleMessage,
+        setLocaleMessage,
+        mergeLocaleMessage,
+        getDateTimeFormat,
+        setDateTimeFormat,
+        mergeDateTimeFormat,
+        getNumberFormat,
+        setNumberFormat,
+        mergeNumberFormat,
+        getPostTranslationHandler,
+        setPostTranslationHandler,
+        getMissingHandler,
+        setMissingHandler,
+        [TransrateVNodeSymbol]: transrateVNode,
+        [NumberPartsSymbol]: numberParts,
+        [DatetimePartsSymbol]: datetimeParts,
+        [SetPluralRulesSymbol]: setPluralRules,
+        [InejctWithOption]: options.__injectWithOption // eslint-disable-line @typescript-eslint/no-explicit-any
+    };
+    // for vue-devtools timeline event
+    if ((true)) {
+        composer[EnableEmitter] = (emitter) => {
+            _context.__v_emitter = emitter;
+        };
+        composer[DisableEmitter] = () => {
+            _context.__v_emitter = undefined;
+        };
+    }
+    return composer;
+}
+
+/**
+ * Convert to I18n Composer Options from VueI18n Options
+ *
+ * @internal
+ */
+function convertComposerOptions(options) {
+    const locale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(options.locale) ? options.locale : 'en-US';
+    const fallbackLocale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(options.fallbackLocale) ||
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(options.fallbackLocale) ||
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(options.fallbackLocale) ||
+        options.fallbackLocale === false
+        ? options.fallbackLocale
+        : locale;
+    const missing = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isFunction)(options.missing) ? options.missing : undefined;
+    const missingWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.silentTranslationWarn) ||
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isRegExp)(options.silentTranslationWarn)
+        ? !options.silentTranslationWarn
+        : true;
+    const fallbackWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.silentFallbackWarn) ||
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isRegExp)(options.silentFallbackWarn)
+        ? !options.silentFallbackWarn
+        : true;
+    const fallbackRoot = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.fallbackRoot)
+        ? options.fallbackRoot
+        : true;
+    const fallbackFormat = !!options.formatFallbackMessages;
+    const modifiers = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(options.modifiers) ? options.modifiers : {};
+    const pluralizationRules = options.pluralizationRules;
+    const postTranslation = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isFunction)(options.postTranslation)
+        ? options.postTranslation
+        : undefined;
+    const warnHtmlMessage = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(options.warnHtmlInMessage)
+        ? options.warnHtmlInMessage !== 'off'
+        : true;
+    const escapeParameter = !!options.escapeParameterHtml;
+    const inheritLocale = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.sync) ? options.sync : true;
+    if (( true) && options.formatter) {
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(8 /* NOT_SUPPORTED_FORMATTER */));
+    }
+    if (( true) && options.preserveDirectiveContent) {
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(9 /* NOT_SUPPORTED_PRESERVE_DIRECTIVE */));
+    }
+    let messages = options.messages;
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(options.sharedMessages)) {
+        const sharedMessages = options.sharedMessages;
+        const locales = Object.keys(sharedMessages);
+        messages = locales.reduce((messages, locale) => {
+            const message = messages[locale] || (messages[locale] = {});
+            (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)(message, sharedMessages[locale]);
+            return messages;
+        }, (messages || {}));
+    }
+    const { __i18n, __root, __injectWithOption } = options;
+    const datetimeFormats = options.datetimeFormats;
+    const numberFormats = options.numberFormats;
+    const flatJson = options.flatJson;
+    return {
+        locale,
+        fallbackLocale,
+        messages,
+        flatJson,
+        datetimeFormats,
+        numberFormats,
+        missing,
+        missingWarn,
+        fallbackWarn,
+        fallbackRoot,
+        fallbackFormat,
+        modifiers,
+        pluralRules: pluralizationRules,
+        postTranslation,
+        warnHtmlMessage,
+        escapeParameter,
+        inheritLocale,
+        __i18n,
+        __root,
+        __injectWithOption
+    };
+}
+/**
+ * create VueI18n interface factory
+ *
+ * @internal
+ */
+function createVueI18n(options = {}) {
+    const composer = createComposer(convertComposerOptions(options));
+    // defines VueI18n
+    const vueI18n = {
+        // id
+        id: composer.id,
+        // locale
+        get locale() {
+            return composer.locale.value;
+        },
+        set locale(val) {
+            composer.locale.value = val;
+        },
+        // fallbackLocale
+        get fallbackLocale() {
+            return composer.fallbackLocale.value;
+        },
+        set fallbackLocale(val) {
+            composer.fallbackLocale.value = val;
+        },
+        // messages
+        get messages() {
+            return composer.messages.value;
+        },
+        // datetimeFormats
+        get datetimeFormats() {
+            return composer.datetimeFormats.value;
+        },
+        // numberFormats
+        get numberFormats() {
+            return composer.numberFormats.value;
+        },
+        // availableLocales
+        get availableLocales() {
+            return composer.availableLocales;
+        },
+        // formatter
+        get formatter() {
+            ( true) && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(8 /* NOT_SUPPORTED_FORMATTER */));
+            // dummy
+            return {
+                interpolate() {
+                    return [];
+                }
+            };
+        },
+        set formatter(val) {
+            ( true) && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(8 /* NOT_SUPPORTED_FORMATTER */));
+        },
+        // missing
+        get missing() {
+            return composer.getMissingHandler();
+        },
+        set missing(handler) {
+            composer.setMissingHandler(handler);
+        },
+        // silentTranslationWarn
+        get silentTranslationWarn() {
+            return (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(composer.missingWarn)
+                ? !composer.missingWarn
+                : composer.missingWarn;
+        },
+        set silentTranslationWarn(val) {
+            composer.missingWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(val) ? !val : val;
+        },
+        // silentFallbackWarn
+        get silentFallbackWarn() {
+            return (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(composer.fallbackWarn)
+                ? !composer.fallbackWarn
+                : composer.fallbackWarn;
+        },
+        set silentFallbackWarn(val) {
+            composer.fallbackWarn = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(val) ? !val : val;
+        },
+        // modifiers
+        get modifiers() {
+            return composer.modifiers;
+        },
+        // formatFallbackMessages
+        get formatFallbackMessages() {
+            return composer.fallbackFormat;
+        },
+        set formatFallbackMessages(val) {
+            composer.fallbackFormat = val;
+        },
+        // postTranslation
+        get postTranslation() {
+            return composer.getPostTranslationHandler();
+        },
+        set postTranslation(handler) {
+            composer.setPostTranslationHandler(handler);
+        },
+        // sync
+        get sync() {
+            return composer.inheritLocale;
+        },
+        set sync(val) {
+            composer.inheritLocale = val;
+        },
+        // warnInHtmlMessage
+        get warnHtmlInMessage() {
+            return composer.warnHtmlMessage ? 'warn' : 'off';
+        },
+        set warnHtmlInMessage(val) {
+            composer.warnHtmlMessage = val !== 'off';
+        },
+        // escapeParameterHtml
+        get escapeParameterHtml() {
+            return composer.escapeParameter;
+        },
+        set escapeParameterHtml(val) {
+            composer.escapeParameter = val;
+        },
+        // preserveDirectiveContent
+        get preserveDirectiveContent() {
+            ( true) &&
+                (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(9 /* NOT_SUPPORTED_PRESERVE_DIRECTIVE */));
+            return true;
+        },
+        set preserveDirectiveContent(val) {
+            ( true) &&
+                (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(9 /* NOT_SUPPORTED_PRESERVE_DIRECTIVE */));
+        },
+        // pluralizationRules
+        get pluralizationRules() {
+            return composer.pluralRules || {};
+        },
+        // for internal
+        __composer: composer,
+        // t
+        t(...args) {
+            const [arg1, arg2, arg3] = args;
+            const options = {};
+            let list = null;
+            let named = null;
+            if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(arg1)) {
+                throw createI18nError(15 /* INVALID_ARGUMENT */);
+            }
+            const key = arg1;
+            if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(arg2)) {
+                options.locale = arg2;
+            }
+            else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(arg2)) {
+                list = arg2;
+            }
+            else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(arg2)) {
+                named = arg2;
+            }
+            if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(arg3)) {
+                list = arg3;
+            }
+            else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(arg3)) {
+                named = arg3;
+            }
+            return composer.t(key, list || named || {}, options);
+        },
+        rt(...args) {
+            return composer.rt(...args);
+        },
+        // tc
+        tc(...args) {
+            const [arg1, arg2, arg3] = args;
+            const options = { plural: 1 };
+            let list = null;
+            let named = null;
+            if (!(0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(arg1)) {
+                throw createI18nError(15 /* INVALID_ARGUMENT */);
+            }
+            const key = arg1;
+            if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(arg2)) {
+                options.locale = arg2;
+            }
+            else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isNumber)(arg2)) {
+                options.plural = arg2;
+            }
+            else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(arg2)) {
+                list = arg2;
+            }
+            else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(arg2)) {
+                named = arg2;
+            }
+            if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(arg3)) {
+                options.locale = arg3;
+            }
+            else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(arg3)) {
+                list = arg3;
+            }
+            else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(arg3)) {
+                named = arg3;
+            }
+            return composer.t(key, list || named || {}, options);
+        },
+        // te
+        te(key, locale) {
+            return composer.te(key, locale);
+        },
+        // tm
+        tm(key) {
+            return composer.tm(key);
+        },
+        // getLocaleMessage
+        getLocaleMessage(locale) {
+            return composer.getLocaleMessage(locale);
+        },
+        // setLocaleMessage
+        setLocaleMessage(locale, message) {
+            composer.setLocaleMessage(locale, message);
+        },
+        // mergeLocaleMessage
+        mergeLocaleMessage(locale, message) {
+            composer.mergeLocaleMessage(locale, message);
+        },
+        // d
+        d(...args) {
+            return composer.d(...args);
+        },
+        // getDateTimeFormat
+        getDateTimeFormat(locale) {
+            return composer.getDateTimeFormat(locale);
+        },
+        // setDateTimeFormat
+        setDateTimeFormat(locale, format) {
+            composer.setDateTimeFormat(locale, format);
+        },
+        // mergeDateTimeFormat
+        mergeDateTimeFormat(locale, format) {
+            composer.mergeDateTimeFormat(locale, format);
+        },
+        // n
+        n(...args) {
+            return composer.n(...args);
+        },
+        // getNumberFormat
+        getNumberFormat(locale) {
+            return composer.getNumberFormat(locale);
+        },
+        // setNumberFormat
+        setNumberFormat(locale, format) {
+            composer.setNumberFormat(locale, format);
+        },
+        // mergeNumberFormat
+        mergeNumberFormat(locale, format) {
+            composer.mergeNumberFormat(locale, format);
+        },
+        // getChoiceIndex
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        getChoiceIndex(choice, choicesLength) {
+            ( true) &&
+                (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(10 /* NOT_SUPPORTED_GET_CHOICE_INDEX */));
+            return -1;
+        },
+        // for internal
+        __onComponentInstanceCreated(target) {
+            const { componentInstanceCreatedListener } = options;
+            if (componentInstanceCreatedListener) {
+                componentInstanceCreatedListener(target, vueI18n);
+            }
+        }
+    };
+    // for vue-devtools timeline event
+    if ((true)) {
+        vueI18n.__enableEmitter = (emitter) => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const __composer = composer;
+            __composer[EnableEmitter] && __composer[EnableEmitter](emitter);
+        };
+        vueI18n.__disableEmitter = () => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const __composer = composer;
+            __composer[DisableEmitter] && __composer[DisableEmitter]();
+        };
+    }
+    return vueI18n;
+}
+
+const baseFormatProps = {
+    tag: {
+        type: [String, Object]
+    },
+    locale: {
+        type: String
+    },
+    scope: {
+        type: String,
+        validator: (val) => val === 'parent' || val === 'global',
+        default: 'parent'
+    },
+    i18n: {
+        type: Object
+    }
+};
+
+/**
+ * Translation Component
+ *
+ * @remarks
+ * See the following items for property about details
+ *
+ * @VueI18nSee [TranslationProps](component#translationprops)
+ * @VueI18nSee [BaseFormatProps](component#baseformatprops)
+ * @VueI18nSee [Component Interpolation](../guide/advanced/component)
+ *
+ * @example
+ * ```html
+ * <div id="app">
+ *   <!-- ... -->
+ *   <i18n path="term" tag="label" for="tos">
+ *     <a :href="url" target="_blank">{{ $t('tos') }}</a>
+ *   </i18n>
+ *   <!-- ... -->
+ * </div>
+ * ```
+ * ```js
+ * import { createApp } from 'vue'
+ * import { createI18n } from 'vue-i18n'
+ *
+ * const messages = {
+ *   en: {
+ *     tos: 'Term of Service',
+ *     term: 'I accept xxx {0}.'
+ *   },
+ *   ja: {
+ *     tos: '利用規約',
+ *     term: '私は xxx の{0}に同意します。'
+ *   }
+ * }
+ *
+ * const i18n = createI18n({
+ *   locale: 'en',
+ *   messages
+ * })
+ *
+ * const app = createApp({
+ *   data: {
+ *     url: '/term'
+ *   }
+ * }).use(i18n).mount('#app')
+ * ```
+ *
+ * @VueI18nComponent
+ */
+const Translation = {
+    /* eslint-disable */
+    name: 'i18n-t',
+    props: (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)({
+        keypath: {
+            type: String,
+            required: true
+        },
+        plural: {
+            type: [Number, String],
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            validator: (val) => (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isNumber)(val) || !isNaN(val)
+        }
+    }, baseFormatProps),
+    /* eslint-enable */
+    setup(props, context) {
+        const { slots, attrs } = context;
+        const i18n = props.i18n ||
+            useI18n({
+                useScope: props.scope,
+                __useComponent: true
+            });
+        const keys = Object.keys(slots).filter(key => key !== '_');
+        return () => {
+            const options = {};
+            if (props.locale) {
+                options.locale = props.locale;
+            }
+            if (props.plural !== undefined) {
+                options.plural = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(props.plural) ? +props.plural : props.plural;
+            }
+            const arg = getInterpolateArg(context, keys);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const children = i18n[TransrateVNodeSymbol](props.keypath, arg, options);
+            const assignedAttrs = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)({}, attrs);
+            // prettier-ignore
+            return (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(props.tag)
+                ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.tag, assignedAttrs, children)
+                : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(props.tag)
+                    ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.tag, assignedAttrs, children)
+                    : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, assignedAttrs, children);
+        };
+    }
+};
+function getInterpolateArg({ slots }, keys) {
+    if (keys.length === 1 && keys[0] === 'default') {
+        // default slot only
+        return slots.default ? slots.default() : [];
+    }
+    else {
+        // named slots
+        return keys.reduce((arg, key) => {
+            const slot = slots[key];
+            if (slot) {
+                arg[key] = slot();
+            }
+            return arg;
+        }, {});
+    }
+}
+
+function renderFormatter(props, context, slotKeys, partFormatter) {
+    const { slots, attrs } = context;
+    return () => {
+        const options = { part: true };
+        let overrides = {};
+        if (props.locale) {
+            options.locale = props.locale;
+        }
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(props.format)) {
+            options.key = props.format;
+        }
+        else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(props.format)) {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(props.format.key)) {
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                options.key = props.format.key;
+            }
+            // Filter out number format options only
+            overrides = Object.keys(props.format).reduce((options, prop) => {
+                return slotKeys.includes(prop)
+                    ? (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)({}, options, { [prop]: props.format[prop] }) // eslint-disable-line @typescript-eslint/no-explicit-any
+                    : options;
+            }, {});
+        }
+        const parts = partFormatter(...[props.value, options, overrides]);
+        let children = [options.key];
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(parts)) {
+            children = parts.map((part, index) => {
+                const slot = slots[part.type];
+                return slot
+                    ? slot({ [part.type]: part.value, index, parts })
+                    : [part.value];
+            });
+        }
+        else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(parts)) {
+            children = [parts];
+        }
+        const assignedAttrs = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)({}, attrs);
+        // prettier-ignore
+        return (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(props.tag)
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.tag, assignedAttrs, children)
+            : (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(props.tag)
+                ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.tag, assignedAttrs, children)
+                : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, assignedAttrs, children);
+    };
+}
+
+const NUMBER_FORMAT_KEYS = [
+    'localeMatcher',
+    'style',
+    'unit',
+    'unitDisplay',
+    'currency',
+    'currencyDisplay',
+    'useGrouping',
+    'numberingSystem',
+    'minimumIntegerDigits',
+    'minimumFractionDigits',
+    'maximumFractionDigits',
+    'minimumSignificantDigits',
+    'maximumSignificantDigits',
+    'notation',
+    'formatMatcher'
+];
+/**
+ * Number Format Component
+ *
+ * @remarks
+ * See the following items for property about details
+ *
+ * @VueI18nSee [FormattableProps](component#formattableprops)
+ * @VueI18nSee [BaseFormatProps](component#baseformatprops)
+ * @VueI18nSee [Custom Formatting](../guide/essentials/number#custom-formatting)
+ *
+ * @VueI18nDanger
+ * Not supported IE, due to no support `Intl.NumberFormat#formatToParts` in [IE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/formatToParts)
+ *
+ * If you want to use it, you need to use [polyfill](https://github.com/formatjs/formatjs/tree/main/packages/intl-numberformat)
+ *
+ * @VueI18nComponent
+ */
+const NumberFormat = {
+    /* eslint-disable */
+    name: 'i18n-n',
+    props: (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)({
+        value: {
+            type: Number,
+            required: true
+        },
+        format: {
+            type: [String, Object]
+        }
+    }, baseFormatProps),
+    /* eslint-enable */
+    setup(props, context) {
+        const i18n = props.i18n ||
+            useI18n({ useScope: 'parent', __useComponent: true });
+        return renderFormatter(props, context, NUMBER_FORMAT_KEYS, (...args) => 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        i18n[NumberPartsSymbol](...args));
+    }
+};
+
+const DATETIME_FORMAT_KEYS = [
+    'dateStyle',
+    'timeStyle',
+    'fractionalSecondDigits',
+    'calendar',
+    'dayPeriod',
+    'numberingSystem',
+    'localeMatcher',
+    'timeZone',
+    'hour12',
+    'hourCycle',
+    'formatMatcher',
+    'weekday',
+    'era',
+    'year',
+    'month',
+    'day',
+    'hour',
+    'minute',
+    'second',
+    'timeZoneName'
+];
+/**
+ * Datetime Format Component
+ *
+ * @remarks
+ * See the following items for property about details
+ *
+ * @VueI18nSee [FormattableProps](component#formattableprops)
+ * @VueI18nSee [BaseFormatProps](component#baseformatprops)
+ * @VueI18nSee [Custom Formatting](../guide/essentials/datetime#custom-formatting)
+ *
+ * @VueI18nDanger
+ * Not supported IE, due to no support `Intl.DateTimeFormat#formatToParts` in [IE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatToParts)
+ *
+ * If you want to use it, you need to use [polyfill](https://github.com/formatjs/formatjs/tree/main/packages/intl-datetimeformat)
+ *
+ * @VueI18nComponent
+ */
+const DatetimeFormat = {
+    /* eslint-disable */
+    name: 'i18n-d',
+    props: (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)({
+        value: {
+            type: [Number, Date],
+            required: true
+        },
+        format: {
+            type: [String, Object]
+        }
+    }, baseFormatProps),
+    /* eslint-enable */
+    setup(props, context) {
+        const i18n = props.i18n ||
+            useI18n({ useScope: 'parent', __useComponent: true });
+        return renderFormatter(props, context, DATETIME_FORMAT_KEYS, (...args) => 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        i18n[DatetimePartsSymbol](...args));
+    }
+};
+
+function getComposer$2(i18n, instance) {
+    const i18nInternal = i18n;
+    if (i18n.mode === 'composition') {
+        return (i18nInternal.__getInstance(instance) || i18n.global);
+    }
+    else {
+        const vueI18n = i18nInternal.__getInstance(instance);
+        return vueI18n != null
+            ? vueI18n.__composer
+            : i18n.global.__composer;
+    }
+}
+function vTDirective(i18n) {
+    const bind = (el, { instance, value, modifiers }) => {
+        /* istanbul ignore if */
+        if (!instance || !instance.$) {
+            throw createI18nError(22 /* UNEXPECTED_ERROR */);
+        }
+        const composer = getComposer$2(i18n, instance.$);
+        if (( true) && modifiers.preserve) {
+            (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(7 /* NOT_SUPPORTED_PRESERVE */));
+        }
+        const parsedValue = parseValue(value);
+        el.textContent = composer.t(...makeParams(parsedValue));
+    };
+    return {
+        beforeMount: bind,
+        beforeUpdate: bind
+    };
+}
+function parseValue(value) {
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(value)) {
+        return { path: value };
+    }
+    else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(value)) {
+        if (!('path' in value)) {
+            throw createI18nError(19 /* REQUIRED_VALUE */, 'path');
+        }
+        return value;
+    }
+    else {
+        throw createI18nError(20 /* INVALID_VALUE */);
+    }
+}
+function makeParams(value) {
+    const { path, locale, args, choice, plural } = value;
+    const options = {};
+    const named = args || {};
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(locale)) {
+        options.locale = locale;
+    }
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isNumber)(choice)) {
+        options.plural = choice;
+    }
+    if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isNumber)(plural)) {
+        options.plural = plural;
+    }
+    return [path, named, options];
+}
+
+function apply(app, i18n, ...options) {
+    const pluginOptions = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isPlainObject)(options[0])
+        ? options[0]
+        : {};
+    const useI18nComponentName = !!pluginOptions.useI18nComponentName;
+    const globalInstall = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(pluginOptions.globalInstall)
+        ? pluginOptions.globalInstall
+        : true;
+    if (( true) && globalInstall && useI18nComponentName) {
+        (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(11 /* COMPONENT_NAME_LEGACY_COMPATIBLE */, {
+            name: Translation.name
+        }));
+    }
+    if (globalInstall) {
+        // install components
+        app.component(!useI18nComponentName ? Translation.name : 'i18n', Translation);
+        app.component(NumberFormat.name, NumberFormat);
+        app.component(DatetimeFormat.name, DatetimeFormat);
+    }
+    // install directive
+    app.directive('t', vTDirective(i18n));
+}
+
+const VUE_I18N_COMPONENT_TYPES = 'vue-i18n: composer properties';
+let devtoolsApi;
+async function enableDevTools(app, i18n) {
+    return new Promise((resolve, reject) => {
+        try {
+            (0,_vue_devtools_api__WEBPACK_IMPORTED_MODULE_5__.setupDevtoolsPlugin)({
+                id: "vue-devtools-plugin-vue-i18n" /* PLUGIN */,
+                label: _intlify_vue_devtools__WEBPACK_IMPORTED_MODULE_6__.VueDevToolsLabels["vue-devtools-plugin-vue-i18n"],
+                packageName: 'vue-i18n',
+                homepage: 'https://vue-i18n.intlify.dev',
+                logo: 'https://vue-i18n.intlify.dev/vue-i18n-devtools-logo.png',
+                componentStateTypes: [VUE_I18N_COMPONENT_TYPES],
+                app
+            }, api => {
+                devtoolsApi = api;
+                api.on.visitComponentTree(({ componentInstance, treeNode }) => {
+                    updateComponentTreeTags(componentInstance, treeNode, i18n);
+                });
+                api.on.inspectComponent(({ componentInstance, instanceData }) => {
+                    if (componentInstance.vnode.el.__VUE_I18N__ && instanceData) {
+                        if (i18n.mode === 'legacy') {
+                            // ignore global scope on legacy mode
+                            if (componentInstance.vnode.el.__VUE_I18N__ !==
+                                i18n.global.__composer) {
+                                inspectComposer(instanceData, componentInstance.vnode.el.__VUE_I18N__);
+                            }
+                        }
+                        else {
+                            inspectComposer(instanceData, componentInstance.vnode.el.__VUE_I18N__);
+                        }
+                    }
+                });
+                api.addInspector({
+                    id: "vue-i18n-resource-inspector" /* CUSTOM_INSPECTOR */,
+                    label: _intlify_vue_devtools__WEBPACK_IMPORTED_MODULE_6__.VueDevToolsLabels["vue-i18n-resource-inspector"],
+                    icon: 'language',
+                    treeFilterPlaceholder: _intlify_vue_devtools__WEBPACK_IMPORTED_MODULE_6__.VueDevToolsPlaceholders["vue-i18n-resource-inspector"]
+                });
+                api.on.getInspectorTree(payload => {
+                    if (payload.app === app &&
+                        payload.inspectorId === "vue-i18n-resource-inspector" /* CUSTOM_INSPECTOR */) {
+                        registerScope(payload, i18n);
+                    }
+                });
+                api.on.getInspectorState(payload => {
+                    if (payload.app === app &&
+                        payload.inspectorId === "vue-i18n-resource-inspector" /* CUSTOM_INSPECTOR */) {
+                        inspectScope(payload, i18n);
+                    }
+                });
+                api.on.editInspectorState(payload => {
+                    if (payload.app === app &&
+                        payload.inspectorId === "vue-i18n-resource-inspector" /* CUSTOM_INSPECTOR */) {
+                        editScope(payload, i18n);
+                    }
+                });
+                api.addTimelineLayer({
+                    id: "vue-i18n-timeline" /* TIMELINE */,
+                    label: _intlify_vue_devtools__WEBPACK_IMPORTED_MODULE_6__.VueDevToolsLabels["vue-i18n-timeline"],
+                    color: _intlify_vue_devtools__WEBPACK_IMPORTED_MODULE_6__.VueDevToolsTimelineColors["vue-i18n-timeline"]
+                });
+                resolve(true);
+            });
+        }
+        catch (e) {
+            console.error(e);
+            reject(false);
+        }
+    });
+}
+function updateComponentTreeTags(instance, // eslint-disable-line @typescript-eslint/no-explicit-any
+treeNode, i18n) {
+    // prettier-ignore
+    const global = i18n.mode === 'composition'
+        ? i18n.global
+        : i18n.global.__composer;
+    if (instance && instance.vnode.el.__VUE_I18N__) {
+        // add custom tags local scope only
+        if (instance.vnode.el.__VUE_I18N__ !== global) {
+            const label = instance.type.name || instance.type.displayName || instance.type.__file;
+            const tag = {
+                label: `i18n (${label} Scope)`,
+                textColor: 0x000000,
+                backgroundColor: 0xffcd19
+            };
+            treeNode.tags.push(tag);
+        }
+    }
+}
+function inspectComposer(instanceData, composer) {
+    const type = VUE_I18N_COMPONENT_TYPES;
+    instanceData.state.push({
+        type,
+        key: 'locale',
+        editable: true,
+        value: composer.locale.value
+    });
+    instanceData.state.push({
+        type,
+        key: 'availableLocales',
+        editable: false,
+        value: composer.availableLocales
+    });
+    instanceData.state.push({
+        type,
+        key: 'fallbackLocale',
+        editable: true,
+        value: composer.fallbackLocale.value
+    });
+    instanceData.state.push({
+        type,
+        key: 'inheritLocale',
+        editable: true,
+        value: composer.inheritLocale
+    });
+    instanceData.state.push({
+        type,
+        key: 'messages',
+        editable: false,
+        value: getLocaleMessageValue(composer.messages.value)
+    });
+    instanceData.state.push({
+        type,
+        key: 'datetimeFormats',
+        editable: false,
+        value: composer.datetimeFormats.value
+    });
+    instanceData.state.push({
+        type,
+        key: 'numberFormats',
+        editable: false,
+        value: composer.numberFormats.value
+    });
+}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function getLocaleMessageValue(messages) {
+    const value = {};
+    Object.keys(messages).forEach((key) => {
+        const v = messages[key];
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isFunction)(v) && 'source' in v) {
+            value[key] = getMessageFunctionDetails(v);
+        }
+        else if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(v)) {
+            value[key] = getLocaleMessageValue(v);
+        }
+        else {
+            value[key] = v;
+        }
+    });
+    return value;
+}
+const ESC = {
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    '&': '&amp;'
+};
+function escape(s) {
+    return s.replace(/[<>"&]/g, escapeChar);
+}
+function escapeChar(a) {
+    return ESC[a] || a;
+}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function getMessageFunctionDetails(func) {
+    const argString = func.source ? `("${escape(func.source)}")` : `(?)`;
+    return {
+        _custom: {
+            type: 'function',
+            display: `<span>ƒ</span> ${argString}`
+        }
+    };
+}
+function registerScope(payload, i18n) {
+    payload.rootNodes.push({
+        id: 'global',
+        label: 'Global Scope'
+    });
+    // prettier-ignore
+    const global = i18n.mode === 'composition'
+        ? i18n.global
+        : i18n.global.__composer;
+    for (const [keyInstance, instance] of i18n.__instances) {
+        // prettier-ignore
+        const composer = i18n.mode === 'composition'
+            ? instance
+            : instance.__composer;
+        if (global === composer) {
+            continue;
+        }
+        const label = keyInstance.type.name ||
+            keyInstance.type.displayName ||
+            keyInstance.type.__file;
+        payload.rootNodes.push({
+            id: composer.id.toString(),
+            label: `${label} Scope`
+        });
+    }
+}
+function getComposer$1(nodeId, i18n) {
+    if (nodeId === 'global') {
+        return i18n.mode === 'composition'
+            ? i18n.global
+            : i18n.global.__composer;
+    }
+    else {
+        const instance = Array.from(i18n.__instances.values()).find(item => item.id.toString() === nodeId);
+        if (instance) {
+            return i18n.mode === 'composition'
+                ? instance
+                : instance.__composer;
+        }
+        else {
+            return null;
+        }
+    }
+}
+function inspectScope(payload, i18n) {
+    const composer = getComposer$1(payload.nodeId, i18n);
+    if (composer) {
+        payload.state = makeScopeInspectState(composer);
+    }
+}
+function makeScopeInspectState(composer) {
+    const state = {};
+    const localeType = 'Locale related info';
+    const localeStates = [
+        {
+            type: localeType,
+            key: 'locale',
+            editable: true,
+            value: composer.locale.value
+        },
+        {
+            type: localeType,
+            key: 'fallbackLocale',
+            editable: true,
+            value: composer.fallbackLocale.value
+        },
+        {
+            type: localeType,
+            key: 'availableLocales',
+            editable: false,
+            value: composer.availableLocales
+        },
+        {
+            type: localeType,
+            key: 'inheritLocale',
+            editable: true,
+            value: composer.inheritLocale
+        }
+    ];
+    state[localeType] = localeStates;
+    const localeMessagesType = 'Locale messages info';
+    const localeMessagesStates = [
+        {
+            type: localeMessagesType,
+            key: 'messages',
+            editable: false,
+            value: getLocaleMessageValue(composer.messages.value)
+        }
+    ];
+    state[localeMessagesType] = localeMessagesStates;
+    const datetimeFormatsType = 'Datetime formats info';
+    const datetimeFormatsStates = [
+        {
+            type: datetimeFormatsType,
+            key: 'datetimeFormats',
+            editable: false,
+            value: composer.datetimeFormats.value
+        }
+    ];
+    state[datetimeFormatsType] = datetimeFormatsStates;
+    const numberFormatsType = 'Datetime formats info';
+    const numberFormatsStates = [
+        {
+            type: numberFormatsType,
+            key: 'numberFormats',
+            editable: false,
+            value: composer.numberFormats.value
+        }
+    ];
+    state[numberFormatsType] = numberFormatsStates;
+    return state;
+}
+function addTimelineEvent(event, payload) {
+    if (devtoolsApi) {
+        let groupId;
+        if (payload && 'groupId' in payload) {
+            groupId = payload.groupId;
+            delete payload.groupId;
+        }
+        devtoolsApi.addTimelineEvent({
+            layerId: "vue-i18n-timeline" /* TIMELINE */,
+            event: {
+                title: event,
+                groupId,
+                time: Date.now(),
+                meta: {},
+                data: payload || {},
+                logType: event === "compile-error" /* COMPILE_ERROR */
+                    ? 'error'
+                    : event === "fallback" /* FALBACK */ ||
+                        event === "missing" /* MISSING */
+                        ? 'warning'
+                        : 'default'
+            }
+        });
+    }
+}
+function editScope(payload, i18n) {
+    const composer = getComposer$1(payload.nodeId, i18n);
+    if (composer) {
+        const [field] = payload.path;
+        if (field === 'locale' && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(payload.state.value)) {
+            composer.locale.value = payload.state.value;
+        }
+        else if (field === 'fallbackLocale' &&
+            ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isString)(payload.state.value) ||
+                (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isArray)(payload.state.value) ||
+                (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(payload.state.value))) {
+            composer.fallbackLocale.value = payload.state.value;
+        }
+        else if (field === 'inheritLocale' && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(payload.state.value)) {
+            composer.inheritLocale = payload.state.value;
+        }
+    }
+}
+
+// supports compatibility for legacy vue-i18n APIs
+function defineMixin(vuei18n, composer, i18n) {
+    return {
+        beforeCreate() {
+            const instance = (0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)();
+            /* istanbul ignore if */
+            if (!instance) {
+                throw createI18nError(22 /* UNEXPECTED_ERROR */);
+            }
+            const options = this.$options;
+            if (options.i18n) {
+                const optionsI18n = options.i18n;
+                if (options.__i18n) {
+                    optionsI18n.__i18n = options.__i18n;
+                }
+                optionsI18n.__root = composer;
+                if (this === this.$root) {
+                    this.$i18n = mergeToRoot(vuei18n, optionsI18n);
+                }
+                else {
+                    optionsI18n.__injectWithOption = true;
+                    this.$i18n = createVueI18n(optionsI18n);
+                }
+            }
+            else if (options.__i18n) {
+                if (this === this.$root) {
+                    this.$i18n = mergeToRoot(vuei18n, options);
+                }
+                else {
+                    this.$i18n = createVueI18n({
+                        __i18n: options.__i18n,
+                        __injectWithOption: true,
+                        __root: composer
+                    });
+                }
+            }
+            else {
+                // set global
+                this.$i18n = vuei18n;
+            }
+            vuei18n.__onComponentInstanceCreated(this.$i18n);
+            i18n.__setInstance(instance, this.$i18n);
+            // defines vue-i18n legacy APIs
+            this.$t = (...args) => this.$i18n.t(...args);
+            this.$rt = (...args) => this.$i18n.rt(...args);
+            this.$tc = (...args) => this.$i18n.tc(...args);
+            this.$te = (key, locale) => this.$i18n.te(key, locale);
+            this.$d = (...args) => this.$i18n.d(...args);
+            this.$n = (...args) => this.$i18n.n(...args);
+            this.$tm = (key) => this.$i18n.tm(key);
+        },
+        mounted() {
+            /* istanbul ignore if */
+            if (true) {
+                this.$el.__VUE_I18N__ = this.$i18n.__composer;
+                const emitter = (this.__v_emitter = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.createEmitter)());
+                const _vueI18n = this.$i18n;
+                _vueI18n.__enableEmitter && _vueI18n.__enableEmitter(emitter);
+                emitter.on('*', addTimelineEvent);
+            }
+        },
+        beforeUnmount() {
+            const instance = (0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)();
+            /* istanbul ignore if */
+            if (!instance) {
+                throw createI18nError(22 /* UNEXPECTED_ERROR */);
+            }
+            /* istanbul ignore if */
+            if (true) {
+                if (this.__v_emitter) {
+                    this.__v_emitter.off('*', addTimelineEvent);
+                    delete this.__v_emitter;
+                }
+                const _vueI18n = this.$i18n;
+                _vueI18n.__disableEmitter && _vueI18n.__disableEmitter();
+                delete this.$el.__VUE_I18N__;
+            }
+            delete this.$t;
+            delete this.$rt;
+            delete this.$tc;
+            delete this.$te;
+            delete this.$d;
+            delete this.$n;
+            delete this.$tm;
+            i18n.__deleteInstance(instance);
+            delete this.$i18n;
+        }
+    };
+}
+function mergeToRoot(root, options) {
+    root.locale = options.locale || root.locale;
+    root.fallbackLocale = options.fallbackLocale || root.fallbackLocale;
+    root.missing = options.missing || root.missing;
+    root.silentTranslationWarn =
+        options.silentTranslationWarn || root.silentFallbackWarn;
+    root.silentFallbackWarn =
+        options.silentFallbackWarn || root.silentFallbackWarn;
+    root.formatFallbackMessages =
+        options.formatFallbackMessages || root.formatFallbackMessages;
+    root.postTranslation = options.postTranslation || root.postTranslation;
+    root.warnHtmlInMessage = options.warnHtmlInMessage || root.warnHtmlInMessage;
+    root.escapeParameterHtml =
+        options.escapeParameterHtml || root.escapeParameterHtml;
+    root.sync = options.sync || root.sync;
+    root.__composer[SetPluralRulesSymbol](options.pluralizationRules || root.pluralizationRules);
+    const messages = getLocaleMessages(root.locale, {
+        messages: options.messages,
+        __i18n: options.__i18n
+    });
+    Object.keys(messages).forEach(locale => root.mergeLocaleMessage(locale, messages[locale]));
+    if (options.datetimeFormats) {
+        Object.keys(options.datetimeFormats).forEach(locale => root.mergeDateTimeFormat(locale, options.datetimeFormats[locale]));
+    }
+    if (options.numberFormats) {
+        Object.keys(options.numberFormats).forEach(locale => root.mergeNumberFormat(locale, options.numberFormats[locale]));
+    }
+    return root;
+}
+
+/**
+ * Vue I18n factory
+ *
+ * @param options - An options, see the {@link I18nOptions}
+ *
+ * @returns {@link I18n} instance
+ *
+ * @remarks
+ * If you use Legacy API mode, you need toto specify {@link VueI18nOptions} and `legacy: true` option.
+ *
+ * If you use composition API mode, you need to specify {@link ComposerOptions}.
+ *
+ * @VueI18nSee [Getting Started](../guide/)
+ * @VueI18nSee [Composition API](../guide/advanced/composition)
+ *
+ * @example
+ * case: for Legacy API
+ * ```js
+ * import { createApp } from 'vue'
+ * import { createI18n } from 'vue-i18n'
+ *
+ * // call with I18n option
+ * const i18n = createI18n({
+ *   locale: 'ja',
+ *   messages: {
+ *     en: { ... },
+ *     ja: { ... }
+ *   }
+ * })
+ *
+ * const App = {
+ *   // ...
+ * }
+ *
+ * const app = createApp(App)
+ *
+ * // install!
+ * app.use(i18n)
+ * app.mount('#app')
+ * ```
+ *
+ * @example
+ * case: for composition API
+ * ```js
+ * import { createApp } from 'vue'
+ * import { createI18n, useI18n } from 'vue-i18n'
+ *
+ * // call with I18n option
+ * const i18n = createI18n({
+ *   legacy: false, // you must specify 'legacy: false' option
+ *   locale: 'ja',
+ *   messages: {
+ *     en: { ... },
+ *     ja: { ... }
+ *   }
+ * })
+ *
+ * const App = {
+ *   setup() {
+ *     // ...
+ *     const { t } = useI18n({ ... })
+ *     return { ... , t }
+ *   }
+ * }
+ *
+ * const app = createApp(App)
+ *
+ * // install!
+ * app.use(i18n)
+ * app.mount('#app')
+ * ```
+ *
+ * @VueI18nGeneral
+ */
+function createI18n(options = {}) {
+    // prettier-ignore
+    const __legacyMode = __VUE_I18N_LEGACY_API__ && (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(options.legacy)
+        ? options.legacy
+        : __VUE_I18N_LEGACY_API__;
+    const __globalInjection = !!options.globalInjection;
+    const __instances = new Map();
+    // prettier-ignore
+    const __global = __VUE_I18N_LEGACY_API__ && __legacyMode
+        ? createVueI18n(options)
+        : createComposer(options);
+    const symbol = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.makeSymbol)(( true) ? 'vue-i18n' : 0);
+    const i18n = {
+        // mode
+        get mode() {
+            // prettier-ignore
+            return __VUE_I18N_LEGACY_API__
+                ? __legacyMode
+                    ? 'legacy'
+                    : 'composition'
+                : 'composition';
+        },
+        // install plugin
+        async install(app, ...options) {
+            if (true) {
+                app.__VUE_I18N__ = i18n;
+            }
+            // setup global provider
+            app.__VUE_I18N_SYMBOL__ = symbol;
+            app.provide(app.__VUE_I18N_SYMBOL__, i18n);
+            // global method and properties injection for Composition API
+            if (!__legacyMode && __globalInjection) {
+                injectGlobalFields(app, i18n.global);
+            }
+            // install built-in components and directive
+            if (__VUE_I18N_FULL_INSTALL__) {
+                apply(app, i18n, ...options);
+            }
+            // setup mixin for Legacy API
+            if (__VUE_I18N_LEGACY_API__ && __legacyMode) {
+                app.mixin(defineMixin(__global, __global.__composer, i18n));
+            }
+            // setup vue-devtools plugin
+            if (true) {
+                const ret = await enableDevTools(app, i18n);
+                if (!ret) {
+                    throw createI18nError(21 /* CANNOT_SETUP_VUE_DEVTOOLS_PLUGIN */);
+                }
+                const emitter = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.createEmitter)();
+                if (__legacyMode) {
+                    const _vueI18n = __global;
+                    _vueI18n.__enableEmitter && _vueI18n.__enableEmitter(emitter);
+                }
+                else {
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    const _composer = __global;
+                    _composer[EnableEmitter] && _composer[EnableEmitter](emitter);
+                }
+                emitter.on('*', addTimelineEvent);
+            }
+        },
+        // global accessor
+        get global() {
+            return __global;
+        },
+        // @internal
+        __instances,
+        // @internal
+        __getInstance(component) {
+            return __instances.get(component) || null;
+        },
+        // @internal
+        __setInstance(component, instance) {
+            __instances.set(component, instance);
+        },
+        // @internal
+        __deleteInstance(component) {
+            __instances.delete(component);
+        }
+    };
+    return i18n;
+}
+/**
+ * Use Composition API for Vue I18n
+ *
+ * @param options - An options, see {@link UseI18nOptions}
+ *
+ * @returns {@link Composer} instance
+ *
+ * @remarks
+ * This function is mainly used by `setup`.
+ *
+ * If options are specified, Composer instance is created for each component and you can be localized on the component.
+ *
+ * If options are not specified, you can be localized using the global Composer.
+ *
+ * @example
+ * case: Component resource base localization
+ * ```html
+ * <template>
+ *   <form>
+ *     <label>{{ t('language') }}</label>
+ *     <select v-model="locale">
+ *       <option value="en">en</option>
+ *       <option value="ja">ja</option>
+ *     </select>
+ *   </form>
+ *   <p>message: {{ t('hello') }}</p>
+ * </template>
+ *
+ * <script>
+ * import { useI18n } from 'vue-i18n'
+ *
+ * export default {
+ *  setup() {
+ *    const { t, locale } = useI18n({
+ *      locale: 'ja',
+ *      messages: {
+ *        en: { ... },
+ *        ja: { ... }
+ *      }
+ *    })
+ *    // Something to do ...
+ *
+ *    return { ..., t, locale }
+ *  }
+ * }
+ * </script>
+ * ```
+ *
+ * @VueI18nComposition
+ */
+function useI18n(options = {}) {
+    const instance = (0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)();
+    if (instance == null) {
+        throw createI18nError(16 /* MUST_BE_CALL_SETUP_TOP */);
+    }
+    if (!instance.appContext.app.__VUE_I18N_SYMBOL__) {
+        throw createI18nError(17 /* NOT_INSLALLED */);
+    }
+    const i18n = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(instance.appContext.app.__VUE_I18N_SYMBOL__);
+    /* istanbul ignore if */
+    if (!i18n) {
+        throw createI18nError(22 /* UNEXPECTED_ERROR */);
+    }
+    // prettier-ignore
+    const global = i18n.mode === 'composition'
+        ? i18n.global
+        : i18n.global.__composer;
+    // prettier-ignore
+    const scope = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isEmptyObject)(options)
+        ? ('__i18n' in instance.type)
+            ? 'local'
+            : 'global'
+        : !options.useScope
+            ? 'local'
+            : options.useScope;
+    if (scope === 'global') {
+        let messages = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(options.messages) ? options.messages : {};
+        if ('__i18nGlobal' in instance.type) {
+            messages = getLocaleMessages(global.locale.value, {
+                messages,
+                __i18n: instance.type.__i18nGlobal
+            });
+        }
+        // merge locale messages
+        const locales = Object.keys(messages);
+        if (locales.length) {
+            locales.forEach(locale => {
+                global.mergeLocaleMessage(locale, messages[locale]);
+            });
+        }
+        // merge datetime formats
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(options.datetimeFormats)) {
+            const locales = Object.keys(options.datetimeFormats);
+            if (locales.length) {
+                locales.forEach(locale => {
+                    global.mergeDateTimeFormat(locale, options.datetimeFormats[locale]);
+                });
+            }
+        }
+        // merge number formats
+        if ((0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.isObject)(options.numberFormats)) {
+            const locales = Object.keys(options.numberFormats);
+            if (locales.length) {
+                locales.forEach(locale => {
+                    global.mergeNumberFormat(locale, options.numberFormats[locale]);
+                });
+            }
+        }
+        return global;
+    }
+    if (scope === 'parent') {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        let composer = getComposer(i18n, instance, options.__useComponent);
+        if (composer == null) {
+            if ((true)) {
+                (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.warn)(getWarnMessage(12 /* NOT_FOUND_PARENT_SCOPE */));
+            }
+            composer = global;
+        }
+        return composer;
+    }
+    // scope 'local' case
+    if (i18n.mode === 'legacy') {
+        throw createI18nError(18 /* NOT_AVAILABLE_IN_LEGACY_MODE */);
+    }
+    const i18nInternal = i18n;
+    let composer = i18nInternal.__getInstance(instance);
+    if (composer == null) {
+        const type = instance.type;
+        const composerOptions = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.assign)({}, options);
+        if (type.__i18n) {
+            composerOptions.__i18n = type.__i18n;
+        }
+        if (global) {
+            composerOptions.__root = global;
+        }
+        composer = createComposer(composerOptions);
+        setupLifeCycle(i18nInternal, instance, composer);
+        i18nInternal.__setInstance(instance, composer);
+    }
+    return composer;
+}
+function getComposer(i18n, target, useComponent = false) {
+    let composer = null;
+    const root = target.root;
+    let current = target.parent;
+    while (current != null) {
+        const i18nInternal = i18n;
+        if (i18n.mode === 'composition') {
+            composer = i18nInternal.__getInstance(current);
+        }
+        else {
+            const vueI18n = i18nInternal.__getInstance(current);
+            if (vueI18n != null) {
+                composer = vueI18n
+                    .__composer;
+            }
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            if (useComponent && composer && !composer[InejctWithOption]) {
+                composer = null;
+            }
+        }
+        if (composer != null) {
+            break;
+        }
+        if (root === current) {
+            break;
+        }
+        current = current.parent;
+    }
+    return composer;
+}
+function setupLifeCycle(i18n, target, composer) {
+    let emitter = null;
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(() => {
+        // inject composer instance to DOM for intlify-devtools
+        if ( true &&
+            target.vnode.el) {
+            target.vnode.el.__VUE_I18N__ = composer;
+            emitter = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.createEmitter)();
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const _composer = composer;
+            _composer[EnableEmitter] && _composer[EnableEmitter](emitter);
+            emitter.on('*', addTimelineEvent);
+        }
+    }, target);
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.onUnmounted)(() => {
+        // remove composer instance from DOM for intlify-devtools
+        if ( true &&
+            target.vnode.el &&
+            target.vnode.el.__VUE_I18N__) {
+            emitter && emitter.off('*', addTimelineEvent);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const _composer = composer;
+            _composer[DisableEmitter] && _composer[DisableEmitter]();
+            delete target.vnode.el.__VUE_I18N__;
+        }
+        i18n.__deleteInstance(target);
+    }, target);
+}
+const globalExportProps = [
+    'locale',
+    'fallbackLocale',
+    'availableLocales'
+];
+const globalExportMethods = ['t', 'rt', 'd', 'n', 'tm'];
+function injectGlobalFields(app, composer) {
+    const i18n = Object.create(null);
+    globalExportProps.forEach(prop => {
+        const desc = Object.getOwnPropertyDescriptor(composer, prop);
+        if (!desc) {
+            throw createI18nError(22 /* UNEXPECTED_ERROR */);
+        }
+        const wrap = (0,vue__WEBPACK_IMPORTED_MODULE_0__.isRef)(desc.value) // check computed props
+            ? {
+                get() {
+                    return desc.value.value;
+                },
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                set(val) {
+                    desc.value.value = val;
+                }
+            }
+            : {
+                get() {
+                    return desc.get && desc.get();
+                }
+            };
+        Object.defineProperty(i18n, prop, wrap);
+    });
+    app.config.globalProperties.$i18n = i18n;
+    globalExportMethods.forEach(method => {
+        const desc = Object.getOwnPropertyDescriptor(composer, method);
+        if (!desc || !desc.value) {
+            throw createI18nError(22 /* UNEXPECTED_ERROR */);
+        }
+        Object.defineProperty(app.config.globalProperties, `$${method}`, desc);
+    });
+}
+
+// register message compiler at vue-i18n
+(0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.registerMessageCompiler)(_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.compileToFunction);
+{
+    initFeatureFlags();
+}
+// NOTE: experimental !!
+if (true) {
+    const target = (0,_intlify_shared__WEBPACK_IMPORTED_MODULE_1__.getGlobalThis)();
+    target.__INTLIFY__ = true;
+    (0,_intlify_core_base__WEBPACK_IMPORTED_MODULE_4__.setDevToolsHook)(target.__INTLIFY_DEVTOOLS_GLOBAL_HOOK__);
+}
+if ((true)) ;
+
+
+
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \****************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ "./node_modules/vue-lang-router/dist/lang-router.esm.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/vue-lang-router/dist/lang-router.esm.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createLangRouter": () => (/* binding */ createLangRouter),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "i18n": () => (/* binding */ i18n)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var vue_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-i18n */ "./node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
+/**
+ * vue-lang-router v2.1.1
+ * (c) 2021 Radek Altof
+ * Released under the MIT License.
+ */
 
 
-var isOldIE = function isOldIE() {
-  var memo;
-  return function memorize() {
-    if (typeof memo === 'undefined') {
-      // Test for IE <= 9 as proposed by Browserhacks
-      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-      // Tests for existence of standard globals is to allow style-loader
-      // to operate correctly into non-standard environments
-      // @see https://github.com/webpack-contrib/style-loader/issues/177
-      memo = Boolean(window && document && document.all && !window.atob);
-    }
-
-    return memo;
-  };
-}();
-
-var getTarget = function getTarget() {
-  var memo = {};
-  return function memorize(target) {
-    if (typeof memo[target] === 'undefined') {
-      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
-
-      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
-        try {
-          // This will throw an exception if access to iframe is blocked
-          // due to cross-origin restrictions
-          styleTarget = styleTarget.contentDocument.head;
-        } catch (e) {
-          // istanbul ignore next
-          styleTarget = null;
-        }
-      }
-
-      memo[target] = styleTarget;
-    }
-
-    return memo[target];
-  };
-}();
-
-var stylesInDom = [];
-
-function getIndexByIdentifier(identifier) {
-  var result = -1;
-
-  for (var i = 0; i < stylesInDom.length; i++) {
-    if (stylesInDom[i].identifier === identifier) {
-      result = i;
-      break;
-    }
-  }
-
-  return result;
-}
-
-function modulesToDom(list, options) {
-  var idCountMap = {};
-  var identifiers = [];
-
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i];
-    var id = options.base ? item[0] + options.base : item[0];
-    var count = idCountMap[id] || 0;
-    var identifier = "".concat(id, " ").concat(count);
-    idCountMap[id] = count + 1;
-    var index = getIndexByIdentifier(identifier);
-    var obj = {
-      css: item[1],
-      media: item[2],
-      sourceMap: item[3]
-    };
-
-    if (index !== -1) {
-      stylesInDom[index].references++;
-      stylesInDom[index].updater(obj);
-    } else {
-      stylesInDom.push({
-        identifier: identifier,
-        updater: addStyle(obj, options),
-        references: 1
-      });
-    }
-
-    identifiers.push(identifier);
-  }
-
-  return identifiers;
-}
-
-function insertStyleElement(options) {
-  var style = document.createElement('style');
-  var attributes = options.attributes || {};
-
-  if (typeof attributes.nonce === 'undefined') {
-    var nonce =  true ? __webpack_require__.nc : 0;
-
-    if (nonce) {
-      attributes.nonce = nonce;
-    }
-  }
-
-  Object.keys(attributes).forEach(function (key) {
-    style.setAttribute(key, attributes[key]);
-  });
-
-  if (typeof options.insert === 'function') {
-    options.insert(style);
-  } else {
-    var target = getTarget(options.insert || 'head');
-
-    if (!target) {
-      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
-    }
-
-    target.appendChild(style);
-  }
-
-  return style;
-}
-
-function removeStyleElement(style) {
-  // istanbul ignore if
-  if (style.parentNode === null) {
-    return false;
-  }
-
-  style.parentNode.removeChild(style);
-}
-/* istanbul ignore next  */
 
 
-var replaceText = function replaceText() {
-  var textStore = [];
-  return function replace(index, replacement) {
-    textStore[index] = replacement;
-    return textStore.filter(Boolean).join('\n');
-  };
-}();
 
-function applyToSingletonTag(style, index, remove, obj) {
-  var css = remove ? '' : obj.media ? "@media ".concat(obj.media, " {").concat(obj.css, "}") : obj.css; // For old IE
-
-  /* istanbul ignore if  */
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = replaceText(index, css);
-  } else {
-    var cssNode = document.createTextNode(css);
-    var childNodes = style.childNodes;
-
-    if (childNodes[index]) {
-      style.removeChild(childNodes[index]);
-    }
-
-    if (childNodes.length) {
-      style.insertBefore(cssNode, childNodes[index]);
-    } else {
-      style.appendChild(cssNode);
-    }
-  }
-}
-
-function applyToTag(style, options, obj) {
-  var css = obj.css;
-  var media = obj.media;
-  var sourceMap = obj.sourceMap;
-
-  if (media) {
-    style.setAttribute('media', media);
-  } else {
-    style.removeAttribute('media');
-  }
-
-  if (sourceMap && typeof btoa !== 'undefined') {
-    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
-  } // For old IE
-
-  /* istanbul ignore if  */
-
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    while (style.firstChild) {
-      style.removeChild(style.firstChild);
-    }
-
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var singleton = null;
-var singletonCounter = 0;
-
-function addStyle(obj, options) {
-  var style;
-  var update;
-  var remove;
-
-  if (options.singleton) {
-    var styleIndex = singletonCounter++;
-    style = singleton || (singleton = insertStyleElement(options));
-    update = applyToSingletonTag.bind(null, style, styleIndex, false);
-    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
-  } else {
-    style = insertStyleElement(options);
-    update = applyToTag.bind(null, style, options);
-
-    remove = function remove() {
-      removeStyleElement(style);
-    };
-  }
-
-  update(obj);
-  return function updateStyle(newObj) {
-    if (newObj) {
-      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
-        return;
-      }
-
-      update(obj = newObj);
-    } else {
-      remove();
-    }
-  };
-}
-
-module.exports = function (list, options) {
-  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-  // tags it will allow on a page
-
-  if (!options.singleton && typeof options.singleton !== 'boolean') {
-    options.singleton = isOldIE();
-  }
-
-  list = list || [];
-  var lastIdentifiers = modulesToDom(list, options);
-  return function update(newList) {
-    newList = newList || [];
-
-    if (Object.prototype.toString.call(newList) !== '[object Array]') {
-      return;
-    }
-
-    for (var i = 0; i < lastIdentifiers.length; i++) {
-      var identifier = lastIdentifiers[i];
-      var index = getIndexByIdentifier(identifier);
-      stylesInDom[index].references--;
-    }
-
-    var newLastIdentifiers = modulesToDom(newList, options);
-
-    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
-      var _identifier = lastIdentifiers[_i];
-
-      var _index = getIndexByIdentifier(_identifier);
-
-      if (stylesInDom[_index].references === 0) {
-        stylesInDom[_index].updater();
-
-        stylesInDom.splice(_index, 1);
-      }
-    }
-
-    lastIdentifiers = newLastIdentifiers;
-  };
+var script = {
+	name: 'LocalizedLink',
+	props: [ 'to' ],
+	methods: {
+		localizedTo: function localizedTo () {
+			if (typeof this.to === 'string') {
+				return this.$localizePath(this.to);
+			}
+			else if (typeof this.to === 'object' && typeof this.to.path === 'string') {
+				var o = JSON.parse(JSON.stringify(this.to));
+				o.path = this.$localizePath(o.path);
+				return o;
+			}
+			else {
+				return this.to;
+			}
+		},
+	},
 };
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
+  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_router_link, (0,vue__WEBPACK_IMPORTED_MODULE_0__.mergeProps)({
+    to: $options.localizedTo()
+  }, _ctx.$attrs), {
+    default: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () { return [
+      (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")
+    ]; }),
+    _: 3
+  }, 16 , ["to"]))
+}
+
+script.render = render;
+script.__file = "src/plugin/components/LocalizedLink.vue";
+
+var script$1 = {
+	name: 'LanguageSwitcher',
+	data: function data () {
+		return {
+			currentUrl: this.url || this.$router.currentRoute.fullPath,
+			links: [],
+		};
+	},
+	props: [ 'tag', 'active-class', 'url' ],
+	computed: {
+		locale: function locale () {
+			return this.$i18n.locale;
+		},
+	},
+	methods: {
+		getTag: function getTag () {
+			if (this.tag) { return this.tag; }
+			else { return 'div'; }
+		},
+		generateLinks: function generateLinks () {
+			var links = [];
+			var activeClass = this.activeClass || 'router-active-language';
+			var tr = this._langRouter.translations;
+			for (var lang in tr) {
+				if (tr.hasOwnProperty(lang)) {
+					links.push({
+						activeClass: (lang == this.locale ? activeClass : ''),
+						langIndex: lang,
+						langName: tr[lang].name || lang,
+						url: this.$localizePath(this.currentUrl, lang),
+					});
+				}
+			}
+			this.links = links;
+		},
+		detectRouterLinkClick: function detectRouterLinkClick (e) {
+			var this$1 = this;
+			if (!e.defaultPrevented) { return; }
+			var a = e.target;
+			while (a.tagName.toLowerCase() != 'a') {
+				if (a.classList.contains('router-language-switcher')) { return; }
+				a = a.parentNode;
+			}
+			if (a.pathname == window.location.pathname) { return; }
+			var currentRoute = this.$route.matched[this.$route.matched.length - 1];
+			if (currentRoute.aliasOf) { currentRoute = currentRoute.aliasOf; }
+			var resolvedRoute = this.$router.resolve(a.pathname);
+			if (resolvedRoute.matched.length == 0) { return; }
+			resolvedRoute = resolvedRoute.matched[resolvedRoute.matched.length - 1];
+			if (resolvedRoute.aliasOf) { resolvedRoute = resolvedRoute.aliasOf; }
+			if (currentRoute == resolvedRoute) {
+				var newRoute = a.pathname + a.search + a.hash;
+				var historyState = Object.assign({}, window.history.state, {current: newRoute});
+				var newLocale = a.pathname.split('/')[1];
+				this._langRouter.loadLanguage(newLocale).then(function () {
+					window.history.replaceState(historyState, '', newRoute);
+					this$1._langRouter.forcedNewRoute.value = newRoute;
+				});
+			}
+		},
+	},
+	watch: {
+		$route: function $route (to) {
+			this.currentUrl = this.url || to.fullPath;
+			this.generateLinks();
+		},
+		locale: function locale () {
+			if (typeof this.currentUrl !== 'undefined') { this.generateLinks(); }
+		},
+	},
+	mounted: function mounted () {
+		var this$1 = this;
+		if (typeof this.currentUrl !== 'undefined') { this.generateLinks(); }
+		(0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(this._langRouter.forcedNewRoute, function (to) {
+			this$1.currentUrl = to;
+			this$1.generateLinks();
+		});
+	},
+};
+
+function render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)((0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent)($options.getTag()), {
+    class: "router-language-switcher",
+    onClick: $options.detectRouterLinkClick
+  }, {
+    default: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () { return [
+      (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default", { links: $data.links })
+    ]; }),
+    _: 3
+  }, 8 , ["onClick"]))
+}
+
+script$1.render = render$1;
+script$1.__file = "src/plugin/components/LanguageSwitcher.vue";
+
+var defaultLanguage, translations, localizedURLs, i18n;
+var isInstalled = false;
+var loadedTranslations = [];
+function err (msg, error) {
+	console.error('LangRouter: ' + msg);
+	if (typeof error !== 'undefined') { console.error(error); }
+}
+function createLangRouter (languageOptions, routerOptions) {
+	setupLanguageConfig(languageOptions);
+	for (var lang in translations) {
+		if (translations.hasOwnProperty(lang) && !localizedURLs[lang]) {
+			localizedURLs[lang] = {};
+		}
+	}
+	for (var lang$1 in localizedURLs) {
+		if (localizedURLs.hasOwnProperty(lang$1)) {
+			addAliasesToRoutes(routerOptions.routes, lang$1);
+		}
+	}
+	var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)(routerOptions);
+	router.beforeEach(switchLanguage);
+	var installRouter = router.install;
+	router.install = function (app, options) {
+		installRouter.call(this, app, options);
+		installLangRouter.call(this, app);
+	};
+	return router;
+}
+function setupLanguageConfig (options) {
+	if (!options) {
+		err('Options missing.');
+	}
+	defaultLanguage = options.defaultLanguage;
+	translations = options.translations;
+	localizedURLs = options.localizedURLs || {};
+	var isArr;
+	if ((isArr = Array.isArray(translations)) || typeof translations !== 'object') {
+		err('options.translations should be an object, received ' + (isArr ? 'array' : typeof translations) + ' instead.');
+	}
+	if ((isArr = Array.isArray(localizedURLs)) || typeof localizedURLs !== 'object') {
+		err('options.localizedURLs should be an object, received ' + (isArr ? 'array' : typeof localizedURLs) + ' instead.');
+	}
+	if (typeof defaultLanguage !== 'string') {
+		err('options.defaultLanguage should be a string, received ' + typeof defaultLanguage + ' instead.');
+	}
+	var messages = {};
+	for (var lang in translations) {
+		if (translations.hasOwnProperty(lang)) {
+			var langMessages = translations[lang].messages;
+			if (typeof langMessages === 'object' && !Array.isArray(langMessages)) {
+				messages[lang] = translations[lang].messages;
+				loadedTranslations.push(lang);
+			}
+		}
+	}
+	i18n = (0,vue_i18n__WEBPACK_IMPORTED_MODULE_2__.createI18n)(Object.assign({}, {legacy: true,
+		locale: defaultLanguage,
+		fallbackLocale: defaultLanguage,
+		messages: messages},
+		options.i18nOptions));
+}
+function installLangRouter (app) {
+	if (isInstalled) {
+		err('Already installed.');
+		return;
+	}
+	isInstalled = true;
+	app.config.globalProperties._langRouter = {
+		translations: translations,
+		loadLanguage: loadLanguage,
+		forcedNewRoute: (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(''),
+	};
+	app.config.globalProperties.$localizePath = localizePath;
+	app.component('localized-link', script);
+	app.component('language-switcher', script$1);
+}
+function setLanguage (lang) {
+	i18n.global.locale = lang;
+	document.querySelector('html').setAttribute('lang', lang);
+	localStorage.setItem('VueAppLanguage', lang);
+	return lang;
+}
+function loadLanguage (lang) {
+	if (loadedTranslations.includes(lang)) {
+		return Promise.resolve(setLanguage(lang));
+	}
+	if (!translations[lang] || typeof translations[lang].load !== 'function') {
+		err('Unable to load translations for "' + lang + '", "load" function is missing!');
+	}
+	return translations[lang].load().then(function (messages) {
+		i18n.global.setLocaleMessage(lang, messages.default || messages);
+		loadedTranslations.push(lang);
+		return setLanguage(lang);
+	}).catch(function (error) {
+		err('Failed to load "' + lang + '" translation.', error);
+	});
+}
+function addAliasesToRoutes (routes, lang, child) {
+	routes.forEach(function (route) {
+		var alias = translatePath(route.path, lang);
+		if (!child) { alias = '/' + lang + (alias.charAt(0) != '/' ? '/' : '') + alias; }
+		if (route.alias) {
+			if (!Array.isArray(route.alias)) { route.alias = [ route.alias ]; }
+		}
+		else { route.alias = []; }
+		if (route.path != alias && route.alias.indexOf(alias) == -1) { route.alias.push(alias); }
+		if (route.children) { addAliasesToRoutes(route.children, lang, true); }
+	});
+}
+function switchLanguage (to, from, next) {
+	var lang = to.path.split('/')[1];
+	if (!translations[lang]) {
+		var savedLang = localStorage.getItem('VueAppLanguage');
+		if (savedLang && translations[savedLang]) { lang = savedLang; }
+		else {
+			var preferredLang = getPrefferedLanguage();
+			if (preferredLang && translations[preferredLang]) { lang = preferredLang; }
+			else { lang = defaultLanguage; }
+		}
+		if (lang != defaultLanguage) {
+			var translatedPath = translatePath(to.path, lang);
+			translatedPath = '/' + lang + (translatedPath.charAt(0) != '/' ? '/' : '') + translatedPath;
+			return next({ path: translatedPath, query: to.query, hash: to.hash });
+		}
+	}
+	loadLanguage(lang).then(function () {
+		return next();
+	});
+}
+function translatePath (path, langTo, langFrom, matchedPath) {
+	var pathChunks = path.split('/');
+	if (langFrom && localizedURLs[langFrom]) {
+		if (langTo == langFrom) { return path; }
+		var map = localizedURLs[langFrom];
+		var reversedMap = {};
+		Object.keys(map).forEach(function (key) {
+			reversedMap[map[key]] = key;
+		});
+		var matchedPathChunks = matchedPath.split('/');
+		for (var i = 0; i < pathChunks.length; i++) {
+			var pathChunk = pathChunks[i];
+			if (matchedPathChunks[i].charAt(0) == ':') { continue; }
+			pathChunks[i] = reversedMap[pathChunk] || pathChunk;
+		}
+	}
+	for (var i$1 = 0; i$1 < pathChunks.length; i$1++) {
+		var pathChunk$1 = pathChunks[i$1];
+		if (pathChunk$1.charAt(0) == ':') { continue; }
+		pathChunks[i$1] = localizedURLs[langTo][pathChunk$1] || pathChunk$1;
+	}
+	return pathChunks.join('/');
+}
+function getPrefferedLanguage () {
+	function extractLanguage (s) {
+		return s.split('-')[0].toLowerCase();
+	}
+	if (navigator.languages && navigator.languages.length) { return extractLanguage(navigator.languages[0] || ''); }
+	return extractLanguage(navigator.language || navigator.browserLanguage || navigator.userLanguage || '');
+}
+function localizePath (fullPath, lang) {
+	if (!lang || !localizedURLs[lang]) { lang = i18n.global.locale; }
+	var path = fullPath;
+	var query = '';
+	if (fullPath.includes('?')) {
+		path = fullPath.split('?')[0];
+		query = '?' + fullPath.split('?')[1];
+	}
+	else if (fullPath.includes('#')) {
+		path = fullPath.split('#')[0];
+		query = '#' + fullPath.split('#')[1];
+	}
+	var pathChunks = path.split('/');
+	var pathLang = (localizedURLs[pathChunks[1]] ? pathChunks[1] : false);
+	var currentPathLang = this.$route.path.split('/')[1];
+	if (lang == defaultLanguage && !localizedURLs[currentPathLang] && !pathLang) { return fullPath; }
+	var resolvedPath = false;
+	if (pathLang) {
+		var resolvedRoute = this.$router.resolve(path);
+		if (resolvedRoute.matched.length != 0) {
+			resolvedPath = resolvedRoute.matched[resolvedRoute.matched.length - 1];
+			resolvedPath = (resolvedPath.aliasOf ? resolvedPath.aliasOf.path : resolvedPath.path);
+			resolvedPath = (resolvedPath.charAt(0) == '/' ? resolvedPath : '/' + resolvedPath);
+		}
+		else {
+			err('Router could not resolve path "' + path + '". URL localization may not work as expected.');
+		}
+		pathChunks.splice(1, 1);
+		path = pathChunks.join('/');
+	}
+	var translatedPath = translatePath(path, lang, pathLang, (resolvedPath || path));
+	translatedPath = '/' + lang + (translatedPath.charAt(0) != '/' ? '/' : '') + translatedPath;
+	return translatedPath + query;
+}
+var jestAccess = function () { return true; };
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (jestAccess);
+
+
 
 /***/ }),
 
@@ -37703,10 +43196,10 @@ exports["default"] = (sfc, props) => {
 
 /***/ }),
 
-/***/ "./resources/js/components/Post/Index.vue":
-/*!************************************************!*\
-  !*** ./resources/js/components/Post/Index.vue ***!
-  \************************************************/
+/***/ "./resources/js/components/Index.vue":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Index.vue ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -37714,15 +43207,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Index_vue_vue_type_template_id_56975ca4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=56975ca4 */ "./resources/js/components/Post/Index.vue?vue&type=template&id=56975ca4");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js */ "./resources/js/components/Post/Index.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_oleh_Develop_korop_vue_laravel_spa_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _Index_vue_vue_type_template_id_bb962f12__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=bb962f12 */ "./resources/js/components/Index.vue?vue&type=template&id=bb962f12");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js */ "./resources/js/components/Index.vue?vue&type=script&lang=js");
+/* harmony import */ var _home_legkiy_Develop_korop_vue_laravel_spa_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_oleh_Develop_korop_vue_laravel_spa_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_56975ca4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/Post/Index.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_legkiy_Develop_korop_vue_laravel_spa_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_bb962f12__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/Index.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -37731,10 +43224,10 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./resources/js/components/Post/Index.vue?vue&type=script&lang=js":
-/*!************************************************************************!*\
-  !*** ./resources/js/components/Post/Index.vue?vue&type=script&lang=js ***!
-  \************************************************************************/
+/***/ "./resources/js/components/Index.vue?vue&type=script&lang=js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/Index.vue?vue&type=script&lang=js ***!
+  \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -37742,23 +43235,3535 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Post/Index.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=script&lang=js");
  
 
 /***/ }),
 
-/***/ "./resources/js/components/Post/Index.vue?vue&type=template&id=56975ca4":
-/*!******************************************************************************!*\
-  !*** ./resources/js/components/Post/Index.vue?vue&type=template&id=56975ca4 ***!
-  \******************************************************************************/
+/***/ "./resources/js/components/Index.vue?vue&type=template&id=bb962f12":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/Index.vue?vue&type=template&id=bb962f12 ***!
+  \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_56975ca4__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_bb962f12__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_56975ca4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=template&id=56975ca4 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Post/Index.vue?vue&type=template&id=56975ca4");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_bb962f12__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=template&id=bb962f12 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=template&id=bb962f12");
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-router/dist/vue-router.esm-bundler.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/vue-router/dist/vue-router.esm-bundler.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "NavigationFailureType": () => (/* binding */ NavigationFailureType),
+/* harmony export */   "RouterLink": () => (/* binding */ RouterLink),
+/* harmony export */   "RouterView": () => (/* binding */ RouterView),
+/* harmony export */   "START_LOCATION": () => (/* binding */ START_LOCATION_NORMALIZED),
+/* harmony export */   "createMemoryHistory": () => (/* binding */ createMemoryHistory),
+/* harmony export */   "createRouter": () => (/* binding */ createRouter),
+/* harmony export */   "createRouterMatcher": () => (/* binding */ createRouterMatcher),
+/* harmony export */   "createWebHashHistory": () => (/* binding */ createWebHashHistory),
+/* harmony export */   "createWebHistory": () => (/* binding */ createWebHistory),
+/* harmony export */   "isNavigationFailure": () => (/* binding */ isNavigationFailure),
+/* harmony export */   "matchedRouteKey": () => (/* binding */ matchedRouteKey),
+/* harmony export */   "onBeforeRouteLeave": () => (/* binding */ onBeforeRouteLeave),
+/* harmony export */   "onBeforeRouteUpdate": () => (/* binding */ onBeforeRouteUpdate),
+/* harmony export */   "parseQuery": () => (/* binding */ parseQuery),
+/* harmony export */   "routeLocationKey": () => (/* binding */ routeLocationKey),
+/* harmony export */   "routerKey": () => (/* binding */ routerKey),
+/* harmony export */   "routerViewLocationKey": () => (/* binding */ routerViewLocationKey),
+/* harmony export */   "stringifyQuery": () => (/* binding */ stringifyQuery),
+/* harmony export */   "useLink": () => (/* binding */ useLink),
+/* harmony export */   "useRoute": () => (/* binding */ useRoute),
+/* harmony export */   "useRouter": () => (/* binding */ useRouter),
+/* harmony export */   "viewDepthKey": () => (/* binding */ viewDepthKey)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _vue_devtools_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vue/devtools-api */ "./node_modules/@vue/devtools-api/lib/esm/index.js");
+/*!
+  * vue-router v4.0.16
+  * (c) 2022 Eduardo San Martin Morote
+  * @license MIT
+  */
+
+
+
+const hasSymbol = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
+const PolySymbol = (name) => 
+// vr = vue router
+hasSymbol
+    ? Symbol(( true) ? '[vue-router]: ' + name : 0)
+    : (( true) ? '[vue-router]: ' : 0) + name;
+// rvlm = Router View Location Matched
+/**
+ * RouteRecord being rendered by the closest ancestor Router View. Used for
+ * `onBeforeRouteUpdate` and `onBeforeRouteLeave`. rvlm stands for Router View
+ * Location Matched
+ *
+ * @internal
+ */
+const matchedRouteKey = /*#__PURE__*/ PolySymbol(( true) ? 'router view location matched' : 0);
+/**
+ * Allows overriding the router view depth to control which component in
+ * `matched` is rendered. rvd stands for Router View Depth
+ *
+ * @internal
+ */
+const viewDepthKey = /*#__PURE__*/ PolySymbol(( true) ? 'router view depth' : 0);
+/**
+ * Allows overriding the router instance returned by `useRouter` in tests. r
+ * stands for router
+ *
+ * @internal
+ */
+const routerKey = /*#__PURE__*/ PolySymbol(( true) ? 'router' : 0);
+/**
+ * Allows overriding the current route returned by `useRoute` in tests. rl
+ * stands for route location
+ *
+ * @internal
+ */
+const routeLocationKey = /*#__PURE__*/ PolySymbol(( true) ? 'route location' : 0);
+/**
+ * Allows overriding the current route used by router-view. Internally this is
+ * used when the `route` prop is passed.
+ *
+ * @internal
+ */
+const routerViewLocationKey = /*#__PURE__*/ PolySymbol(( true) ? 'router view location' : 0);
+
+const isBrowser = typeof window !== 'undefined';
+
+function isESModule(obj) {
+    return obj.__esModule || (hasSymbol && obj[Symbol.toStringTag] === 'Module');
+}
+const assign = Object.assign;
+function applyToParams(fn, params) {
+    const newParams = {};
+    for (const key in params) {
+        const value = params[key];
+        newParams[key] = Array.isArray(value) ? value.map(fn) : fn(value);
+    }
+    return newParams;
+}
+const noop = () => { };
+
+function warn(msg) {
+    // avoid using ...args as it breaks in older Edge builds
+    const args = Array.from(arguments).slice(1);
+    console.warn.apply(console, ['[Vue Router warn]: ' + msg].concat(args));
+}
+
+const TRAILING_SLASH_RE = /\/$/;
+const removeTrailingSlash = (path) => path.replace(TRAILING_SLASH_RE, '');
+/**
+ * Transforms an URI into a normalized history location
+ *
+ * @param parseQuery
+ * @param location - URI to normalize
+ * @param currentLocation - current absolute location. Allows resolving relative
+ * paths. Must start with `/`. Defaults to `/`
+ * @returns a normalized history location
+ */
+function parseURL(parseQuery, location, currentLocation = '/') {
+    let path, query = {}, searchString = '', hash = '';
+    // Could use URL and URLSearchParams but IE 11 doesn't support it
+    const searchPos = location.indexOf('?');
+    const hashPos = location.indexOf('#', searchPos > -1 ? searchPos : 0);
+    if (searchPos > -1) {
+        path = location.slice(0, searchPos);
+        searchString = location.slice(searchPos + 1, hashPos > -1 ? hashPos : location.length);
+        query = parseQuery(searchString);
+    }
+    if (hashPos > -1) {
+        path = path || location.slice(0, hashPos);
+        // keep the # character
+        hash = location.slice(hashPos, location.length);
+    }
+    // no search and no query
+    path = resolveRelativePath(path != null ? path : location, currentLocation);
+    // empty path means a relative query or hash `?foo=f`, `#thing`
+    return {
+        fullPath: path + (searchString && '?') + searchString + hash,
+        path,
+        query,
+        hash,
+    };
+}
+/**
+ * Stringifies a URL object
+ *
+ * @param stringifyQuery
+ * @param location
+ */
+function stringifyURL(stringifyQuery, location) {
+    const query = location.query ? stringifyQuery(location.query) : '';
+    return location.path + (query && '?') + query + (location.hash || '');
+}
+/**
+ * Strips off the base from the beginning of a location.pathname in a non
+ * case-sensitive way.
+ *
+ * @param pathname - location.pathname
+ * @param base - base to strip off
+ */
+function stripBase(pathname, base) {
+    // no base or base is not found at the beginning
+    if (!base || !pathname.toLowerCase().startsWith(base.toLowerCase()))
+        return pathname;
+    return pathname.slice(base.length) || '/';
+}
+/**
+ * Checks if two RouteLocation are equal. This means that both locations are
+ * pointing towards the same {@link RouteRecord} and that all `params`, `query`
+ * parameters and `hash` are the same
+ *
+ * @param a - first {@link RouteLocation}
+ * @param b - second {@link RouteLocation}
+ */
+function isSameRouteLocation(stringifyQuery, a, b) {
+    const aLastIndex = a.matched.length - 1;
+    const bLastIndex = b.matched.length - 1;
+    return (aLastIndex > -1 &&
+        aLastIndex === bLastIndex &&
+        isSameRouteRecord(a.matched[aLastIndex], b.matched[bLastIndex]) &&
+        isSameRouteLocationParams(a.params, b.params) &&
+        stringifyQuery(a.query) === stringifyQuery(b.query) &&
+        a.hash === b.hash);
+}
+/**
+ * Check if two `RouteRecords` are equal. Takes into account aliases: they are
+ * considered equal to the `RouteRecord` they are aliasing.
+ *
+ * @param a - first {@link RouteRecord}
+ * @param b - second {@link RouteRecord}
+ */
+function isSameRouteRecord(a, b) {
+    // since the original record has an undefined value for aliasOf
+    // but all aliases point to the original record, this will always compare
+    // the original record
+    return (a.aliasOf || a) === (b.aliasOf || b);
+}
+function isSameRouteLocationParams(a, b) {
+    if (Object.keys(a).length !== Object.keys(b).length)
+        return false;
+    for (const key in a) {
+        if (!isSameRouteLocationParamsValue(a[key], b[key]))
+            return false;
+    }
+    return true;
+}
+function isSameRouteLocationParamsValue(a, b) {
+    return Array.isArray(a)
+        ? isEquivalentArray(a, b)
+        : Array.isArray(b)
+            ? isEquivalentArray(b, a)
+            : a === b;
+}
+/**
+ * Check if two arrays are the same or if an array with one single entry is the
+ * same as another primitive value. Used to check query and parameters
+ *
+ * @param a - array of values
+ * @param b - array of values or a single value
+ */
+function isEquivalentArray(a, b) {
+    return Array.isArray(b)
+        ? a.length === b.length && a.every((value, i) => value === b[i])
+        : a.length === 1 && a[0] === b;
+}
+/**
+ * Resolves a relative path that starts with `.`.
+ *
+ * @param to - path location we are resolving
+ * @param from - currentLocation.path, should start with `/`
+ */
+function resolveRelativePath(to, from) {
+    if (to.startsWith('/'))
+        return to;
+    if (( true) && !from.startsWith('/')) {
+        warn(`Cannot resolve a relative location without an absolute path. Trying to resolve "${to}" from "${from}". It should look like "/${from}".`);
+        return to;
+    }
+    if (!to)
+        return from;
+    const fromSegments = from.split('/');
+    const toSegments = to.split('/');
+    let position = fromSegments.length - 1;
+    let toPosition;
+    let segment;
+    for (toPosition = 0; toPosition < toSegments.length; toPosition++) {
+        segment = toSegments[toPosition];
+        // can't go below zero
+        if (position === 1 || segment === '.')
+            continue;
+        if (segment === '..')
+            position--;
+        // found something that is not relative path
+        else
+            break;
+    }
+    return (fromSegments.slice(0, position).join('/') +
+        '/' +
+        toSegments
+            .slice(toPosition - (toPosition === toSegments.length ? 1 : 0))
+            .join('/'));
+}
+
+var NavigationType;
+(function (NavigationType) {
+    NavigationType["pop"] = "pop";
+    NavigationType["push"] = "push";
+})(NavigationType || (NavigationType = {}));
+var NavigationDirection;
+(function (NavigationDirection) {
+    NavigationDirection["back"] = "back";
+    NavigationDirection["forward"] = "forward";
+    NavigationDirection["unknown"] = "";
+})(NavigationDirection || (NavigationDirection = {}));
+/**
+ * Starting location for Histories
+ */
+const START = '';
+// Generic utils
+/**
+ * Normalizes a base by removing any trailing slash and reading the base tag if
+ * present.
+ *
+ * @param base - base to normalize
+ */
+function normalizeBase(base) {
+    if (!base) {
+        if (isBrowser) {
+            // respect <base> tag
+            const baseEl = document.querySelector('base');
+            base = (baseEl && baseEl.getAttribute('href')) || '/';
+            // strip full URL origin
+            base = base.replace(/^\w+:\/\/[^\/]+/, '');
+        }
+        else {
+            base = '/';
+        }
+    }
+    // ensure leading slash when it was removed by the regex above avoid leading
+    // slash with hash because the file could be read from the disk like file://
+    // and the leading slash would cause problems
+    if (base[0] !== '/' && base[0] !== '#')
+        base = '/' + base;
+    // remove the trailing slash so all other method can just do `base + fullPath`
+    // to build an href
+    return removeTrailingSlash(base);
+}
+// remove any character before the hash
+const BEFORE_HASH_RE = /^[^#]+#/;
+function createHref(base, location) {
+    return base.replace(BEFORE_HASH_RE, '#') + location;
+}
+
+function getElementPosition(el, offset) {
+    const docRect = document.documentElement.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+    return {
+        behavior: offset.behavior,
+        left: elRect.left - docRect.left - (offset.left || 0),
+        top: elRect.top - docRect.top - (offset.top || 0),
+    };
+}
+const computeScrollPosition = () => ({
+    left: window.pageXOffset,
+    top: window.pageYOffset,
+});
+function scrollToPosition(position) {
+    let scrollToOptions;
+    if ('el' in position) {
+        const positionEl = position.el;
+        const isIdSelector = typeof positionEl === 'string' && positionEl.startsWith('#');
+        /**
+         * `id`s can accept pretty much any characters, including CSS combinators
+         * like `>` or `~`. It's still possible to retrieve elements using
+         * `document.getElementById('~')` but it needs to be escaped when using
+         * `document.querySelector('#\\~')` for it to be valid. The only
+         * requirements for `id`s are them to be unique on the page and to not be
+         * empty (`id=""`). Because of that, when passing an id selector, it should
+         * be properly escaped for it to work with `querySelector`. We could check
+         * for the id selector to be simple (no CSS combinators `+ >~`) but that
+         * would make things inconsistent since they are valid characters for an
+         * `id` but would need to be escaped when using `querySelector`, breaking
+         * their usage and ending up in no selector returned. Selectors need to be
+         * escaped:
+         *
+         * - `#1-thing` becomes `#\31 -thing`
+         * - `#with~symbols` becomes `#with\\~symbols`
+         *
+         * - More information about  the topic can be found at
+         *   https://mathiasbynens.be/notes/html5-id-class.
+         * - Practical example: https://mathiasbynens.be/demo/html5-id
+         */
+        if (( true) && typeof position.el === 'string') {
+            if (!isIdSelector || !document.getElementById(position.el.slice(1))) {
+                try {
+                    const foundEl = document.querySelector(position.el);
+                    if (isIdSelector && foundEl) {
+                        warn(`The selector "${position.el}" should be passed as "el: document.querySelector('${position.el}')" because it starts with "#".`);
+                        // return to avoid other warnings
+                        return;
+                    }
+                }
+                catch (err) {
+                    warn(`The selector "${position.el}" is invalid. If you are using an id selector, make sure to escape it. You can find more information about escaping characters in selectors at https://mathiasbynens.be/notes/css-escapes or use CSS.escape (https://developer.mozilla.org/en-US/docs/Web/API/CSS/escape).`);
+                    // return to avoid other warnings
+                    return;
+                }
+            }
+        }
+        const el = typeof positionEl === 'string'
+            ? isIdSelector
+                ? document.getElementById(positionEl.slice(1))
+                : document.querySelector(positionEl)
+            : positionEl;
+        if (!el) {
+            ( true) &&
+                warn(`Couldn't find element using selector "${position.el}" returned by scrollBehavior.`);
+            return;
+        }
+        scrollToOptions = getElementPosition(el, position);
+    }
+    else {
+        scrollToOptions = position;
+    }
+    if ('scrollBehavior' in document.documentElement.style)
+        window.scrollTo(scrollToOptions);
+    else {
+        window.scrollTo(scrollToOptions.left != null ? scrollToOptions.left : window.pageXOffset, scrollToOptions.top != null ? scrollToOptions.top : window.pageYOffset);
+    }
+}
+function getScrollKey(path, delta) {
+    const position = history.state ? history.state.position - delta : -1;
+    return position + path;
+}
+const scrollPositions = new Map();
+function saveScrollPosition(key, scrollPosition) {
+    scrollPositions.set(key, scrollPosition);
+}
+function getSavedScrollPosition(key) {
+    const scroll = scrollPositions.get(key);
+    // consume it so it's not used again
+    scrollPositions.delete(key);
+    return scroll;
+}
+// TODO: RFC about how to save scroll position
+/**
+ * ScrollBehavior instance used by the router to compute and restore the scroll
+ * position when navigating.
+ */
+// export interface ScrollHandler<ScrollPositionEntry extends HistoryStateValue, ScrollPosition extends ScrollPositionEntry> {
+//   // returns a scroll position that can be saved in history
+//   compute(): ScrollPositionEntry
+//   // can take an extended ScrollPositionEntry
+//   scroll(position: ScrollPosition): void
+// }
+// export const scrollHandler: ScrollHandler<ScrollPosition> = {
+//   compute: computeScroll,
+//   scroll: scrollToPosition,
+// }
+
+let createBaseLocation = () => location.protocol + '//' + location.host;
+/**
+ * Creates a normalized history location from a window.location object
+ * @param location -
+ */
+function createCurrentLocation(base, location) {
+    const { pathname, search, hash } = location;
+    // allows hash bases like #, /#, #/, #!, #!/, /#!/, or even /folder#end
+    const hashPos = base.indexOf('#');
+    if (hashPos > -1) {
+        let slicePos = hash.includes(base.slice(hashPos))
+            ? base.slice(hashPos).length
+            : 1;
+        let pathFromHash = hash.slice(slicePos);
+        // prepend the starting slash to hash so the url starts with /#
+        if (pathFromHash[0] !== '/')
+            pathFromHash = '/' + pathFromHash;
+        return stripBase(pathFromHash, '');
+    }
+    const path = stripBase(pathname, base);
+    return path + search + hash;
+}
+function useHistoryListeners(base, historyState, currentLocation, replace) {
+    let listeners = [];
+    let teardowns = [];
+    // TODO: should it be a stack? a Dict. Check if the popstate listener
+    // can trigger twice
+    let pauseState = null;
+    const popStateHandler = ({ state, }) => {
+        const to = createCurrentLocation(base, location);
+        const from = currentLocation.value;
+        const fromState = historyState.value;
+        let delta = 0;
+        if (state) {
+            currentLocation.value = to;
+            historyState.value = state;
+            // ignore the popstate and reset the pauseState
+            if (pauseState && pauseState === from) {
+                pauseState = null;
+                return;
+            }
+            delta = fromState ? state.position - fromState.position : 0;
+        }
+        else {
+            replace(to);
+        }
+        // console.log({ deltaFromCurrent })
+        // Here we could also revert the navigation by calling history.go(-delta)
+        // this listener will have to be adapted to not trigger again and to wait for the url
+        // to be updated before triggering the listeners. Some kind of validation function would also
+        // need to be passed to the listeners so the navigation can be accepted
+        // call all listeners
+        listeners.forEach(listener => {
+            listener(currentLocation.value, from, {
+                delta,
+                type: NavigationType.pop,
+                direction: delta
+                    ? delta > 0
+                        ? NavigationDirection.forward
+                        : NavigationDirection.back
+                    : NavigationDirection.unknown,
+            });
+        });
+    };
+    function pauseListeners() {
+        pauseState = currentLocation.value;
+    }
+    function listen(callback) {
+        // setup the listener and prepare teardown callbacks
+        listeners.push(callback);
+        const teardown = () => {
+            const index = listeners.indexOf(callback);
+            if (index > -1)
+                listeners.splice(index, 1);
+        };
+        teardowns.push(teardown);
+        return teardown;
+    }
+    function beforeUnloadListener() {
+        const { history } = window;
+        if (!history.state)
+            return;
+        history.replaceState(assign({}, history.state, { scroll: computeScrollPosition() }), '');
+    }
+    function destroy() {
+        for (const teardown of teardowns)
+            teardown();
+        teardowns = [];
+        window.removeEventListener('popstate', popStateHandler);
+        window.removeEventListener('beforeunload', beforeUnloadListener);
+    }
+    // setup the listeners and prepare teardown callbacks
+    window.addEventListener('popstate', popStateHandler);
+    window.addEventListener('beforeunload', beforeUnloadListener);
+    return {
+        pauseListeners,
+        listen,
+        destroy,
+    };
+}
+/**
+ * Creates a state object
+ */
+function buildState(back, current, forward, replaced = false, computeScroll = false) {
+    return {
+        back,
+        current,
+        forward,
+        replaced,
+        position: window.history.length,
+        scroll: computeScroll ? computeScrollPosition() : null,
+    };
+}
+function useHistoryStateNavigation(base) {
+    const { history, location } = window;
+    // private variables
+    const currentLocation = {
+        value: createCurrentLocation(base, location),
+    };
+    const historyState = { value: history.state };
+    // build current history entry as this is a fresh navigation
+    if (!historyState.value) {
+        changeLocation(currentLocation.value, {
+            back: null,
+            current: currentLocation.value,
+            forward: null,
+            // the length is off by one, we need to decrease it
+            position: history.length - 1,
+            replaced: true,
+            // don't add a scroll as the user may have an anchor and we want
+            // scrollBehavior to be triggered without a saved position
+            scroll: null,
+        }, true);
+    }
+    function changeLocation(to, state, replace) {
+        /**
+         * if a base tag is provided and we are on a normal domain, we have to
+         * respect the provided `base` attribute because pushState() will use it and
+         * potentially erase anything before the `#` like at
+         * https://github.com/vuejs/router/issues/685 where a base of
+         * `/folder/#` but a base of `/` would erase the `/folder/` section. If
+         * there is no host, the `<base>` tag makes no sense and if there isn't a
+         * base tag we can just use everything after the `#`.
+         */
+        const hashIndex = base.indexOf('#');
+        const url = hashIndex > -1
+            ? (location.host && document.querySelector('base')
+                ? base
+                : base.slice(hashIndex)) + to
+            : createBaseLocation() + base + to;
+        try {
+            // BROWSER QUIRK
+            // NOTE: Safari throws a SecurityError when calling this function 100 times in 30 seconds
+            history[replace ? 'replaceState' : 'pushState'](state, '', url);
+            historyState.value = state;
+        }
+        catch (err) {
+            if ((true)) {
+                warn('Error with push/replace State', err);
+            }
+            else {}
+            // Force the navigation, this also resets the call count
+            location[replace ? 'replace' : 'assign'](url);
+        }
+    }
+    function replace(to, data) {
+        const state = assign({}, history.state, buildState(historyState.value.back, 
+        // keep back and forward entries but override current position
+        to, historyState.value.forward, true), data, { position: historyState.value.position });
+        changeLocation(to, state, true);
+        currentLocation.value = to;
+    }
+    function push(to, data) {
+        // Add to current entry the information of where we are going
+        // as well as saving the current position
+        const currentState = assign({}, 
+        // use current history state to gracefully handle a wrong call to
+        // history.replaceState
+        // https://github.com/vuejs/router/issues/366
+        historyState.value, history.state, {
+            forward: to,
+            scroll: computeScrollPosition(),
+        });
+        if (( true) && !history.state) {
+            warn(`history.state seems to have been manually replaced without preserving the necessary values. Make sure to preserve existing history state if you are manually calling history.replaceState:\n\n` +
+                `history.replaceState(history.state, '', url)\n\n` +
+                `You can find more information at https://next.router.vuejs.org/guide/migration/#usage-of-history-state.`);
+        }
+        changeLocation(currentState.current, currentState, true);
+        const state = assign({}, buildState(currentLocation.value, to, null), { position: currentState.position + 1 }, data);
+        changeLocation(to, state, false);
+        currentLocation.value = to;
+    }
+    return {
+        location: currentLocation,
+        state: historyState,
+        push,
+        replace,
+    };
+}
+/**
+ * Creates an HTML5 history. Most common history for single page applications.
+ *
+ * @param base -
+ */
+function createWebHistory(base) {
+    base = normalizeBase(base);
+    const historyNavigation = useHistoryStateNavigation(base);
+    const historyListeners = useHistoryListeners(base, historyNavigation.state, historyNavigation.location, historyNavigation.replace);
+    function go(delta, triggerListeners = true) {
+        if (!triggerListeners)
+            historyListeners.pauseListeners();
+        history.go(delta);
+    }
+    const routerHistory = assign({
+        // it's overridden right after
+        location: '',
+        base,
+        go,
+        createHref: createHref.bind(null, base),
+    }, historyNavigation, historyListeners);
+    Object.defineProperty(routerHistory, 'location', {
+        enumerable: true,
+        get: () => historyNavigation.location.value,
+    });
+    Object.defineProperty(routerHistory, 'state', {
+        enumerable: true,
+        get: () => historyNavigation.state.value,
+    });
+    return routerHistory;
+}
+
+/**
+ * Creates a in-memory based history. The main purpose of this history is to handle SSR. It starts in a special location that is nowhere.
+ * It's up to the user to replace that location with the starter location by either calling `router.push` or `router.replace`.
+ *
+ * @param base - Base applied to all urls, defaults to '/'
+ * @returns a history object that can be passed to the router constructor
+ */
+function createMemoryHistory(base = '') {
+    let listeners = [];
+    let queue = [START];
+    let position = 0;
+    base = normalizeBase(base);
+    function setLocation(location) {
+        position++;
+        if (position === queue.length) {
+            // we are at the end, we can simply append a new entry
+            queue.push(location);
+        }
+        else {
+            // we are in the middle, we remove everything from here in the queue
+            queue.splice(position);
+            queue.push(location);
+        }
+    }
+    function triggerListeners(to, from, { direction, delta }) {
+        const info = {
+            direction,
+            delta,
+            type: NavigationType.pop,
+        };
+        for (const callback of listeners) {
+            callback(to, from, info);
+        }
+    }
+    const routerHistory = {
+        // rewritten by Object.defineProperty
+        location: START,
+        // TODO: should be kept in queue
+        state: {},
+        base,
+        createHref: createHref.bind(null, base),
+        replace(to) {
+            // remove current entry and decrement position
+            queue.splice(position--, 1);
+            setLocation(to);
+        },
+        push(to, data) {
+            setLocation(to);
+        },
+        listen(callback) {
+            listeners.push(callback);
+            return () => {
+                const index = listeners.indexOf(callback);
+                if (index > -1)
+                    listeners.splice(index, 1);
+            };
+        },
+        destroy() {
+            listeners = [];
+            queue = [START];
+            position = 0;
+        },
+        go(delta, shouldTrigger = true) {
+            const from = this.location;
+            const direction = 
+            // we are considering delta === 0 going forward, but in abstract mode
+            // using 0 for the delta doesn't make sense like it does in html5 where
+            // it reloads the page
+            delta < 0 ? NavigationDirection.back : NavigationDirection.forward;
+            position = Math.max(0, Math.min(position + delta, queue.length - 1));
+            if (shouldTrigger) {
+                triggerListeners(this.location, from, {
+                    direction,
+                    delta,
+                });
+            }
+        },
+    };
+    Object.defineProperty(routerHistory, 'location', {
+        enumerable: true,
+        get: () => queue[position],
+    });
+    return routerHistory;
+}
+
+/**
+ * Creates a hash history. Useful for web applications with no host (e.g.
+ * `file://`) or when configuring a server to handle any URL is not possible.
+ *
+ * @param base - optional base to provide. Defaults to `location.pathname +
+ * location.search` If there is a `<base>` tag in the `head`, its value will be
+ * ignored in favor of this parameter **but note it affects all the
+ * history.pushState() calls**, meaning that if you use a `<base>` tag, it's
+ * `href` value **has to match this parameter** (ignoring anything after the
+ * `#`).
+ *
+ * @example
+ * ```js
+ * // at https://example.com/folder
+ * createWebHashHistory() // gives a url of `https://example.com/folder#`
+ * createWebHashHistory('/folder/') // gives a url of `https://example.com/folder/#`
+ * // if the `#` is provided in the base, it won't be added by `createWebHashHistory`
+ * createWebHashHistory('/folder/#/app/') // gives a url of `https://example.com/folder/#/app/`
+ * // you should avoid doing this because it changes the original url and breaks copying urls
+ * createWebHashHistory('/other-folder/') // gives a url of `https://example.com/other-folder/#`
+ *
+ * // at file:///usr/etc/folder/index.html
+ * // for locations with no `host`, the base is ignored
+ * createWebHashHistory('/iAmIgnored') // gives a url of `file:///usr/etc/folder/index.html#`
+ * ```
+ */
+function createWebHashHistory(base) {
+    // Make sure this implementation is fine in terms of encoding, specially for IE11
+    // for `file://`, directly use the pathname and ignore the base
+    // location.pathname contains an initial `/` even at the root: `https://example.com`
+    base = location.host ? base || location.pathname + location.search : '';
+    // allow the user to provide a `#` in the middle: `/base/#/app`
+    if (!base.includes('#'))
+        base += '#';
+    if (( true) && !base.endsWith('#/') && !base.endsWith('#')) {
+        warn(`A hash base must end with a "#":\n"${base}" should be "${base.replace(/#.*$/, '#')}".`);
+    }
+    return createWebHistory(base);
+}
+
+function isRouteLocation(route) {
+    return typeof route === 'string' || (route && typeof route === 'object');
+}
+function isRouteName(name) {
+    return typeof name === 'string' || typeof name === 'symbol';
+}
+
+/**
+ * Initial route location where the router is. Can be used in navigation guards
+ * to differentiate the initial navigation.
+ *
+ * @example
+ * ```js
+ * import { START_LOCATION } from 'vue-router'
+ *
+ * router.beforeEach((to, from) => {
+ *   if (from === START_LOCATION) {
+ *     // initial navigation
+ *   }
+ * })
+ * ```
+ */
+const START_LOCATION_NORMALIZED = {
+    path: '/',
+    name: undefined,
+    params: {},
+    query: {},
+    hash: '',
+    fullPath: '/',
+    matched: [],
+    meta: {},
+    redirectedFrom: undefined,
+};
+
+const NavigationFailureSymbol = /*#__PURE__*/ PolySymbol(( true) ? 'navigation failure' : 0);
+/**
+ * Enumeration with all possible types for navigation failures. Can be passed to
+ * {@link isNavigationFailure} to check for specific failures.
+ */
+var NavigationFailureType;
+(function (NavigationFailureType) {
+    /**
+     * An aborted navigation is a navigation that failed because a navigation
+     * guard returned `false` or called `next(false)`
+     */
+    NavigationFailureType[NavigationFailureType["aborted"] = 4] = "aborted";
+    /**
+     * A cancelled navigation is a navigation that failed because a more recent
+     * navigation finished started (not necessarily finished).
+     */
+    NavigationFailureType[NavigationFailureType["cancelled"] = 8] = "cancelled";
+    /**
+     * A duplicated navigation is a navigation that failed because it was
+     * initiated while already being at the exact same location.
+     */
+    NavigationFailureType[NavigationFailureType["duplicated"] = 16] = "duplicated";
+})(NavigationFailureType || (NavigationFailureType = {}));
+// DEV only debug messages
+const ErrorTypeMessages = {
+    [1 /* MATCHER_NOT_FOUND */]({ location, currentLocation }) {
+        return `No match for\n ${JSON.stringify(location)}${currentLocation
+            ? '\nwhile being at\n' + JSON.stringify(currentLocation)
+            : ''}`;
+    },
+    [2 /* NAVIGATION_GUARD_REDIRECT */]({ from, to, }) {
+        return `Redirected from "${from.fullPath}" to "${stringifyRoute(to)}" via a navigation guard.`;
+    },
+    [4 /* NAVIGATION_ABORTED */]({ from, to }) {
+        return `Navigation aborted from "${from.fullPath}" to "${to.fullPath}" via a navigation guard.`;
+    },
+    [8 /* NAVIGATION_CANCELLED */]({ from, to }) {
+        return `Navigation cancelled from "${from.fullPath}" to "${to.fullPath}" with a new navigation.`;
+    },
+    [16 /* NAVIGATION_DUPLICATED */]({ from, to }) {
+        return `Avoided redundant navigation to current location: "${from.fullPath}".`;
+    },
+};
+function createRouterError(type, params) {
+    // keep full error messages in cjs versions
+    if (true) {
+        return assign(new Error(ErrorTypeMessages[type](params)), {
+            type,
+            [NavigationFailureSymbol]: true,
+        }, params);
+    }
+    else {}
+}
+function isNavigationFailure(error, type) {
+    return (error instanceof Error &&
+        NavigationFailureSymbol in error &&
+        (type == null || !!(error.type & type)));
+}
+const propertiesToLog = ['params', 'query', 'hash'];
+function stringifyRoute(to) {
+    if (typeof to === 'string')
+        return to;
+    if ('path' in to)
+        return to.path;
+    const location = {};
+    for (const key of propertiesToLog) {
+        if (key in to)
+            location[key] = to[key];
+    }
+    return JSON.stringify(location, null, 2);
+}
+
+// default pattern for a param: non greedy everything but /
+const BASE_PARAM_PATTERN = '[^/]+?';
+const BASE_PATH_PARSER_OPTIONS = {
+    sensitive: false,
+    strict: false,
+    start: true,
+    end: true,
+};
+// Special Regex characters that must be escaped in static tokens
+const REGEX_CHARS_RE = /[.+*?^${}()[\]/\\]/g;
+/**
+ * Creates a path parser from an array of Segments (a segment is an array of Tokens)
+ *
+ * @param segments - array of segments returned by tokenizePath
+ * @param extraOptions - optional options for the regexp
+ * @returns a PathParser
+ */
+function tokensToParser(segments, extraOptions) {
+    const options = assign({}, BASE_PATH_PARSER_OPTIONS, extraOptions);
+    // the amount of scores is the same as the length of segments except for the root segment "/"
+    const score = [];
+    // the regexp as a string
+    let pattern = options.start ? '^' : '';
+    // extracted keys
+    const keys = [];
+    for (const segment of segments) {
+        // the root segment needs special treatment
+        const segmentScores = segment.length ? [] : [90 /* Root */];
+        // allow trailing slash
+        if (options.strict && !segment.length)
+            pattern += '/';
+        for (let tokenIndex = 0; tokenIndex < segment.length; tokenIndex++) {
+            const token = segment[tokenIndex];
+            // resets the score if we are inside a sub segment /:a-other-:b
+            let subSegmentScore = 40 /* Segment */ +
+                (options.sensitive ? 0.25 /* BonusCaseSensitive */ : 0);
+            if (token.type === 0 /* Static */) {
+                // prepend the slash if we are starting a new segment
+                if (!tokenIndex)
+                    pattern += '/';
+                pattern += token.value.replace(REGEX_CHARS_RE, '\\$&');
+                subSegmentScore += 40 /* Static */;
+            }
+            else if (token.type === 1 /* Param */) {
+                const { value, repeatable, optional, regexp } = token;
+                keys.push({
+                    name: value,
+                    repeatable,
+                    optional,
+                });
+                const re = regexp ? regexp : BASE_PARAM_PATTERN;
+                // the user provided a custom regexp /:id(\\d+)
+                if (re !== BASE_PARAM_PATTERN) {
+                    subSegmentScore += 10 /* BonusCustomRegExp */;
+                    // make sure the regexp is valid before using it
+                    try {
+                        new RegExp(`(${re})`);
+                    }
+                    catch (err) {
+                        throw new Error(`Invalid custom RegExp for param "${value}" (${re}): ` +
+                            err.message);
+                    }
+                }
+                // when we repeat we must take care of the repeating leading slash
+                let subPattern = repeatable ? `((?:${re})(?:/(?:${re}))*)` : `(${re})`;
+                // prepend the slash if we are starting a new segment
+                if (!tokenIndex)
+                    subPattern =
+                        // avoid an optional / if there are more segments e.g. /:p?-static
+                        // or /:p?-:p2
+                        optional && segment.length < 2
+                            ? `(?:/${subPattern})`
+                            : '/' + subPattern;
+                if (optional)
+                    subPattern += '?';
+                pattern += subPattern;
+                subSegmentScore += 20 /* Dynamic */;
+                if (optional)
+                    subSegmentScore += -8 /* BonusOptional */;
+                if (repeatable)
+                    subSegmentScore += -20 /* BonusRepeatable */;
+                if (re === '.*')
+                    subSegmentScore += -50 /* BonusWildcard */;
+            }
+            segmentScores.push(subSegmentScore);
+        }
+        // an empty array like /home/ -> [[{home}], []]
+        // if (!segment.length) pattern += '/'
+        score.push(segmentScores);
+    }
+    // only apply the strict bonus to the last score
+    if (options.strict && options.end) {
+        const i = score.length - 1;
+        score[i][score[i].length - 1] += 0.7000000000000001 /* BonusStrict */;
+    }
+    // TODO: dev only warn double trailing slash
+    if (!options.strict)
+        pattern += '/?';
+    if (options.end)
+        pattern += '$';
+    // allow paths like /dynamic to only match dynamic or dynamic/... but not dynamic_something_else
+    else if (options.strict)
+        pattern += '(?:/|$)';
+    const re = new RegExp(pattern, options.sensitive ? '' : 'i');
+    function parse(path) {
+        const match = path.match(re);
+        const params = {};
+        if (!match)
+            return null;
+        for (let i = 1; i < match.length; i++) {
+            const value = match[i] || '';
+            const key = keys[i - 1];
+            params[key.name] = value && key.repeatable ? value.split('/') : value;
+        }
+        return params;
+    }
+    function stringify(params) {
+        let path = '';
+        // for optional parameters to allow to be empty
+        let avoidDuplicatedSlash = false;
+        for (const segment of segments) {
+            if (!avoidDuplicatedSlash || !path.endsWith('/'))
+                path += '/';
+            avoidDuplicatedSlash = false;
+            for (const token of segment) {
+                if (token.type === 0 /* Static */) {
+                    path += token.value;
+                }
+                else if (token.type === 1 /* Param */) {
+                    const { value, repeatable, optional } = token;
+                    const param = value in params ? params[value] : '';
+                    if (Array.isArray(param) && !repeatable)
+                        throw new Error(`Provided param "${value}" is an array but it is not repeatable (* or + modifiers)`);
+                    const text = Array.isArray(param) ? param.join('/') : param;
+                    if (!text) {
+                        if (optional) {
+                            // if we have more than one optional param like /:a?-static and there are more segments, we don't need to
+                            // care about the optional param
+                            if (segment.length < 2 && segments.length > 1) {
+                                // remove the last slash as we could be at the end
+                                if (path.endsWith('/'))
+                                    path = path.slice(0, -1);
+                                // do not append a slash on the next iteration
+                                else
+                                    avoidDuplicatedSlash = true;
+                            }
+                        }
+                        else
+                            throw new Error(`Missing required param "${value}"`);
+                    }
+                    path += text;
+                }
+            }
+        }
+        return path;
+    }
+    return {
+        re,
+        score,
+        keys,
+        parse,
+        stringify,
+    };
+}
+/**
+ * Compares an array of numbers as used in PathParser.score and returns a
+ * number. This function can be used to `sort` an array
+ *
+ * @param a - first array of numbers
+ * @param b - second array of numbers
+ * @returns 0 if both are equal, < 0 if a should be sorted first, > 0 if b
+ * should be sorted first
+ */
+function compareScoreArray(a, b) {
+    let i = 0;
+    while (i < a.length && i < b.length) {
+        const diff = b[i] - a[i];
+        // only keep going if diff === 0
+        if (diff)
+            return diff;
+        i++;
+    }
+    // if the last subsegment was Static, the shorter segments should be sorted first
+    // otherwise sort the longest segment first
+    if (a.length < b.length) {
+        return a.length === 1 && a[0] === 40 /* Static */ + 40 /* Segment */
+            ? -1
+            : 1;
+    }
+    else if (a.length > b.length) {
+        return b.length === 1 && b[0] === 40 /* Static */ + 40 /* Segment */
+            ? 1
+            : -1;
+    }
+    return 0;
+}
+/**
+ * Compare function that can be used with `sort` to sort an array of PathParser
+ *
+ * @param a - first PathParser
+ * @param b - second PathParser
+ * @returns 0 if both are equal, < 0 if a should be sorted first, > 0 if b
+ */
+function comparePathParserScore(a, b) {
+    let i = 0;
+    const aScore = a.score;
+    const bScore = b.score;
+    while (i < aScore.length && i < bScore.length) {
+        const comp = compareScoreArray(aScore[i], bScore[i]);
+        // do not return if both are equal
+        if (comp)
+            return comp;
+        i++;
+    }
+    if (Math.abs(bScore.length - aScore.length) === 1) {
+        if (isLastScoreNegative(aScore))
+            return 1;
+        if (isLastScoreNegative(bScore))
+            return -1;
+    }
+    // if a and b share the same score entries but b has more, sort b first
+    return bScore.length - aScore.length;
+    // this is the ternary version
+    // return aScore.length < bScore.length
+    //   ? 1
+    //   : aScore.length > bScore.length
+    //   ? -1
+    //   : 0
+}
+/**
+ * This allows detecting splats at the end of a path: /home/:id(.*)*
+ *
+ * @param score - score to check
+ * @returns true if the last entry is negative
+ */
+function isLastScoreNegative(score) {
+    const last = score[score.length - 1];
+    return score.length > 0 && last[last.length - 1] < 0;
+}
+
+const ROOT_TOKEN = {
+    type: 0 /* Static */,
+    value: '',
+};
+const VALID_PARAM_RE = /[a-zA-Z0-9_]/;
+// After some profiling, the cache seems to be unnecessary because tokenizePath
+// (the slowest part of adding a route) is very fast
+// const tokenCache = new Map<string, Token[][]>()
+function tokenizePath(path) {
+    if (!path)
+        return [[]];
+    if (path === '/')
+        return [[ROOT_TOKEN]];
+    if (!path.startsWith('/')) {
+        throw new Error(( true)
+            ? `Route paths should start with a "/": "${path}" should be "/${path}".`
+            : 0);
+    }
+    // if (tokenCache.has(path)) return tokenCache.get(path)!
+    function crash(message) {
+        throw new Error(`ERR (${state})/"${buffer}": ${message}`);
+    }
+    let state = 0 /* Static */;
+    let previousState = state;
+    const tokens = [];
+    // the segment will always be valid because we get into the initial state
+    // with the leading /
+    let segment;
+    function finalizeSegment() {
+        if (segment)
+            tokens.push(segment);
+        segment = [];
+    }
+    // index on the path
+    let i = 0;
+    // char at index
+    let char;
+    // buffer of the value read
+    let buffer = '';
+    // custom regexp for a param
+    let customRe = '';
+    function consumeBuffer() {
+        if (!buffer)
+            return;
+        if (state === 0 /* Static */) {
+            segment.push({
+                type: 0 /* Static */,
+                value: buffer,
+            });
+        }
+        else if (state === 1 /* Param */ ||
+            state === 2 /* ParamRegExp */ ||
+            state === 3 /* ParamRegExpEnd */) {
+            if (segment.length > 1 && (char === '*' || char === '+'))
+                crash(`A repeatable param (${buffer}) must be alone in its segment. eg: '/:ids+.`);
+            segment.push({
+                type: 1 /* Param */,
+                value: buffer,
+                regexp: customRe,
+                repeatable: char === '*' || char === '+',
+                optional: char === '*' || char === '?',
+            });
+        }
+        else {
+            crash('Invalid state to consume buffer');
+        }
+        buffer = '';
+    }
+    function addCharToBuffer() {
+        buffer += char;
+    }
+    while (i < path.length) {
+        char = path[i++];
+        if (char === '\\' && state !== 2 /* ParamRegExp */) {
+            previousState = state;
+            state = 4 /* EscapeNext */;
+            continue;
+        }
+        switch (state) {
+            case 0 /* Static */:
+                if (char === '/') {
+                    if (buffer) {
+                        consumeBuffer();
+                    }
+                    finalizeSegment();
+                }
+                else if (char === ':') {
+                    consumeBuffer();
+                    state = 1 /* Param */;
+                }
+                else {
+                    addCharToBuffer();
+                }
+                break;
+            case 4 /* EscapeNext */:
+                addCharToBuffer();
+                state = previousState;
+                break;
+            case 1 /* Param */:
+                if (char === '(') {
+                    state = 2 /* ParamRegExp */;
+                }
+                else if (VALID_PARAM_RE.test(char)) {
+                    addCharToBuffer();
+                }
+                else {
+                    consumeBuffer();
+                    state = 0 /* Static */;
+                    // go back one character if we were not modifying
+                    if (char !== '*' && char !== '?' && char !== '+')
+                        i--;
+                }
+                break;
+            case 2 /* ParamRegExp */:
+                // TODO: is it worth handling nested regexp? like :p(?:prefix_([^/]+)_suffix)
+                // it already works by escaping the closing )
+                // https://paths.esm.dev/?p=AAMeJbiAwQEcDKbAoAAkP60PG2R6QAvgNaA6AFACM2ABuQBB#
+                // is this really something people need since you can also write
+                // /prefix_:p()_suffix
+                if (char === ')') {
+                    // handle the escaped )
+                    if (customRe[customRe.length - 1] == '\\')
+                        customRe = customRe.slice(0, -1) + char;
+                    else
+                        state = 3 /* ParamRegExpEnd */;
+                }
+                else {
+                    customRe += char;
+                }
+                break;
+            case 3 /* ParamRegExpEnd */:
+                // same as finalizing a param
+                consumeBuffer();
+                state = 0 /* Static */;
+                // go back one character if we were not modifying
+                if (char !== '*' && char !== '?' && char !== '+')
+                    i--;
+                customRe = '';
+                break;
+            default:
+                crash('Unknown state');
+                break;
+        }
+    }
+    if (state === 2 /* ParamRegExp */)
+        crash(`Unfinished custom RegExp for param "${buffer}"`);
+    consumeBuffer();
+    finalizeSegment();
+    // tokenCache.set(path, tokens)
+    return tokens;
+}
+
+function createRouteRecordMatcher(record, parent, options) {
+    const parser = tokensToParser(tokenizePath(record.path), options);
+    // warn against params with the same name
+    if ((true)) {
+        const existingKeys = new Set();
+        for (const key of parser.keys) {
+            if (existingKeys.has(key.name))
+                warn(`Found duplicated params with name "${key.name}" for path "${record.path}". Only the last one will be available on "$route.params".`);
+            existingKeys.add(key.name);
+        }
+    }
+    const matcher = assign(parser, {
+        record,
+        parent,
+        // these needs to be populated by the parent
+        children: [],
+        alias: [],
+    });
+    if (parent) {
+        // both are aliases or both are not aliases
+        // we don't want to mix them because the order is used when
+        // passing originalRecord in Matcher.addRoute
+        if (!matcher.record.aliasOf === !parent.record.aliasOf)
+            parent.children.push(matcher);
+    }
+    return matcher;
+}
+
+/**
+ * Creates a Router Matcher.
+ *
+ * @internal
+ * @param routes - array of initial routes
+ * @param globalOptions - global route options
+ */
+function createRouterMatcher(routes, globalOptions) {
+    // normalized ordered array of matchers
+    const matchers = [];
+    const matcherMap = new Map();
+    globalOptions = mergeOptions({ strict: false, end: true, sensitive: false }, globalOptions);
+    function getRecordMatcher(name) {
+        return matcherMap.get(name);
+    }
+    function addRoute(record, parent, originalRecord) {
+        // used later on to remove by name
+        const isRootAdd = !originalRecord;
+        const mainNormalizedRecord = normalizeRouteRecord(record);
+        // we might be the child of an alias
+        mainNormalizedRecord.aliasOf = originalRecord && originalRecord.record;
+        const options = mergeOptions(globalOptions, record);
+        // generate an array of records to correctly handle aliases
+        const normalizedRecords = [
+            mainNormalizedRecord,
+        ];
+        if ('alias' in record) {
+            const aliases = typeof record.alias === 'string' ? [record.alias] : record.alias;
+            for (const alias of aliases) {
+                normalizedRecords.push(assign({}, mainNormalizedRecord, {
+                    // this allows us to hold a copy of the `components` option
+                    // so that async components cache is hold on the original record
+                    components: originalRecord
+                        ? originalRecord.record.components
+                        : mainNormalizedRecord.components,
+                    path: alias,
+                    // we might be the child of an alias
+                    aliasOf: originalRecord
+                        ? originalRecord.record
+                        : mainNormalizedRecord,
+                    // the aliases are always of the same kind as the original since they
+                    // are defined on the same record
+                }));
+            }
+        }
+        let matcher;
+        let originalMatcher;
+        for (const normalizedRecord of normalizedRecords) {
+            const { path } = normalizedRecord;
+            // Build up the path for nested routes if the child isn't an absolute
+            // route. Only add the / delimiter if the child path isn't empty and if the
+            // parent path doesn't have a trailing slash
+            if (parent && path[0] !== '/') {
+                const parentPath = parent.record.path;
+                const connectingSlash = parentPath[parentPath.length - 1] === '/' ? '' : '/';
+                normalizedRecord.path =
+                    parent.record.path + (path && connectingSlash + path);
+            }
+            if (( true) && normalizedRecord.path === '*') {
+                throw new Error('Catch all routes ("*") must now be defined using a param with a custom regexp.\n' +
+                    'See more at https://next.router.vuejs.org/guide/migration/#removed-star-or-catch-all-routes.');
+            }
+            // create the object before hand so it can be passed to children
+            matcher = createRouteRecordMatcher(normalizedRecord, parent, options);
+            if (( true) && parent && path[0] === '/')
+                checkMissingParamsInAbsolutePath(matcher, parent);
+            // if we are an alias we must tell the original record that we exist
+            // so we can be removed
+            if (originalRecord) {
+                originalRecord.alias.push(matcher);
+                if ((true)) {
+                    checkSameParams(originalRecord, matcher);
+                }
+            }
+            else {
+                // otherwise, the first record is the original and others are aliases
+                originalMatcher = originalMatcher || matcher;
+                if (originalMatcher !== matcher)
+                    originalMatcher.alias.push(matcher);
+                // remove the route if named and only for the top record (avoid in nested calls)
+                // this works because the original record is the first one
+                if (isRootAdd && record.name && !isAliasRecord(matcher))
+                    removeRoute(record.name);
+            }
+            if ('children' in mainNormalizedRecord) {
+                const children = mainNormalizedRecord.children;
+                for (let i = 0; i < children.length; i++) {
+                    addRoute(children[i], matcher, originalRecord && originalRecord.children[i]);
+                }
+            }
+            // if there was no original record, then the first one was not an alias and all
+            // other alias (if any) need to reference this record when adding children
+            originalRecord = originalRecord || matcher;
+            // TODO: add normalized records for more flexibility
+            // if (parent && isAliasRecord(originalRecord)) {
+            //   parent.children.push(originalRecord)
+            // }
+            insertMatcher(matcher);
+        }
+        return originalMatcher
+            ? () => {
+                // since other matchers are aliases, they should be removed by the original matcher
+                removeRoute(originalMatcher);
+            }
+            : noop;
+    }
+    function removeRoute(matcherRef) {
+        if (isRouteName(matcherRef)) {
+            const matcher = matcherMap.get(matcherRef);
+            if (matcher) {
+                matcherMap.delete(matcherRef);
+                matchers.splice(matchers.indexOf(matcher), 1);
+                matcher.children.forEach(removeRoute);
+                matcher.alias.forEach(removeRoute);
+            }
+        }
+        else {
+            const index = matchers.indexOf(matcherRef);
+            if (index > -1) {
+                matchers.splice(index, 1);
+                if (matcherRef.record.name)
+                    matcherMap.delete(matcherRef.record.name);
+                matcherRef.children.forEach(removeRoute);
+                matcherRef.alias.forEach(removeRoute);
+            }
+        }
+    }
+    function getRoutes() {
+        return matchers;
+    }
+    function insertMatcher(matcher) {
+        let i = 0;
+        while (i < matchers.length &&
+            comparePathParserScore(matcher, matchers[i]) >= 0 &&
+            // Adding children with empty path should still appear before the parent
+            // https://github.com/vuejs/router/issues/1124
+            (matcher.record.path !== matchers[i].record.path ||
+                !isRecordChildOf(matcher, matchers[i])))
+            i++;
+        matchers.splice(i, 0, matcher);
+        // only add the original record to the name map
+        if (matcher.record.name && !isAliasRecord(matcher))
+            matcherMap.set(matcher.record.name, matcher);
+    }
+    function resolve(location, currentLocation) {
+        let matcher;
+        let params = {};
+        let path;
+        let name;
+        if ('name' in location && location.name) {
+            matcher = matcherMap.get(location.name);
+            if (!matcher)
+                throw createRouterError(1 /* MATCHER_NOT_FOUND */, {
+                    location,
+                });
+            name = matcher.record.name;
+            params = assign(
+            // paramsFromLocation is a new object
+            paramsFromLocation(currentLocation.params, 
+            // only keep params that exist in the resolved location
+            // TODO: only keep optional params coming from a parent record
+            matcher.keys.filter(k => !k.optional).map(k => k.name)), location.params);
+            // throws if cannot be stringified
+            path = matcher.stringify(params);
+        }
+        else if ('path' in location) {
+            // no need to resolve the path with the matcher as it was provided
+            // this also allows the user to control the encoding
+            path = location.path;
+            if (( true) && !path.startsWith('/')) {
+                warn(`The Matcher cannot resolve relative paths but received "${path}". Unless you directly called \`matcher.resolve("${path}")\`, this is probably a bug in vue-router. Please open an issue at https://new-issue.vuejs.org/?repo=vuejs/router.`);
+            }
+            matcher = matchers.find(m => m.re.test(path));
+            // matcher should have a value after the loop
+            if (matcher) {
+                // TODO: dev warning of unused params if provided
+                // we know the matcher works because we tested the regexp
+                params = matcher.parse(path);
+                name = matcher.record.name;
+            }
+            // location is a relative path
+        }
+        else {
+            // match by name or path of current route
+            matcher = currentLocation.name
+                ? matcherMap.get(currentLocation.name)
+                : matchers.find(m => m.re.test(currentLocation.path));
+            if (!matcher)
+                throw createRouterError(1 /* MATCHER_NOT_FOUND */, {
+                    location,
+                    currentLocation,
+                });
+            name = matcher.record.name;
+            // since we are navigating to the same location, we don't need to pick the
+            // params like when `name` is provided
+            params = assign({}, currentLocation.params, location.params);
+            path = matcher.stringify(params);
+        }
+        const matched = [];
+        let parentMatcher = matcher;
+        while (parentMatcher) {
+            // reversed order so parents are at the beginning
+            matched.unshift(parentMatcher.record);
+            parentMatcher = parentMatcher.parent;
+        }
+        return {
+            name,
+            path,
+            params,
+            matched,
+            meta: mergeMetaFields(matched),
+        };
+    }
+    // add initial routes
+    routes.forEach(route => addRoute(route));
+    return { addRoute, resolve, removeRoute, getRoutes, getRecordMatcher };
+}
+function paramsFromLocation(params, keys) {
+    const newParams = {};
+    for (const key of keys) {
+        if (key in params)
+            newParams[key] = params[key];
+    }
+    return newParams;
+}
+/**
+ * Normalizes a RouteRecordRaw. Creates a copy
+ *
+ * @param record
+ * @returns the normalized version
+ */
+function normalizeRouteRecord(record) {
+    return {
+        path: record.path,
+        redirect: record.redirect,
+        name: record.name,
+        meta: record.meta || {},
+        aliasOf: undefined,
+        beforeEnter: record.beforeEnter,
+        props: normalizeRecordProps(record),
+        children: record.children || [],
+        instances: {},
+        leaveGuards: new Set(),
+        updateGuards: new Set(),
+        enterCallbacks: {},
+        components: 'components' in record
+            ? record.components || {}
+            : { default: record.component },
+    };
+}
+/**
+ * Normalize the optional `props` in a record to always be an object similar to
+ * components. Also accept a boolean for components.
+ * @param record
+ */
+function normalizeRecordProps(record) {
+    const propsObject = {};
+    // props does not exist on redirect records but we can set false directly
+    const props = record.props || false;
+    if ('component' in record) {
+        propsObject.default = props;
+    }
+    else {
+        // NOTE: we could also allow a function to be applied to every component.
+        // Would need user feedback for use cases
+        for (const name in record.components)
+            propsObject[name] = typeof props === 'boolean' ? props : props[name];
+    }
+    return propsObject;
+}
+/**
+ * Checks if a record or any of its parent is an alias
+ * @param record
+ */
+function isAliasRecord(record) {
+    while (record) {
+        if (record.record.aliasOf)
+            return true;
+        record = record.parent;
+    }
+    return false;
+}
+/**
+ * Merge meta fields of an array of records
+ *
+ * @param matched - array of matched records
+ */
+function mergeMetaFields(matched) {
+    return matched.reduce((meta, record) => assign(meta, record.meta), {});
+}
+function mergeOptions(defaults, partialOptions) {
+    const options = {};
+    for (const key in defaults) {
+        options[key] = key in partialOptions ? partialOptions[key] : defaults[key];
+    }
+    return options;
+}
+function isSameParam(a, b) {
+    return (a.name === b.name &&
+        a.optional === b.optional &&
+        a.repeatable === b.repeatable);
+}
+/**
+ * Check if a path and its alias have the same required params
+ *
+ * @param a - original record
+ * @param b - alias record
+ */
+function checkSameParams(a, b) {
+    for (const key of a.keys) {
+        if (!key.optional && !b.keys.find(isSameParam.bind(null, key)))
+            return warn(`Alias "${b.record.path}" and the original record: "${a.record.path}" should have the exact same param named "${key.name}"`);
+    }
+    for (const key of b.keys) {
+        if (!key.optional && !a.keys.find(isSameParam.bind(null, key)))
+            return warn(`Alias "${b.record.path}" and the original record: "${a.record.path}" should have the exact same param named "${key.name}"`);
+    }
+}
+function checkMissingParamsInAbsolutePath(record, parent) {
+    for (const key of parent.keys) {
+        if (!record.keys.find(isSameParam.bind(null, key)))
+            return warn(`Absolute path "${record.record.path}" should have the exact same param named "${key.name}" as its parent "${parent.record.path}".`);
+    }
+}
+function isRecordChildOf(record, parent) {
+    return parent.children.some(child => child === record || isRecordChildOf(record, child));
+}
+
+/**
+ * Encoding Rules ␣ = Space Path: ␣ " < > # ? { } Query: ␣ " < > # & = Hash: ␣ "
+ * < > `
+ *
+ * On top of that, the RFC3986 (https://tools.ietf.org/html/rfc3986#section-2.2)
+ * defines some extra characters to be encoded. Most browsers do not encode them
+ * in encodeURI https://github.com/whatwg/url/issues/369, so it may be safer to
+ * also encode `!'()*`. Leaving unencoded only ASCII alphanumeric(`a-zA-Z0-9`)
+ * plus `-._~`. This extra safety should be applied to query by patching the
+ * string returned by encodeURIComponent encodeURI also encodes `[\]^`. `\`
+ * should be encoded to avoid ambiguity. Browsers (IE, FF, C) transform a `\`
+ * into a `/` if directly typed in. The _backtick_ (`````) should also be
+ * encoded everywhere because some browsers like FF encode it when directly
+ * written while others don't. Safari and IE don't encode ``"<>{}``` in hash.
+ */
+// const EXTRA_RESERVED_RE = /[!'()*]/g
+// const encodeReservedReplacer = (c: string) => '%' + c.charCodeAt(0).toString(16)
+const HASH_RE = /#/g; // %23
+const AMPERSAND_RE = /&/g; // %26
+const SLASH_RE = /\//g; // %2F
+const EQUAL_RE = /=/g; // %3D
+const IM_RE = /\?/g; // %3F
+const PLUS_RE = /\+/g; // %2B
+/**
+ * NOTE: It's not clear to me if we should encode the + symbol in queries, it
+ * seems to be less flexible than not doing so and I can't find out the legacy
+ * systems requiring this for regular requests like text/html. In the standard,
+ * the encoding of the plus character is only mentioned for
+ * application/x-www-form-urlencoded
+ * (https://url.spec.whatwg.org/#urlencoded-parsing) and most browsers seems lo
+ * leave the plus character as is in queries. To be more flexible, we allow the
+ * plus character on the query but it can also be manually encoded by the user.
+ *
+ * Resources:
+ * - https://url.spec.whatwg.org/#urlencoded-parsing
+ * - https://stackoverflow.com/questions/1634271/url-encoding-the-space-character-or-20
+ */
+const ENC_BRACKET_OPEN_RE = /%5B/g; // [
+const ENC_BRACKET_CLOSE_RE = /%5D/g; // ]
+const ENC_CARET_RE = /%5E/g; // ^
+const ENC_BACKTICK_RE = /%60/g; // `
+const ENC_CURLY_OPEN_RE = /%7B/g; // {
+const ENC_PIPE_RE = /%7C/g; // |
+const ENC_CURLY_CLOSE_RE = /%7D/g; // }
+const ENC_SPACE_RE = /%20/g; // }
+/**
+ * Encode characters that need to be encoded on the path, search and hash
+ * sections of the URL.
+ *
+ * @internal
+ * @param text - string to encode
+ * @returns encoded string
+ */
+function commonEncode(text) {
+    return encodeURI('' + text)
+        .replace(ENC_PIPE_RE, '|')
+        .replace(ENC_BRACKET_OPEN_RE, '[')
+        .replace(ENC_BRACKET_CLOSE_RE, ']');
+}
+/**
+ * Encode characters that need to be encoded on the hash section of the URL.
+ *
+ * @param text - string to encode
+ * @returns encoded string
+ */
+function encodeHash(text) {
+    return commonEncode(text)
+        .replace(ENC_CURLY_OPEN_RE, '{')
+        .replace(ENC_CURLY_CLOSE_RE, '}')
+        .replace(ENC_CARET_RE, '^');
+}
+/**
+ * Encode characters that need to be encoded query values on the query
+ * section of the URL.
+ *
+ * @param text - string to encode
+ * @returns encoded string
+ */
+function encodeQueryValue(text) {
+    return (commonEncode(text)
+        // Encode the space as +, encode the + to differentiate it from the space
+        .replace(PLUS_RE, '%2B')
+        .replace(ENC_SPACE_RE, '+')
+        .replace(HASH_RE, '%23')
+        .replace(AMPERSAND_RE, '%26')
+        .replace(ENC_BACKTICK_RE, '`')
+        .replace(ENC_CURLY_OPEN_RE, '{')
+        .replace(ENC_CURLY_CLOSE_RE, '}')
+        .replace(ENC_CARET_RE, '^'));
+}
+/**
+ * Like `encodeQueryValue` but also encodes the `=` character.
+ *
+ * @param text - string to encode
+ */
+function encodeQueryKey(text) {
+    return encodeQueryValue(text).replace(EQUAL_RE, '%3D');
+}
+/**
+ * Encode characters that need to be encoded on the path section of the URL.
+ *
+ * @param text - string to encode
+ * @returns encoded string
+ */
+function encodePath(text) {
+    return commonEncode(text).replace(HASH_RE, '%23').replace(IM_RE, '%3F');
+}
+/**
+ * Encode characters that need to be encoded on the path section of the URL as a
+ * param. This function encodes everything {@link encodePath} does plus the
+ * slash (`/`) character. If `text` is `null` or `undefined`, returns an empty
+ * string instead.
+ *
+ * @param text - string to encode
+ * @returns encoded string
+ */
+function encodeParam(text) {
+    return text == null ? '' : encodePath(text).replace(SLASH_RE, '%2F');
+}
+/**
+ * Decode text using `decodeURIComponent`. Returns the original text if it
+ * fails.
+ *
+ * @param text - string to decode
+ * @returns decoded string
+ */
+function decode(text) {
+    try {
+        return decodeURIComponent('' + text);
+    }
+    catch (err) {
+        ( true) && warn(`Error decoding "${text}". Using original value`);
+    }
+    return '' + text;
+}
+
+/**
+ * Transforms a queryString into a {@link LocationQuery} object. Accept both, a
+ * version with the leading `?` and without Should work as URLSearchParams
+
+ * @internal
+ *
+ * @param search - search string to parse
+ * @returns a query object
+ */
+function parseQuery(search) {
+    const query = {};
+    // avoid creating an object with an empty key and empty value
+    // because of split('&')
+    if (search === '' || search === '?')
+        return query;
+    const hasLeadingIM = search[0] === '?';
+    const searchParams = (hasLeadingIM ? search.slice(1) : search).split('&');
+    for (let i = 0; i < searchParams.length; ++i) {
+        // pre decode the + into space
+        const searchParam = searchParams[i].replace(PLUS_RE, ' ');
+        // allow the = character
+        const eqPos = searchParam.indexOf('=');
+        const key = decode(eqPos < 0 ? searchParam : searchParam.slice(0, eqPos));
+        const value = eqPos < 0 ? null : decode(searchParam.slice(eqPos + 1));
+        if (key in query) {
+            // an extra variable for ts types
+            let currentValue = query[key];
+            if (!Array.isArray(currentValue)) {
+                currentValue = query[key] = [currentValue];
+            }
+            currentValue.push(value);
+        }
+        else {
+            query[key] = value;
+        }
+    }
+    return query;
+}
+/**
+ * Stringifies a {@link LocationQueryRaw} object. Like `URLSearchParams`, it
+ * doesn't prepend a `?`
+ *
+ * @internal
+ *
+ * @param query - query object to stringify
+ * @returns string version of the query without the leading `?`
+ */
+function stringifyQuery(query) {
+    let search = '';
+    for (let key in query) {
+        const value = query[key];
+        key = encodeQueryKey(key);
+        if (value == null) {
+            // only null adds the value
+            if (value !== undefined) {
+                search += (search.length ? '&' : '') + key;
+            }
+            continue;
+        }
+        // keep null values
+        const values = Array.isArray(value)
+            ? value.map(v => v && encodeQueryValue(v))
+            : [value && encodeQueryValue(value)];
+        values.forEach(value => {
+            // skip undefined values in arrays as if they were not present
+            // smaller code than using filter
+            if (value !== undefined) {
+                // only append & with non-empty search
+                search += (search.length ? '&' : '') + key;
+                if (value != null)
+                    search += '=' + value;
+            }
+        });
+    }
+    return search;
+}
+/**
+ * Transforms a {@link LocationQueryRaw} into a {@link LocationQuery} by casting
+ * numbers into strings, removing keys with an undefined value and replacing
+ * undefined with null in arrays
+ *
+ * @param query - query object to normalize
+ * @returns a normalized query object
+ */
+function normalizeQuery(query) {
+    const normalizedQuery = {};
+    for (const key in query) {
+        const value = query[key];
+        if (value !== undefined) {
+            normalizedQuery[key] = Array.isArray(value)
+                ? value.map(v => (v == null ? null : '' + v))
+                : value == null
+                    ? value
+                    : '' + value;
+        }
+    }
+    return normalizedQuery;
+}
+
+/**
+ * Create a list of callbacks that can be reset. Used to create before and after navigation guards list
+ */
+function useCallbacks() {
+    let handlers = [];
+    function add(handler) {
+        handlers.push(handler);
+        return () => {
+            const i = handlers.indexOf(handler);
+            if (i > -1)
+                handlers.splice(i, 1);
+        };
+    }
+    function reset() {
+        handlers = [];
+    }
+    return {
+        add,
+        list: () => handlers,
+        reset,
+    };
+}
+
+function registerGuard(record, name, guard) {
+    const removeFromList = () => {
+        record[name].delete(guard);
+    };
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.onUnmounted)(removeFromList);
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.onDeactivated)(removeFromList);
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.onActivated)(() => {
+        record[name].add(guard);
+    });
+    record[name].add(guard);
+}
+/**
+ * Add a navigation guard that triggers whenever the component for the current
+ * location is about to be left. Similar to {@link beforeRouteLeave} but can be
+ * used in any component. The guard is removed when the component is unmounted.
+ *
+ * @param leaveGuard - {@link NavigationGuard}
+ */
+function onBeforeRouteLeave(leaveGuard) {
+    if (( true) && !(0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)()) {
+        warn('getCurrentInstance() returned null. onBeforeRouteLeave() must be called at the top of a setup function');
+        return;
+    }
+    const activeRecord = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(matchedRouteKey, 
+    // to avoid warning
+    {}).value;
+    if (!activeRecord) {
+        ( true) &&
+            warn('No active route record was found when calling `onBeforeRouteLeave()`. Make sure you call this function inside of a component child of <router-view>. Maybe you called it inside of App.vue?');
+        return;
+    }
+    registerGuard(activeRecord, 'leaveGuards', leaveGuard);
+}
+/**
+ * Add a navigation guard that triggers whenever the current location is about
+ * to be updated. Similar to {@link beforeRouteUpdate} but can be used in any
+ * component. The guard is removed when the component is unmounted.
+ *
+ * @param updateGuard - {@link NavigationGuard}
+ */
+function onBeforeRouteUpdate(updateGuard) {
+    if (( true) && !(0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)()) {
+        warn('getCurrentInstance() returned null. onBeforeRouteUpdate() must be called at the top of a setup function');
+        return;
+    }
+    const activeRecord = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(matchedRouteKey, 
+    // to avoid warning
+    {}).value;
+    if (!activeRecord) {
+        ( true) &&
+            warn('No active route record was found when calling `onBeforeRouteUpdate()`. Make sure you call this function inside of a component child of <router-view>. Maybe you called it inside of App.vue?');
+        return;
+    }
+    registerGuard(activeRecord, 'updateGuards', updateGuard);
+}
+function guardToPromiseFn(guard, to, from, record, name) {
+    // keep a reference to the enterCallbackArray to prevent pushing callbacks if a new navigation took place
+    const enterCallbackArray = record &&
+        // name is defined if record is because of the function overload
+        (record.enterCallbacks[name] = record.enterCallbacks[name] || []);
+    return () => new Promise((resolve, reject) => {
+        const next = (valid) => {
+            if (valid === false)
+                reject(createRouterError(4 /* NAVIGATION_ABORTED */, {
+                    from,
+                    to,
+                }));
+            else if (valid instanceof Error) {
+                reject(valid);
+            }
+            else if (isRouteLocation(valid)) {
+                reject(createRouterError(2 /* NAVIGATION_GUARD_REDIRECT */, {
+                    from: to,
+                    to: valid,
+                }));
+            }
+            else {
+                if (enterCallbackArray &&
+                    // since enterCallbackArray is truthy, both record and name also are
+                    record.enterCallbacks[name] === enterCallbackArray &&
+                    typeof valid === 'function')
+                    enterCallbackArray.push(valid);
+                resolve();
+            }
+        };
+        // wrapping with Promise.resolve allows it to work with both async and sync guards
+        const guardReturn = guard.call(record && record.instances[name], to, from, ( true) ? canOnlyBeCalledOnce(next, to, from) : 0);
+        let guardCall = Promise.resolve(guardReturn);
+        if (guard.length < 3)
+            guardCall = guardCall.then(next);
+        if (( true) && guard.length > 2) {
+            const message = `The "next" callback was never called inside of ${guard.name ? '"' + guard.name + '"' : ''}:\n${guard.toString()}\n. If you are returning a value instead of calling "next", make sure to remove the "next" parameter from your function.`;
+            if (typeof guardReturn === 'object' && 'then' in guardReturn) {
+                guardCall = guardCall.then(resolvedValue => {
+                    // @ts-expect-error: _called is added at canOnlyBeCalledOnce
+                    if (!next._called) {
+                        warn(message);
+                        return Promise.reject(new Error('Invalid navigation guard'));
+                    }
+                    return resolvedValue;
+                });
+                // TODO: test me!
+            }
+            else if (guardReturn !== undefined) {
+                // @ts-expect-error: _called is added at canOnlyBeCalledOnce
+                if (!next._called) {
+                    warn(message);
+                    reject(new Error('Invalid navigation guard'));
+                    return;
+                }
+            }
+        }
+        guardCall.catch(err => reject(err));
+    });
+}
+function canOnlyBeCalledOnce(next, to, from) {
+    let called = 0;
+    return function () {
+        if (called++ === 1)
+            warn(`The "next" callback was called more than once in one navigation guard when going from "${from.fullPath}" to "${to.fullPath}". It should be called exactly one time in each navigation guard. This will fail in production.`);
+        // @ts-expect-error: we put it in the original one because it's easier to check
+        next._called = true;
+        if (called === 1)
+            next.apply(null, arguments);
+    };
+}
+function extractComponentsGuards(matched, guardType, to, from) {
+    const guards = [];
+    for (const record of matched) {
+        for (const name in record.components) {
+            let rawComponent = record.components[name];
+            if ((true)) {
+                if (!rawComponent ||
+                    (typeof rawComponent !== 'object' &&
+                        typeof rawComponent !== 'function')) {
+                    warn(`Component "${name}" in record with path "${record.path}" is not` +
+                        ` a valid component. Received "${String(rawComponent)}".`);
+                    // throw to ensure we stop here but warn to ensure the message isn't
+                    // missed by the user
+                    throw new Error('Invalid route component');
+                }
+                else if ('then' in rawComponent) {
+                    // warn if user wrote import('/component.vue') instead of () =>
+                    // import('./component.vue')
+                    warn(`Component "${name}" in record with path "${record.path}" is a ` +
+                        `Promise instead of a function that returns a Promise. Did you ` +
+                        `write "import('./MyPage.vue')" instead of ` +
+                        `"() => import('./MyPage.vue')" ? This will break in ` +
+                        `production if not fixed.`);
+                    const promise = rawComponent;
+                    rawComponent = () => promise;
+                }
+                else if (rawComponent.__asyncLoader &&
+                    // warn only once per component
+                    !rawComponent.__warnedDefineAsync) {
+                    rawComponent.__warnedDefineAsync = true;
+                    warn(`Component "${name}" in record with path "${record.path}" is defined ` +
+                        `using "defineAsyncComponent()". ` +
+                        `Write "() => import('./MyPage.vue')" instead of ` +
+                        `"defineAsyncComponent(() => import('./MyPage.vue'))".`);
+                }
+            }
+            // skip update and leave guards if the route component is not mounted
+            if (guardType !== 'beforeRouteEnter' && !record.instances[name])
+                continue;
+            if (isRouteComponent(rawComponent)) {
+                // __vccOpts is added by vue-class-component and contain the regular options
+                const options = rawComponent.__vccOpts || rawComponent;
+                const guard = options[guardType];
+                guard && guards.push(guardToPromiseFn(guard, to, from, record, name));
+            }
+            else {
+                // start requesting the chunk already
+                let componentPromise = rawComponent();
+                if (( true) && !('catch' in componentPromise)) {
+                    warn(`Component "${name}" in record with path "${record.path}" is a function that does not return a Promise. If you were passing a functional component, make sure to add a "displayName" to the component. This will break in production if not fixed.`);
+                    componentPromise = Promise.resolve(componentPromise);
+                }
+                guards.push(() => componentPromise.then(resolved => {
+                    if (!resolved)
+                        return Promise.reject(new Error(`Couldn't resolve component "${name}" at "${record.path}"`));
+                    const resolvedComponent = isESModule(resolved)
+                        ? resolved.default
+                        : resolved;
+                    // replace the function with the resolved component
+                    record.components[name] = resolvedComponent;
+                    // __vccOpts is added by vue-class-component and contain the regular options
+                    const options = resolvedComponent.__vccOpts || resolvedComponent;
+                    const guard = options[guardType];
+                    return guard && guardToPromiseFn(guard, to, from, record, name)();
+                }));
+            }
+        }
+    }
+    return guards;
+}
+/**
+ * Allows differentiating lazy components from functional components and vue-class-component
+ *
+ * @param component
+ */
+function isRouteComponent(component) {
+    return (typeof component === 'object' ||
+        'displayName' in component ||
+        'props' in component ||
+        '__vccOpts' in component);
+}
+
+// TODO: we could allow currentRoute as a prop to expose `isActive` and
+// `isExactActive` behavior should go through an RFC
+function useLink(props) {
+    const router = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(routerKey);
+    const currentRoute = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(routeLocationKey);
+    const route = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => router.resolve((0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(props.to)));
+    const activeRecordIndex = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+        const { matched } = route.value;
+        const { length } = matched;
+        const routeMatched = matched[length - 1];
+        const currentMatched = currentRoute.matched;
+        if (!routeMatched || !currentMatched.length)
+            return -1;
+        const index = currentMatched.findIndex(isSameRouteRecord.bind(null, routeMatched));
+        if (index > -1)
+            return index;
+        // possible parent record
+        const parentRecordPath = getOriginalPath(matched[length - 2]);
+        return (
+        // we are dealing with nested routes
+        length > 1 &&
+            // if the parent and matched route have the same path, this link is
+            // referring to the empty child. Or we currently are on a different
+            // child of the same parent
+            getOriginalPath(routeMatched) === parentRecordPath &&
+            // avoid comparing the child with its parent
+            currentMatched[currentMatched.length - 1].path !== parentRecordPath
+            ? currentMatched.findIndex(isSameRouteRecord.bind(null, matched[length - 2]))
+            : index);
+    });
+    const isActive = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => activeRecordIndex.value > -1 &&
+        includesParams(currentRoute.params, route.value.params));
+    const isExactActive = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => activeRecordIndex.value > -1 &&
+        activeRecordIndex.value === currentRoute.matched.length - 1 &&
+        isSameRouteLocationParams(currentRoute.params, route.value.params));
+    function navigate(e = {}) {
+        if (guardEvent(e)) {
+            return router[(0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(props.replace) ? 'replace' : 'push']((0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(props.to)
+            // avoid uncaught errors are they are logged anyway
+            ).catch(noop);
+        }
+        return Promise.resolve();
+    }
+    // devtools only
+    if (( true) && isBrowser) {
+        const instance = (0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)();
+        if (instance) {
+            const linkContextDevtools = {
+                route: route.value,
+                isActive: isActive.value,
+                isExactActive: isExactActive.value,
+            };
+            // @ts-expect-error: this is internal
+            instance.__vrl_devtools = instance.__vrl_devtools || [];
+            // @ts-expect-error: this is internal
+            instance.__vrl_devtools.push(linkContextDevtools);
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect)(() => {
+                linkContextDevtools.route = route.value;
+                linkContextDevtools.isActive = isActive.value;
+                linkContextDevtools.isExactActive = isExactActive.value;
+            }, { flush: 'post' });
+        }
+    }
+    return {
+        route,
+        href: (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => route.value.href),
+        isActive,
+        isExactActive,
+        navigate,
+    };
+}
+const RouterLinkImpl = /*#__PURE__*/ (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'RouterLink',
+    compatConfig: { MODE: 3 },
+    props: {
+        to: {
+            type: [String, Object],
+            required: true,
+        },
+        replace: Boolean,
+        activeClass: String,
+        // inactiveClass: String,
+        exactActiveClass: String,
+        custom: Boolean,
+        ariaCurrentValue: {
+            type: String,
+            default: 'page',
+        },
+    },
+    useLink,
+    setup(props, { slots }) {
+        const link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)(useLink(props));
+        const { options } = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(routerKey);
+        const elClass = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => ({
+            [getLinkClass(props.activeClass, options.linkActiveClass, 'router-link-active')]: link.isActive,
+            // [getLinkClass(
+            //   props.inactiveClass,
+            //   options.linkInactiveClass,
+            //   'router-link-inactive'
+            // )]: !link.isExactActive,
+            [getLinkClass(props.exactActiveClass, options.linkExactActiveClass, 'router-link-exact-active')]: link.isExactActive,
+        }));
+        return () => {
+            const children = slots.default && slots.default(link);
+            return props.custom
+                ? children
+                : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('a', {
+                    'aria-current': link.isExactActive
+                        ? props.ariaCurrentValue
+                        : null,
+                    href: link.href,
+                    // this would override user added attrs but Vue will still add
+                    // the listener so we end up triggering both
+                    onClick: link.navigate,
+                    class: elClass.value,
+                }, children);
+        };
+    },
+});
+// export the public type for h/tsx inference
+// also to avoid inline import() in generated d.ts files
+/**
+ * Component to render a link that triggers a navigation on click.
+ */
+const RouterLink = RouterLinkImpl;
+function guardEvent(e) {
+    // don't redirect with control keys
+    if (e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
+        return;
+    // don't redirect when preventDefault called
+    if (e.defaultPrevented)
+        return;
+    // don't redirect on right click
+    if (e.button !== undefined && e.button !== 0)
+        return;
+    // don't redirect if `target="_blank"`
+    // @ts-expect-error getAttribute does exist
+    if (e.currentTarget && e.currentTarget.getAttribute) {
+        // @ts-expect-error getAttribute exists
+        const target = e.currentTarget.getAttribute('target');
+        if (/\b_blank\b/i.test(target))
+            return;
+    }
+    // this may be a Weex event which doesn't have this method
+    if (e.preventDefault)
+        e.preventDefault();
+    return true;
+}
+function includesParams(outer, inner) {
+    for (const key in inner) {
+        const innerValue = inner[key];
+        const outerValue = outer[key];
+        if (typeof innerValue === 'string') {
+            if (innerValue !== outerValue)
+                return false;
+        }
+        else {
+            if (!Array.isArray(outerValue) ||
+                outerValue.length !== innerValue.length ||
+                innerValue.some((value, i) => value !== outerValue[i]))
+                return false;
+        }
+    }
+    return true;
+}
+/**
+ * Get the original path value of a record by following its aliasOf
+ * @param record
+ */
+function getOriginalPath(record) {
+    return record ? (record.aliasOf ? record.aliasOf.path : record.path) : '';
+}
+/**
+ * Utility class to get the active class based on defaults.
+ * @param propClass
+ * @param globalClass
+ * @param defaultClass
+ */
+const getLinkClass = (propClass, globalClass, defaultClass) => propClass != null
+    ? propClass
+    : globalClass != null
+        ? globalClass
+        : defaultClass;
+
+const RouterViewImpl = /*#__PURE__*/ (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'RouterView',
+    // #674 we manually inherit them
+    inheritAttrs: false,
+    props: {
+        name: {
+            type: String,
+            default: 'default',
+        },
+        route: Object,
+    },
+    // Better compat for @vue/compat users
+    // https://github.com/vuejs/router/issues/1315
+    compatConfig: { MODE: 3 },
+    setup(props, { attrs, slots }) {
+        ( true) && warnDeprecatedUsage();
+        const injectedRoute = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(routerViewLocationKey);
+        const routeToDisplay = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => props.route || injectedRoute.value);
+        const depth = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(viewDepthKey, 0);
+        const matchedRouteRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => routeToDisplay.value.matched[depth]);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(viewDepthKey, depth + 1);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(matchedRouteKey, matchedRouteRef);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(routerViewLocationKey, routeToDisplay);
+        const viewRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        // watch at the same time the component instance, the route record we are
+        // rendering, and the name
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => [viewRef.value, matchedRouteRef.value, props.name], ([instance, to, name], [oldInstance, from, oldName]) => {
+            // copy reused instances
+            if (to) {
+                // this will update the instance for new instances as well as reused
+                // instances when navigating to a new route
+                to.instances[name] = instance;
+                // the component instance is reused for a different route or name so
+                // we copy any saved update or leave guards. With async setup, the
+                // mounting component will mount before the matchedRoute changes,
+                // making instance === oldInstance, so we check if guards have been
+                // added before. This works because we remove guards when
+                // unmounting/deactivating components
+                if (from && from !== to && instance && instance === oldInstance) {
+                    if (!to.leaveGuards.size) {
+                        to.leaveGuards = from.leaveGuards;
+                    }
+                    if (!to.updateGuards.size) {
+                        to.updateGuards = from.updateGuards;
+                    }
+                }
+            }
+            // trigger beforeRouteEnter next callbacks
+            if (instance &&
+                to &&
+                // if there is no instance but to and from are the same this might be
+                // the first visit
+                (!from || !isSameRouteRecord(to, from) || !oldInstance)) {
+                (to.enterCallbacks[name] || []).forEach(callback => callback(instance));
+            }
+        }, { flush: 'post' });
+        return () => {
+            const route = routeToDisplay.value;
+            const matchedRoute = matchedRouteRef.value;
+            const ViewComponent = matchedRoute && matchedRoute.components[props.name];
+            // we need the value at the time we render because when we unmount, we
+            // navigated to a different location so the value is different
+            const currentName = props.name;
+            if (!ViewComponent) {
+                return normalizeSlot(slots.default, { Component: ViewComponent, route });
+            }
+            // props from route configuration
+            const routePropsOption = matchedRoute.props[props.name];
+            const routeProps = routePropsOption
+                ? routePropsOption === true
+                    ? route.params
+                    : typeof routePropsOption === 'function'
+                        ? routePropsOption(route)
+                        : routePropsOption
+                : null;
+            const onVnodeUnmounted = vnode => {
+                // remove the instance reference to prevent leak
+                if (vnode.component.isUnmounted) {
+                    matchedRoute.instances[currentName] = null;
+                }
+            };
+            const component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(ViewComponent, assign({}, routeProps, attrs, {
+                onVnodeUnmounted,
+                ref: viewRef,
+            }));
+            if (( true) &&
+                isBrowser &&
+                component.ref) {
+                // TODO: can display if it's an alias, its props
+                const info = {
+                    depth,
+                    name: matchedRoute.name,
+                    path: matchedRoute.path,
+                    meta: matchedRoute.meta,
+                };
+                const internalInstances = Array.isArray(component.ref)
+                    ? component.ref.map(r => r.i)
+                    : [component.ref.i];
+                internalInstances.forEach(instance => {
+                    // @ts-expect-error
+                    instance.__vrv_devtools = info;
+                });
+            }
+            return (
+            // pass the vnode to the slot as a prop.
+            // h and <component :is="..."> both accept vnodes
+            normalizeSlot(slots.default, { Component: component, route }) ||
+                component);
+        };
+    },
+});
+function normalizeSlot(slot, data) {
+    if (!slot)
+        return null;
+    const slotContent = slot(data);
+    return slotContent.length === 1 ? slotContent[0] : slotContent;
+}
+// export the public type for h/tsx inference
+// also to avoid inline import() in generated d.ts files
+/**
+ * Component to display the current route the user is at.
+ */
+const RouterView = RouterViewImpl;
+// warn against deprecated usage with <transition> & <keep-alive>
+// due to functional component being no longer eager in Vue 3
+function warnDeprecatedUsage() {
+    const instance = (0,vue__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance)();
+    const parentName = instance.parent && instance.parent.type.name;
+    if (parentName &&
+        (parentName === 'KeepAlive' || parentName.includes('Transition'))) {
+        const comp = parentName === 'KeepAlive' ? 'keep-alive' : 'transition';
+        warn(`<router-view> can no longer be used directly inside <transition> or <keep-alive>.\n` +
+            `Use slot props instead:\n\n` +
+            `<router-view v-slot="{ Component }">\n` +
+            `  <${comp}>\n` +
+            `    <component :is="Component" />\n` +
+            `  </${comp}>\n` +
+            `</router-view>`);
+    }
+}
+
+function formatRouteLocation(routeLocation, tooltip) {
+    const copy = assign({}, routeLocation, {
+        // remove variables that can contain vue instances
+        matched: routeLocation.matched.map(matched => omit(matched, ['instances', 'children', 'aliasOf'])),
+    });
+    return {
+        _custom: {
+            type: null,
+            readOnly: true,
+            display: routeLocation.fullPath,
+            tooltip,
+            value: copy,
+        },
+    };
+}
+function formatDisplay(display) {
+    return {
+        _custom: {
+            display,
+        },
+    };
+}
+// to support multiple router instances
+let routerId = 0;
+function addDevtools(app, router, matcher) {
+    // Take over router.beforeEach and afterEach
+    // make sure we are not registering the devtool twice
+    if (router.__hasDevtools)
+        return;
+    router.__hasDevtools = true;
+    // increment to support multiple router instances
+    const id = routerId++;
+    (0,_vue_devtools_api__WEBPACK_IMPORTED_MODULE_1__.setupDevtoolsPlugin)({
+        id: 'org.vuejs.router' + (id ? '.' + id : ''),
+        label: 'Vue Router',
+        packageName: 'vue-router',
+        homepage: 'https://router.vuejs.org',
+        logo: 'https://router.vuejs.org/logo.png',
+        componentStateTypes: ['Routing'],
+        app,
+    }, api => {
+        // display state added by the router
+        api.on.inspectComponent((payload, ctx) => {
+            if (payload.instanceData) {
+                payload.instanceData.state.push({
+                    type: 'Routing',
+                    key: '$route',
+                    editable: false,
+                    value: formatRouteLocation(router.currentRoute.value, 'Current Route'),
+                });
+            }
+        });
+        // mark router-link as active and display tags on router views
+        api.on.visitComponentTree(({ treeNode: node, componentInstance }) => {
+            if (componentInstance.__vrv_devtools) {
+                const info = componentInstance.__vrv_devtools;
+                node.tags.push({
+                    label: (info.name ? `${info.name.toString()}: ` : '') + info.path,
+                    textColor: 0,
+                    tooltip: 'This component is rendered by &lt;router-view&gt;',
+                    backgroundColor: PINK_500,
+                });
+            }
+            // if multiple useLink are used
+            if (Array.isArray(componentInstance.__vrl_devtools)) {
+                componentInstance.__devtoolsApi = api;
+                componentInstance.__vrl_devtools.forEach(devtoolsData => {
+                    let backgroundColor = ORANGE_400;
+                    let tooltip = '';
+                    if (devtoolsData.isExactActive) {
+                        backgroundColor = LIME_500;
+                        tooltip = 'This is exactly active';
+                    }
+                    else if (devtoolsData.isActive) {
+                        backgroundColor = BLUE_600;
+                        tooltip = 'This link is active';
+                    }
+                    node.tags.push({
+                        label: devtoolsData.route.path,
+                        textColor: 0,
+                        tooltip,
+                        backgroundColor,
+                    });
+                });
+            }
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(router.currentRoute, () => {
+            // refresh active state
+            refreshRoutesView();
+            api.notifyComponentUpdate();
+            api.sendInspectorTree(routerInspectorId);
+            api.sendInspectorState(routerInspectorId);
+        });
+        const navigationsLayerId = 'router:navigations:' + id;
+        api.addTimelineLayer({
+            id: navigationsLayerId,
+            label: `Router${id ? ' ' + id : ''} Navigations`,
+            color: 0x40a8c4,
+        });
+        // const errorsLayerId = 'router:errors'
+        // api.addTimelineLayer({
+        //   id: errorsLayerId,
+        //   label: 'Router Errors',
+        //   color: 0xea5455,
+        // })
+        router.onError((error, to) => {
+            api.addTimelineEvent({
+                layerId: navigationsLayerId,
+                event: {
+                    title: 'Error during Navigation',
+                    subtitle: to.fullPath,
+                    logType: 'error',
+                    time: api.now(),
+                    data: { error },
+                    groupId: to.meta.__navigationId,
+                },
+            });
+        });
+        // attached to `meta` and used to group events
+        let navigationId = 0;
+        router.beforeEach((to, from) => {
+            const data = {
+                guard: formatDisplay('beforeEach'),
+                from: formatRouteLocation(from, 'Current Location during this navigation'),
+                to: formatRouteLocation(to, 'Target location'),
+            };
+            // Used to group navigations together, hide from devtools
+            Object.defineProperty(to.meta, '__navigationId', {
+                value: navigationId++,
+            });
+            api.addTimelineEvent({
+                layerId: navigationsLayerId,
+                event: {
+                    time: api.now(),
+                    title: 'Start of navigation',
+                    subtitle: to.fullPath,
+                    data,
+                    groupId: to.meta.__navigationId,
+                },
+            });
+        });
+        router.afterEach((to, from, failure) => {
+            const data = {
+                guard: formatDisplay('afterEach'),
+            };
+            if (failure) {
+                data.failure = {
+                    _custom: {
+                        type: Error,
+                        readOnly: true,
+                        display: failure ? failure.message : '',
+                        tooltip: 'Navigation Failure',
+                        value: failure,
+                    },
+                };
+                data.status = formatDisplay('❌');
+            }
+            else {
+                data.status = formatDisplay('✅');
+            }
+            // we set here to have the right order
+            data.from = formatRouteLocation(from, 'Current Location during this navigation');
+            data.to = formatRouteLocation(to, 'Target location');
+            api.addTimelineEvent({
+                layerId: navigationsLayerId,
+                event: {
+                    title: 'End of navigation',
+                    subtitle: to.fullPath,
+                    time: api.now(),
+                    data,
+                    logType: failure ? 'warning' : 'default',
+                    groupId: to.meta.__navigationId,
+                },
+            });
+        });
+        /**
+         * Inspector of Existing routes
+         */
+        const routerInspectorId = 'router-inspector:' + id;
+        api.addInspector({
+            id: routerInspectorId,
+            label: 'Routes' + (id ? ' ' + id : ''),
+            icon: 'book',
+            treeFilterPlaceholder: 'Search routes',
+        });
+        function refreshRoutesView() {
+            // the routes view isn't active
+            if (!activeRoutesPayload)
+                return;
+            const payload = activeRoutesPayload;
+            // children routes will appear as nested
+            let routes = matcher.getRoutes().filter(route => !route.parent);
+            // reset match state to false
+            routes.forEach(resetMatchStateOnRouteRecord);
+            // apply a match state if there is a payload
+            if (payload.filter) {
+                routes = routes.filter(route => 
+                // save matches state based on the payload
+                isRouteMatching(route, payload.filter.toLowerCase()));
+            }
+            // mark active routes
+            routes.forEach(route => markRouteRecordActive(route, router.currentRoute.value));
+            payload.rootNodes = routes.map(formatRouteRecordForInspector);
+        }
+        let activeRoutesPayload;
+        api.on.getInspectorTree(payload => {
+            activeRoutesPayload = payload;
+            if (payload.app === app && payload.inspectorId === routerInspectorId) {
+                refreshRoutesView();
+            }
+        });
+        /**
+         * Display information about the currently selected route record
+         */
+        api.on.getInspectorState(payload => {
+            if (payload.app === app && payload.inspectorId === routerInspectorId) {
+                const routes = matcher.getRoutes();
+                const route = routes.find(route => route.record.__vd_id === payload.nodeId);
+                if (route) {
+                    payload.state = {
+                        options: formatRouteRecordMatcherForStateInspector(route),
+                    };
+                }
+            }
+        });
+        api.sendInspectorTree(routerInspectorId);
+        api.sendInspectorState(routerInspectorId);
+    });
+}
+function modifierForKey(key) {
+    if (key.optional) {
+        return key.repeatable ? '*' : '?';
+    }
+    else {
+        return key.repeatable ? '+' : '';
+    }
+}
+function formatRouteRecordMatcherForStateInspector(route) {
+    const { record } = route;
+    const fields = [
+        { editable: false, key: 'path', value: record.path },
+    ];
+    if (record.name != null) {
+        fields.push({
+            editable: false,
+            key: 'name',
+            value: record.name,
+        });
+    }
+    fields.push({ editable: false, key: 'regexp', value: route.re });
+    if (route.keys.length) {
+        fields.push({
+            editable: false,
+            key: 'keys',
+            value: {
+                _custom: {
+                    type: null,
+                    readOnly: true,
+                    display: route.keys
+                        .map(key => `${key.name}${modifierForKey(key)}`)
+                        .join(' '),
+                    tooltip: 'Param keys',
+                    value: route.keys,
+                },
+            },
+        });
+    }
+    if (record.redirect != null) {
+        fields.push({
+            editable: false,
+            key: 'redirect',
+            value: record.redirect,
+        });
+    }
+    if (route.alias.length) {
+        fields.push({
+            editable: false,
+            key: 'aliases',
+            value: route.alias.map(alias => alias.record.path),
+        });
+    }
+    fields.push({
+        key: 'score',
+        editable: false,
+        value: {
+            _custom: {
+                type: null,
+                readOnly: true,
+                display: route.score.map(score => score.join(', ')).join(' | '),
+                tooltip: 'Score used to sort routes',
+                value: route.score,
+            },
+        },
+    });
+    return fields;
+}
+/**
+ * Extracted from tailwind palette
+ */
+const PINK_500 = 0xec4899;
+const BLUE_600 = 0x2563eb;
+const LIME_500 = 0x84cc16;
+const CYAN_400 = 0x22d3ee;
+const ORANGE_400 = 0xfb923c;
+// const GRAY_100 = 0xf4f4f5
+const DARK = 0x666666;
+function formatRouteRecordForInspector(route) {
+    const tags = [];
+    const { record } = route;
+    if (record.name != null) {
+        tags.push({
+            label: String(record.name),
+            textColor: 0,
+            backgroundColor: CYAN_400,
+        });
+    }
+    if (record.aliasOf) {
+        tags.push({
+            label: 'alias',
+            textColor: 0,
+            backgroundColor: ORANGE_400,
+        });
+    }
+    if (route.__vd_match) {
+        tags.push({
+            label: 'matches',
+            textColor: 0,
+            backgroundColor: PINK_500,
+        });
+    }
+    if (route.__vd_exactActive) {
+        tags.push({
+            label: 'exact',
+            textColor: 0,
+            backgroundColor: LIME_500,
+        });
+    }
+    if (route.__vd_active) {
+        tags.push({
+            label: 'active',
+            textColor: 0,
+            backgroundColor: BLUE_600,
+        });
+    }
+    if (record.redirect) {
+        tags.push({
+            label: 'redirect: ' +
+                (typeof record.redirect === 'string' ? record.redirect : 'Object'),
+            textColor: 0xffffff,
+            backgroundColor: DARK,
+        });
+    }
+    // add an id to be able to select it. Using the `path` is not possible because
+    // empty path children would collide with their parents
+    let id = record.__vd_id;
+    if (id == null) {
+        id = String(routeRecordId++);
+        record.__vd_id = id;
+    }
+    return {
+        id,
+        label: record.path,
+        tags,
+        children: route.children.map(formatRouteRecordForInspector),
+    };
+}
+//  incremental id for route records and inspector state
+let routeRecordId = 0;
+const EXTRACT_REGEXP_RE = /^\/(.*)\/([a-z]*)$/;
+function markRouteRecordActive(route, currentRoute) {
+    // no route will be active if matched is empty
+    // reset the matching state
+    const isExactActive = currentRoute.matched.length &&
+        isSameRouteRecord(currentRoute.matched[currentRoute.matched.length - 1], route.record);
+    route.__vd_exactActive = route.__vd_active = isExactActive;
+    if (!isExactActive) {
+        route.__vd_active = currentRoute.matched.some(match => isSameRouteRecord(match, route.record));
+    }
+    route.children.forEach(childRoute => markRouteRecordActive(childRoute, currentRoute));
+}
+function resetMatchStateOnRouteRecord(route) {
+    route.__vd_match = false;
+    route.children.forEach(resetMatchStateOnRouteRecord);
+}
+function isRouteMatching(route, filter) {
+    const found = String(route.re).match(EXTRACT_REGEXP_RE);
+    route.__vd_match = false;
+    if (!found || found.length < 3) {
+        return false;
+    }
+    // use a regexp without $ at the end to match nested routes better
+    const nonEndingRE = new RegExp(found[1].replace(/\$$/, ''), found[2]);
+    if (nonEndingRE.test(filter)) {
+        // mark children as matches
+        route.children.forEach(child => isRouteMatching(child, filter));
+        // exception case: `/`
+        if (route.record.path !== '/' || filter === '/') {
+            route.__vd_match = route.re.test(filter);
+            return true;
+        }
+        // hide the / route
+        return false;
+    }
+    const path = route.record.path.toLowerCase();
+    const decodedPath = decode(path);
+    // also allow partial matching on the path
+    if (!filter.startsWith('/') &&
+        (decodedPath.includes(filter) || path.includes(filter)))
+        return true;
+    if (decodedPath.startsWith(filter) || path.startsWith(filter))
+        return true;
+    if (route.record.name && String(route.record.name).includes(filter))
+        return true;
+    return route.children.some(child => isRouteMatching(child, filter));
+}
+function omit(obj, keys) {
+    const ret = {};
+    for (const key in obj) {
+        if (!keys.includes(key)) {
+            // @ts-expect-error
+            ret[key] = obj[key];
+        }
+    }
+    return ret;
+}
+
+/**
+ * Creates a Router instance that can be used by a Vue app.
+ *
+ * @param options - {@link RouterOptions}
+ */
+function createRouter(options) {
+    const matcher = createRouterMatcher(options.routes, options);
+    const parseQuery$1 = options.parseQuery || parseQuery;
+    const stringifyQuery$1 = options.stringifyQuery || stringifyQuery;
+    const routerHistory = options.history;
+    if (( true) && !routerHistory)
+        throw new Error('Provide the "history" option when calling "createRouter()":' +
+            ' https://next.router.vuejs.org/api/#history.');
+    const beforeGuards = useCallbacks();
+    const beforeResolveGuards = useCallbacks();
+    const afterGuards = useCallbacks();
+    const currentRoute = (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(START_LOCATION_NORMALIZED);
+    let pendingLocation = START_LOCATION_NORMALIZED;
+    // leave the scrollRestoration if no scrollBehavior is provided
+    if (isBrowser && options.scrollBehavior && 'scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    const normalizeParams = applyToParams.bind(null, paramValue => '' + paramValue);
+    const encodeParams = applyToParams.bind(null, encodeParam);
+    const decodeParams = 
+    // @ts-expect-error: intentionally avoid the type check
+    applyToParams.bind(null, decode);
+    function addRoute(parentOrRoute, route) {
+        let parent;
+        let record;
+        if (isRouteName(parentOrRoute)) {
+            parent = matcher.getRecordMatcher(parentOrRoute);
+            record = route;
+        }
+        else {
+            record = parentOrRoute;
+        }
+        return matcher.addRoute(record, parent);
+    }
+    function removeRoute(name) {
+        const recordMatcher = matcher.getRecordMatcher(name);
+        if (recordMatcher) {
+            matcher.removeRoute(recordMatcher);
+        }
+        else if ((true)) {
+            warn(`Cannot remove non-existent route "${String(name)}"`);
+        }
+    }
+    function getRoutes() {
+        return matcher.getRoutes().map(routeMatcher => routeMatcher.record);
+    }
+    function hasRoute(name) {
+        return !!matcher.getRecordMatcher(name);
+    }
+    function resolve(rawLocation, currentLocation) {
+        // const objectLocation = routerLocationAsObject(rawLocation)
+        // we create a copy to modify it later
+        currentLocation = assign({}, currentLocation || currentRoute.value);
+        if (typeof rawLocation === 'string') {
+            const locationNormalized = parseURL(parseQuery$1, rawLocation, currentLocation.path);
+            const matchedRoute = matcher.resolve({ path: locationNormalized.path }, currentLocation);
+            const href = routerHistory.createHref(locationNormalized.fullPath);
+            if ((true)) {
+                if (href.startsWith('//'))
+                    warn(`Location "${rawLocation}" resolved to "${href}". A resolved location cannot start with multiple slashes.`);
+                else if (!matchedRoute.matched.length) {
+                    warn(`No match found for location with path "${rawLocation}"`);
+                }
+            }
+            // locationNormalized is always a new object
+            return assign(locationNormalized, matchedRoute, {
+                params: decodeParams(matchedRoute.params),
+                hash: decode(locationNormalized.hash),
+                redirectedFrom: undefined,
+                href,
+            });
+        }
+        let matcherLocation;
+        // path could be relative in object as well
+        if ('path' in rawLocation) {
+            if (( true) &&
+                'params' in rawLocation &&
+                !('name' in rawLocation) &&
+                // @ts-expect-error: the type is never
+                Object.keys(rawLocation.params).length) {
+                warn(`Path "${
+                // @ts-expect-error: the type is never
+                rawLocation.path}" was passed with params but they will be ignored. Use a named route alongside params instead.`);
+            }
+            matcherLocation = assign({}, rawLocation, {
+                path: parseURL(parseQuery$1, rawLocation.path, currentLocation.path).path,
+            });
+        }
+        else {
+            // remove any nullish param
+            const targetParams = assign({}, rawLocation.params);
+            for (const key in targetParams) {
+                if (targetParams[key] == null) {
+                    delete targetParams[key];
+                }
+            }
+            // pass encoded values to the matcher so it can produce encoded path and fullPath
+            matcherLocation = assign({}, rawLocation, {
+                params: encodeParams(rawLocation.params),
+            });
+            // current location params are decoded, we need to encode them in case the
+            // matcher merges the params
+            currentLocation.params = encodeParams(currentLocation.params);
+        }
+        const matchedRoute = matcher.resolve(matcherLocation, currentLocation);
+        const hash = rawLocation.hash || '';
+        if (( true) && hash && !hash.startsWith('#')) {
+            warn(`A \`hash\` should always start with the character "#". Replace "${hash}" with "#${hash}".`);
+        }
+        // decoding them) the matcher might have merged current location params so
+        // we need to run the decoding again
+        matchedRoute.params = normalizeParams(decodeParams(matchedRoute.params));
+        const fullPath = stringifyURL(stringifyQuery$1, assign({}, rawLocation, {
+            hash: encodeHash(hash),
+            path: matchedRoute.path,
+        }));
+        const href = routerHistory.createHref(fullPath);
+        if ((true)) {
+            if (href.startsWith('//')) {
+                warn(`Location "${rawLocation}" resolved to "${href}". A resolved location cannot start with multiple slashes.`);
+            }
+            else if (!matchedRoute.matched.length) {
+                warn(`No match found for location with path "${'path' in rawLocation ? rawLocation.path : rawLocation}"`);
+            }
+        }
+        return assign({
+            fullPath,
+            // keep the hash encoded so fullPath is effectively path + encodedQuery +
+            // hash
+            hash,
+            query: 
+            // if the user is using a custom query lib like qs, we might have
+            // nested objects, so we keep the query as is, meaning it can contain
+            // numbers at `$route.query`, but at the point, the user will have to
+            // use their own type anyway.
+            // https://github.com/vuejs/router/issues/328#issuecomment-649481567
+            stringifyQuery$1 === stringifyQuery
+                ? normalizeQuery(rawLocation.query)
+                : (rawLocation.query || {}),
+        }, matchedRoute, {
+            redirectedFrom: undefined,
+            href,
+        });
+    }
+    function locationAsObject(to) {
+        return typeof to === 'string'
+            ? parseURL(parseQuery$1, to, currentRoute.value.path)
+            : assign({}, to);
+    }
+    function checkCanceledNavigation(to, from) {
+        if (pendingLocation !== to) {
+            return createRouterError(8 /* NAVIGATION_CANCELLED */, {
+                from,
+                to,
+            });
+        }
+    }
+    function push(to) {
+        return pushWithRedirect(to);
+    }
+    function replace(to) {
+        return push(assign(locationAsObject(to), { replace: true }));
+    }
+    function handleRedirectRecord(to) {
+        const lastMatched = to.matched[to.matched.length - 1];
+        if (lastMatched && lastMatched.redirect) {
+            const { redirect } = lastMatched;
+            let newTargetLocation = typeof redirect === 'function' ? redirect(to) : redirect;
+            if (typeof newTargetLocation === 'string') {
+                newTargetLocation =
+                    newTargetLocation.includes('?') || newTargetLocation.includes('#')
+                        ? (newTargetLocation = locationAsObject(newTargetLocation))
+                        : // force empty params
+                            { path: newTargetLocation };
+                // @ts-expect-error: force empty params when a string is passed to let
+                // the router parse them again
+                newTargetLocation.params = {};
+            }
+            if (( true) &&
+                !('path' in newTargetLocation) &&
+                !('name' in newTargetLocation)) {
+                warn(`Invalid redirect found:\n${JSON.stringify(newTargetLocation, null, 2)}\n when navigating to "${to.fullPath}". A redirect must contain a name or path. This will break in production.`);
+                throw new Error('Invalid redirect');
+            }
+            return assign({
+                query: to.query,
+                hash: to.hash,
+                params: to.params,
+            }, newTargetLocation);
+        }
+    }
+    function pushWithRedirect(to, redirectedFrom) {
+        const targetLocation = (pendingLocation = resolve(to));
+        const from = currentRoute.value;
+        const data = to.state;
+        const force = to.force;
+        // to could be a string where `replace` is a function
+        const replace = to.replace === true;
+        const shouldRedirect = handleRedirectRecord(targetLocation);
+        if (shouldRedirect)
+            return pushWithRedirect(assign(locationAsObject(shouldRedirect), {
+                state: data,
+                force,
+                replace,
+            }), 
+            // keep original redirectedFrom if it exists
+            redirectedFrom || targetLocation);
+        // if it was a redirect we already called `pushWithRedirect` above
+        const toLocation = targetLocation;
+        toLocation.redirectedFrom = redirectedFrom;
+        let failure;
+        if (!force && isSameRouteLocation(stringifyQuery$1, from, targetLocation)) {
+            failure = createRouterError(16 /* NAVIGATION_DUPLICATED */, { to: toLocation, from });
+            // trigger scroll to allow scrolling to the same anchor
+            handleScroll(from, from, 
+            // this is a push, the only way for it to be triggered from a
+            // history.listen is with a redirect, which makes it become a push
+            true, 
+            // This cannot be the first navigation because the initial location
+            // cannot be manually navigated to
+            false);
+        }
+        return (failure ? Promise.resolve(failure) : navigate(toLocation, from))
+            .catch((error) => isNavigationFailure(error)
+            ? // navigation redirects still mark the router as ready
+                isNavigationFailure(error, 2 /* NAVIGATION_GUARD_REDIRECT */)
+                    ? error
+                    : markAsReady(error) // also returns the error
+            : // reject any unknown error
+                triggerError(error, toLocation, from))
+            .then((failure) => {
+            if (failure) {
+                if (isNavigationFailure(failure, 2 /* NAVIGATION_GUARD_REDIRECT */)) {
+                    if (( true) &&
+                        // we are redirecting to the same location we were already at
+                        isSameRouteLocation(stringifyQuery$1, resolve(failure.to), toLocation) &&
+                        // and we have done it a couple of times
+                        redirectedFrom &&
+                        // @ts-expect-error: added only in dev
+                        (redirectedFrom._count = redirectedFrom._count
+                            ? // @ts-expect-error
+                                redirectedFrom._count + 1
+                            : 1) > 10) {
+                        warn(`Detected an infinite redirection in a navigation guard when going from "${from.fullPath}" to "${toLocation.fullPath}". Aborting to avoid a Stack Overflow. This will break in production if not fixed.`);
+                        return Promise.reject(new Error('Infinite redirect in navigation guard'));
+                    }
+                    return pushWithRedirect(
+                    // keep options
+                    assign(locationAsObject(failure.to), {
+                        state: data,
+                        force,
+                        replace,
+                    }), 
+                    // preserve the original redirectedFrom if any
+                    redirectedFrom || toLocation);
+                }
+            }
+            else {
+                // if we fail we don't finalize the navigation
+                failure = finalizeNavigation(toLocation, from, true, replace, data);
+            }
+            triggerAfterEach(toLocation, from, failure);
+            return failure;
+        });
+    }
+    /**
+     * Helper to reject and skip all navigation guards if a new navigation happened
+     * @param to
+     * @param from
+     */
+    function checkCanceledNavigationAndReject(to, from) {
+        const error = checkCanceledNavigation(to, from);
+        return error ? Promise.reject(error) : Promise.resolve();
+    }
+    // TODO: refactor the whole before guards by internally using router.beforeEach
+    function navigate(to, from) {
+        let guards;
+        const [leavingRecords, updatingRecords, enteringRecords] = extractChangingRecords(to, from);
+        // all components here have been resolved once because we are leaving
+        guards = extractComponentsGuards(leavingRecords.reverse(), 'beforeRouteLeave', to, from);
+        // leavingRecords is already reversed
+        for (const record of leavingRecords) {
+            record.leaveGuards.forEach(guard => {
+                guards.push(guardToPromiseFn(guard, to, from));
+            });
+        }
+        const canceledNavigationCheck = checkCanceledNavigationAndReject.bind(null, to, from);
+        guards.push(canceledNavigationCheck);
+        // run the queue of per route beforeRouteLeave guards
+        return (runGuardQueue(guards)
+            .then(() => {
+            // check global guards beforeEach
+            guards = [];
+            for (const guard of beforeGuards.list()) {
+                guards.push(guardToPromiseFn(guard, to, from));
+            }
+            guards.push(canceledNavigationCheck);
+            return runGuardQueue(guards);
+        })
+            .then(() => {
+            // check in components beforeRouteUpdate
+            guards = extractComponentsGuards(updatingRecords, 'beforeRouteUpdate', to, from);
+            for (const record of updatingRecords) {
+                record.updateGuards.forEach(guard => {
+                    guards.push(guardToPromiseFn(guard, to, from));
+                });
+            }
+            guards.push(canceledNavigationCheck);
+            // run the queue of per route beforeEnter guards
+            return runGuardQueue(guards);
+        })
+            .then(() => {
+            // check the route beforeEnter
+            guards = [];
+            for (const record of to.matched) {
+                // do not trigger beforeEnter on reused views
+                if (record.beforeEnter && !from.matched.includes(record)) {
+                    if (Array.isArray(record.beforeEnter)) {
+                        for (const beforeEnter of record.beforeEnter)
+                            guards.push(guardToPromiseFn(beforeEnter, to, from));
+                    }
+                    else {
+                        guards.push(guardToPromiseFn(record.beforeEnter, to, from));
+                    }
+                }
+            }
+            guards.push(canceledNavigationCheck);
+            // run the queue of per route beforeEnter guards
+            return runGuardQueue(guards);
+        })
+            .then(() => {
+            // NOTE: at this point to.matched is normalized and does not contain any () => Promise<Component>
+            // clear existing enterCallbacks, these are added by extractComponentsGuards
+            to.matched.forEach(record => (record.enterCallbacks = {}));
+            // check in-component beforeRouteEnter
+            guards = extractComponentsGuards(enteringRecords, 'beforeRouteEnter', to, from);
+            guards.push(canceledNavigationCheck);
+            // run the queue of per route beforeEnter guards
+            return runGuardQueue(guards);
+        })
+            .then(() => {
+            // check global guards beforeResolve
+            guards = [];
+            for (const guard of beforeResolveGuards.list()) {
+                guards.push(guardToPromiseFn(guard, to, from));
+            }
+            guards.push(canceledNavigationCheck);
+            return runGuardQueue(guards);
+        })
+            // catch any navigation canceled
+            .catch(err => isNavigationFailure(err, 8 /* NAVIGATION_CANCELLED */)
+            ? err
+            : Promise.reject(err)));
+    }
+    function triggerAfterEach(to, from, failure) {
+        // navigation is confirmed, call afterGuards
+        // TODO: wrap with error handlers
+        for (const guard of afterGuards.list())
+            guard(to, from, failure);
+    }
+    /**
+     * - Cleans up any navigation guards
+     * - Changes the url if necessary
+     * - Calls the scrollBehavior
+     */
+    function finalizeNavigation(toLocation, from, isPush, replace, data) {
+        // a more recent navigation took place
+        const error = checkCanceledNavigation(toLocation, from);
+        if (error)
+            return error;
+        // only consider as push if it's not the first navigation
+        const isFirstNavigation = from === START_LOCATION_NORMALIZED;
+        const state = !isBrowser ? {} : history.state;
+        // change URL only if the user did a push/replace and if it's not the initial navigation because
+        // it's just reflecting the url
+        if (isPush) {
+            // on the initial navigation, we want to reuse the scroll position from
+            // history state if it exists
+            if (replace || isFirstNavigation)
+                routerHistory.replace(toLocation.fullPath, assign({
+                    scroll: isFirstNavigation && state && state.scroll,
+                }, data));
+            else
+                routerHistory.push(toLocation.fullPath, data);
+        }
+        // accept current navigation
+        currentRoute.value = toLocation;
+        handleScroll(toLocation, from, isPush, isFirstNavigation);
+        markAsReady();
+    }
+    let removeHistoryListener;
+    // attach listener to history to trigger navigations
+    function setupListeners() {
+        // avoid setting up listeners twice due to an invalid first navigation
+        if (removeHistoryListener)
+            return;
+        removeHistoryListener = routerHistory.listen((to, _from, info) => {
+            // cannot be a redirect route because it was in history
+            const toLocation = resolve(to);
+            // due to dynamic routing, and to hash history with manual navigation
+            // (manually changing the url or calling history.hash = '#/somewhere'),
+            // there could be a redirect record in history
+            const shouldRedirect = handleRedirectRecord(toLocation);
+            if (shouldRedirect) {
+                pushWithRedirect(assign(shouldRedirect, { replace: true }), toLocation).catch(noop);
+                return;
+            }
+            pendingLocation = toLocation;
+            const from = currentRoute.value;
+            // TODO: should be moved to web history?
+            if (isBrowser) {
+                saveScrollPosition(getScrollKey(from.fullPath, info.delta), computeScrollPosition());
+            }
+            navigate(toLocation, from)
+                .catch((error) => {
+                if (isNavigationFailure(error, 4 /* NAVIGATION_ABORTED */ | 8 /* NAVIGATION_CANCELLED */)) {
+                    return error;
+                }
+                if (isNavigationFailure(error, 2 /* NAVIGATION_GUARD_REDIRECT */)) {
+                    // Here we could call if (info.delta) routerHistory.go(-info.delta,
+                    // false) but this is bug prone as we have no way to wait the
+                    // navigation to be finished before calling pushWithRedirect. Using
+                    // a setTimeout of 16ms seems to work but there is not guarantee for
+                    // it to work on every browser. So Instead we do not restore the
+                    // history entry and trigger a new navigation as requested by the
+                    // navigation guard.
+                    // the error is already handled by router.push we just want to avoid
+                    // logging the error
+                    pushWithRedirect(error.to, toLocation
+                    // avoid an uncaught rejection, let push call triggerError
+                    )
+                        .then(failure => {
+                        // manual change in hash history #916 ending up in the URL not
+                        // changing but it was changed by the manual url change, so we
+                        // need to manually change it ourselves
+                        if (isNavigationFailure(failure, 4 /* NAVIGATION_ABORTED */ |
+                            16 /* NAVIGATION_DUPLICATED */) &&
+                            !info.delta &&
+                            info.type === NavigationType.pop) {
+                            routerHistory.go(-1, false);
+                        }
+                    })
+                        .catch(noop);
+                    // avoid the then branch
+                    return Promise.reject();
+                }
+                // do not restore history on unknown direction
+                if (info.delta)
+                    routerHistory.go(-info.delta, false);
+                // unrecognized error, transfer to the global handler
+                return triggerError(error, toLocation, from);
+            })
+                .then((failure) => {
+                failure =
+                    failure ||
+                        finalizeNavigation(
+                        // after navigation, all matched components are resolved
+                        toLocation, from, false);
+                // revert the navigation
+                if (failure) {
+                    if (info.delta) {
+                        routerHistory.go(-info.delta, false);
+                    }
+                    else if (info.type === NavigationType.pop &&
+                        isNavigationFailure(failure, 4 /* NAVIGATION_ABORTED */ | 16 /* NAVIGATION_DUPLICATED */)) {
+                        // manual change in hash history #916
+                        // it's like a push but lacks the information of the direction
+                        routerHistory.go(-1, false);
+                    }
+                }
+                triggerAfterEach(toLocation, from, failure);
+            })
+                .catch(noop);
+        });
+    }
+    // Initialization and Errors
+    let readyHandlers = useCallbacks();
+    let errorHandlers = useCallbacks();
+    let ready;
+    /**
+     * Trigger errorHandlers added via onError and throws the error as well
+     *
+     * @param error - error to throw
+     * @param to - location we were navigating to when the error happened
+     * @param from - location we were navigating from when the error happened
+     * @returns the error as a rejected promise
+     */
+    function triggerError(error, to, from) {
+        markAsReady(error);
+        const list = errorHandlers.list();
+        if (list.length) {
+            list.forEach(handler => handler(error, to, from));
+        }
+        else {
+            if ((true)) {
+                warn('uncaught error during route navigation:');
+            }
+            console.error(error);
+        }
+        return Promise.reject(error);
+    }
+    function isReady() {
+        if (ready && currentRoute.value !== START_LOCATION_NORMALIZED)
+            return Promise.resolve();
+        return new Promise((resolve, reject) => {
+            readyHandlers.add([resolve, reject]);
+        });
+    }
+    function markAsReady(err) {
+        if (!ready) {
+            // still not ready if an error happened
+            ready = !err;
+            setupListeners();
+            readyHandlers
+                .list()
+                .forEach(([resolve, reject]) => (err ? reject(err) : resolve()));
+            readyHandlers.reset();
+        }
+        return err;
+    }
+    // Scroll behavior
+    function handleScroll(to, from, isPush, isFirstNavigation) {
+        const { scrollBehavior } = options;
+        if (!isBrowser || !scrollBehavior)
+            return Promise.resolve();
+        const scrollPosition = (!isPush && getSavedScrollPosition(getScrollKey(to.fullPath, 0))) ||
+            ((isFirstNavigation || !isPush) &&
+                history.state &&
+                history.state.scroll) ||
+            null;
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.nextTick)()
+            .then(() => scrollBehavior(to, from, scrollPosition))
+            .then(position => position && scrollToPosition(position))
+            .catch(err => triggerError(err, to, from));
+    }
+    const go = (delta) => routerHistory.go(delta);
+    let started;
+    const installedApps = new Set();
+    const router = {
+        currentRoute,
+        addRoute,
+        removeRoute,
+        hasRoute,
+        getRoutes,
+        resolve,
+        options,
+        push,
+        replace,
+        go,
+        back: () => go(-1),
+        forward: () => go(1),
+        beforeEach: beforeGuards.add,
+        beforeResolve: beforeResolveGuards.add,
+        afterEach: afterGuards.add,
+        onError: errorHandlers.add,
+        isReady,
+        install(app) {
+            const router = this;
+            app.component('RouterLink', RouterLink);
+            app.component('RouterView', RouterView);
+            app.config.globalProperties.$router = router;
+            Object.defineProperty(app.config.globalProperties, '$route', {
+                enumerable: true,
+                get: () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.unref)(currentRoute),
+            });
+            // this initial navigation is only necessary on client, on server it doesn't
+            // make sense because it will create an extra unnecessary navigation and could
+            // lead to problems
+            if (isBrowser &&
+                // used for the initial navigation client side to avoid pushing
+                // multiple times when the router is used in multiple apps
+                !started &&
+                currentRoute.value === START_LOCATION_NORMALIZED) {
+                // see above
+                started = true;
+                push(routerHistory.location).catch(err => {
+                    if ((true))
+                        warn('Unexpected error when starting the router:', err);
+                });
+            }
+            const reactiveRoute = {};
+            for (const key in START_LOCATION_NORMALIZED) {
+                // @ts-expect-error: the key matches
+                reactiveRoute[key] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => currentRoute.value[key]);
+            }
+            app.provide(routerKey, router);
+            app.provide(routeLocationKey, (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)(reactiveRoute));
+            app.provide(routerViewLocationKey, currentRoute);
+            const unmountApp = app.unmount;
+            installedApps.add(app);
+            app.unmount = function () {
+                installedApps.delete(app);
+                // the router is not attached to an app anymore
+                if (installedApps.size < 1) {
+                    // invalidate the current navigation
+                    pendingLocation = START_LOCATION_NORMALIZED;
+                    removeHistoryListener && removeHistoryListener();
+                    removeHistoryListener = null;
+                    currentRoute.value = START_LOCATION_NORMALIZED;
+                    started = false;
+                    ready = false;
+                }
+                unmountApp();
+            };
+            if (( true) && isBrowser) {
+                addDevtools(app, router, matcher);
+            }
+        },
+    };
+    return router;
+}
+function runGuardQueue(guards) {
+    return guards.reduce((promise, guard) => promise.then(() => guard()), Promise.resolve());
+}
+function extractChangingRecords(to, from) {
+    const leavingRecords = [];
+    const updatingRecords = [];
+    const enteringRecords = [];
+    const len = Math.max(from.matched.length, to.matched.length);
+    for (let i = 0; i < len; i++) {
+        const recordFrom = from.matched[i];
+        if (recordFrom) {
+            if (to.matched.find(record => isSameRouteRecord(record, recordFrom)))
+                updatingRecords.push(recordFrom);
+            else
+                leavingRecords.push(recordFrom);
+        }
+        const recordTo = to.matched[i];
+        if (recordTo) {
+            // the type doesn't matter because we are comparing per reference
+            if (!from.matched.find(record => isSameRouteRecord(record, recordTo))) {
+                enteringRecords.push(recordTo);
+            }
+        }
+    }
+    return [leavingRecords, updatingRecords, enteringRecords];
+}
+
+/**
+ * Returns the router instance. Equivalent to using `$router` inside
+ * templates.
+ */
+function useRouter() {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(routerKey);
+}
+/**
+ * Returns the current route location. Equivalent to using `$route` inside
+ * templates.
+ */
+function useRoute() {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(routeLocationKey);
+}
+
+
 
 
 /***/ }),
@@ -38070,6 +47075,36 @@ function compileToFunction(template, options) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/create fake namespace object */
+/******/ 	(() => {
+/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
+/******/ 		var leafPrototypes;
+/******/ 		// create a fake namespace object
+/******/ 		// mode & 1: value is a module id, require it
+/******/ 		// mode & 2: merge all properties of value into the ns
+/******/ 		// mode & 4: return value when already ns object
+/******/ 		// mode & 16: return value when it's Promise-like
+/******/ 		// mode & 8|1: behave like require
+/******/ 		__webpack_require__.t = function(value, mode) {
+/******/ 			if(mode & 1) value = this(value);
+/******/ 			if(mode & 8) return value;
+/******/ 			if(typeof value === 'object' && value) {
+/******/ 				if((mode & 4) && value.__esModule) return value;
+/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
+/******/ 			}
+/******/ 			var ns = Object.create(null);
+/******/ 			__webpack_require__.r(ns);
+/******/ 			var def = {};
+/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
+/******/ 			for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
+/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
+/******/ 			}
+/******/ 			def['default'] = () => (value);
+/******/ 			__webpack_require__.d(ns, def);
+/******/ 			return ns;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -38079,6 +47114,39 @@ function compileToFunction(template, options) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/ensure chunk */
+/******/ 	(() => {
+/******/ 		__webpack_require__.f = {};
+/******/ 		// This file contains only the entry chunk.
+/******/ 		// The chunk loading function for additional chunks
+/******/ 		__webpack_require__.e = (chunkId) => {
+/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
+/******/ 				__webpack_require__.f[key](chunkId, promises);
+/******/ 				return promises;
+/******/ 			}, []));
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get javascript chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference async chunks
+/******/ 		__webpack_require__.u = (chunkId) => {
+/******/ 			// return url for filenames not based on template
+/******/ 			if ({"resources_js_components_Home_Index_vue":1,"resources_js_components_Post_Index_vue":1,"resources_js_lang_translations_uk_json":1,"resources_js_lang_translations_en_json":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			// return url for filenames based on template
+/******/ 			return undefined;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get mini-css chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference all chunks
+/******/ 		__webpack_require__.miniCssF = (chunkId) => {
+/******/ 			// return url for filenames based on template
+/******/ 			return "" + chunkId + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -38097,6 +47165,52 @@ function compileToFunction(template, options) {
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/load script */
+/******/ 	(() => {
+/******/ 		var inProgress = {};
+/******/ 		// data-webpack is not used as build has no uniqueName
+/******/ 		// loadScript function to load a script via script tag
+/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
+/******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
+/******/ 			var script, needAttach;
+/******/ 			if(key !== undefined) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				for(var i = 0; i < scripts.length; i++) {
+/******/ 					var s = scripts[i];
+/******/ 					if(s.getAttribute("src") == url) { script = s; break; }
+/******/ 				}
+/******/ 			}
+/******/ 			if(!script) {
+/******/ 				needAttach = true;
+/******/ 				script = document.createElement('script');
+/******/ 		
+/******/ 				script.charset = 'utf-8';
+/******/ 				script.timeout = 120;
+/******/ 				if (__webpack_require__.nc) {
+/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
+/******/ 				}
+/******/ 		
+/******/ 				script.src = url;
+/******/ 			}
+/******/ 			inProgress[url] = [done];
+/******/ 			var onScriptComplete = (prev, event) => {
+/******/ 				// avoid mem leaks in IE.
+/******/ 				script.onerror = script.onload = null;
+/******/ 				clearTimeout(timeout);
+/******/ 				var doneFns = inProgress[url];
+/******/ 				delete inProgress[url];
+/******/ 				script.parentNode && script.parentNode.removeChild(script);
+/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
+/******/ 				if(prev) return prev(event);
+/******/ 			}
+/******/ 			;
+/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
+/******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
+/******/ 			script.onload = onScriptComplete.bind(null, script.onload);
+/******/ 			needAttach && document.head.appendChild(script);
+/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
@@ -38119,6 +47233,11 @@ function compileToFunction(template, options) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/";
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
@@ -38131,7 +47250,44 @@ function compileToFunction(template, options) {
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
-/******/ 		// no chunk on demand loading
+/******/ 		__webpack_require__.f.j = (chunkId, promises) => {
+/******/ 				// JSONP chunk loading for javascript
+/******/ 				var installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
+/******/ 				if(installedChunkData !== 0) { // 0 means "already installed".
+/******/ 		
+/******/ 					// a Promise means "currently loading".
+/******/ 					if(installedChunkData) {
+/******/ 						promises.push(installedChunkData[2]);
+/******/ 					} else {
+/******/ 						if("css/app" != chunkId) {
+/******/ 							// setup Promise in chunk cache
+/******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
+/******/ 							promises.push(installedChunkData[2] = promise);
+/******/ 		
+/******/ 							// start chunk loading
+/******/ 							var url = __webpack_require__.p + __webpack_require__.u(chunkId);
+/******/ 							// create error before stack unwound to get useful stacktrace later
+/******/ 							var error = new Error();
+/******/ 							var loadingEnded = (event) => {
+/******/ 								if(__webpack_require__.o(installedChunks, chunkId)) {
+/******/ 									installedChunkData = installedChunks[chunkId];
+/******/ 									if(installedChunkData !== 0) installedChunks[chunkId] = undefined;
+/******/ 									if(installedChunkData) {
+/******/ 										var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 										var realSrc = event && event.target && event.target.src;
+/******/ 										error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 										error.name = 'ChunkLoadError';
+/******/ 										error.type = errorType;
+/******/ 										error.request = realSrc;
+/******/ 										installedChunkData[1](error);
+/******/ 									}
+/******/ 								}
+/******/ 							};
+/******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
+/******/ 						} else installedChunks[chunkId] = 0;
+/******/ 					}
+/******/ 				}
+/******/ 		};
 /******/ 		
 /******/ 		// no prefetching
 /******/ 		

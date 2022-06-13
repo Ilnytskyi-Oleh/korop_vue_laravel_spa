@@ -2,6 +2,7 @@
 @section('content')
     <div id="">
        test lara
+
     </div>
 
 @endsection

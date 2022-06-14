@@ -17,6 +17,11 @@
               </select>
               <div v-if="errors.category_id" class="text-red-700">{{errors.category_id[0]}}</div>
           </div>
+          <div class="my-2">
+              Thumbnail
+              <br/>
+              <input type="file" @change="selectFile">
+          </div>
           <div class="my-3">
               <input type="submit" :disabled="formSubmitting"
                      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:bg-blue-300 cursor-pointer"
@@ -35,7 +40,8 @@ export default {
             fields:{
                 title:'',
                 text:'',
-                category_id:''
+                category_id:'',
+                thumbnail:null
             },
             errors:{},
             formSubmitting: false
@@ -53,7 +59,14 @@ export default {
         },
         async submitForm() {
             this.formSubmitting = true
-            await axios.post('/api/posts', this.fields)
+
+            let fields = new FormData()
+
+            for(let key in this.fields){
+                fields.append(key, this.fields[key])
+            }
+
+            await axios.post('/api/posts', fields)
                 .then(res => {
                     this.$router.push({name:'posts'})
                     this.formSubmitting = false
@@ -63,6 +76,11 @@ export default {
                         this.formSubmitting = false
                     }
                 });
+        },
+        selectFile(event){
+            console.log(event.target.files[0])
+            this.fields.thumbnail = event.target.files[0]
+            // this.fields.thumbnail = 'test'
         }
     }
 }

@@ -12,7 +12,10 @@ class StoreController extends Controller
 {
     public function __invoke(StoreRequest $request)
     {
-        sleep(5);
+        if ($request->hasFile('thumbnail')){
+            $filename = $request->thumbnail->getClientOriginalName();
+            info($filename);
+        }
         $data = $request->validated();
         $post = Post::create($data);
         return new PostResource($post);

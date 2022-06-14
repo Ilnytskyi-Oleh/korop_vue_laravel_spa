@@ -27,7 +27,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       fields: {
         title: '',
         text: '',
-        category_id: ''
+        category_id: '',
+        thumbnail: null
       },
       errors: {},
       formSubmitting: false
@@ -62,13 +63,20 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this2 = this;
 
       return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+        var fields, key;
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
                 _this2.formSubmitting = true;
-                _context2.next = 3;
-                return axios.post('/api/posts', _this2.fields).then(function (res) {
+                fields = new FormData();
+
+                for (key in _this2.fields) {
+                  fields.append(key, _this2.fields[key]);
+                }
+
+                _context2.next = 5;
+                return axios.post('/api/posts', fields).then(function (res) {
                   _this2.$router.push({
                     name: 'posts'
                   });
@@ -81,13 +89,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 });
 
-              case 3:
+              case 5:
               case "end":
                 return _context2.stop();
             }
           }
         }, _callee2);
       }))();
+    },
+    selectFile: function selectFile(event) {
+      console.log(event.target.files[0]);
+      this.fields.thumbnail = event.target.files[0]; // this.fields.thumbnail = 'test'
     }
   }
 });
@@ -144,13 +156,23 @@ var _hoisted_8 = {
   "class": "text-red-700"
 };
 var _hoisted_9 = {
+  "class": "my-2"
+};
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Thumbnail ");
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_12 = {
   "class": "my-3"
 };
-var _hoisted_10 = ["disabled", "value"];
+var _hoisted_13 = ["disabled", "value"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
     "class": "w-full",
-    onSubmit: _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+    onSubmit: _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.submitForm && $options.submitForm.apply($options, arguments);
     }, ["prevent"]))
   }, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
@@ -188,14 +210,21 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.fields.category_id]]), $data.errors.category_id ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.category_id[0]), 1
   /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_hoisted_10, _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "file",
+    onChange: _cache[3] || (_cache[3] = function () {
+      return $options.selectFile && $options.selectFile.apply($options, arguments);
+    })
+  }, null, 32
+  /* HYDRATE_EVENTS */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "submit",
     disabled: $data.formSubmitting,
     "class": "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:bg-blue-300 cursor-pointer",
     value: $data.formSubmitting ? 'Saving post...' : 'Save post'
   }, null, 8
   /* PROPS */
-  , _hoisted_10)])], 32
+  , _hoisted_13)])], 32
   /* HYDRATE_EVENTS */
   )]);
 }

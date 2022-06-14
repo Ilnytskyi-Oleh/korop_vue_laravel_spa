@@ -27,6 +27,7 @@ class StoreRequest extends FormRequest
             'title' => 'required',
             'text' => 'required',
             'category_id' => 'required|exists:App\Models\Category,id',
+            'thumbnail' => '',
         ];
     }
 }

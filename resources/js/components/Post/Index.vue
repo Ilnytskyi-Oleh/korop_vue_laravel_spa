@@ -59,7 +59,7 @@
                 :current="currentPage"
                 :total="total"
                 :per-page="perPage"
-                @page-changed="getPosts(currentPage = $event)"
+                @page-changed="this.$router.push({query: {page: `${currentPage = $event}`}})"
 
                 text-before-input="Page"
                 text-after-input="Go"/>
@@ -70,6 +70,7 @@
 <script>
 import '@ocrv/vue-tailwind-pagination/styles'
 import VueTailwindPagination from '@ocrv/vue-tailwind-pagination'
+
 
 export default {
     name: "Index",
@@ -89,16 +90,20 @@ export default {
         }
     },
     watch:{
-        categoryId(value){
+        categoryId(){
             this.getPosts();
         }
     },
     computed:{
         queryPage() {
             let params = new URLSearchParams(document.location.search)
-            let page = params.get('page');
-            return page;
+            return params.get('page');
         },
+    },
+    async beforeRouteUpdate(to, from) {
+        if(to.query.page){
+            this.getPosts(to.query.page)
+        }
     },
     mounted() {
         this.getPosts(this.queryPage ?? 1);
@@ -122,10 +127,7 @@ export default {
                     this.total = res.data.meta.total;
                     this.perPage = res.data.meta.per_page;
                     this.currentPage = res.data.meta.current_page;
-
-                    const url = new URL(window.location);
-                    url.searchParams.set('page', this.currentPage);
-                    window.history.pushState({}, '', url);
+                    this.$router.push({query: {page: `${page}`}})
                 });
         },
         getCategories() {

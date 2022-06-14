@@ -115,7 +115,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context2.prev = _context2.next) {
               case 0:
                 page = _arguments.length > 0 && _arguments[0] !== undefined ? _arguments[0] : 1;
-                loader = _this2.$loading.show();
+                loader = _this2.$loading.show({// opacity:0.95
+                });
                 _context2.next = 4;
                 return axios.get("/api/posts?page=".concat(page, "&category_id=").concat(_this2.categoryId, "&sort_field=").concat(_this2.sortField, "&sort_direction=").concat(_this2.sortDirection)).then(function (res) {
                   _this2.posts = res.data.data;
@@ -253,7 +254,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* UNKEYED_FRAGMENT */
   ))], 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.categoryId]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.categoryId]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "#",
     onClick: _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
       return $options.changeSort('title');
@@ -293,7 +294,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "text-after-input": "Go"
   }, null, 8
   /* PROPS */
-  , ["current", "total", "per-page"])])]);
+  , ["current", "total", "per-page"])])])]);
 }
 
 /***/ }),

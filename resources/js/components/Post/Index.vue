@@ -11,58 +11,60 @@
                     </option>
                 </select>
             </div>
+            <div >
+                <table  class="w-full table-auto rounded-sm">
+                    <thead>
+                    <tr>
+                        <th
+                            class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
+                        >
+                            <a href="#" @click.prevent="changeSort('title')">Title</a>
+                            <span v-if="this.sortField === 'title' && this.sortDirection === 'asc'">&uarr;</span>
+                            <span v-if="this.sortField === 'title' && this.sortDirection === 'desc'">&darr;</span>
+                        </th>
+                        <th
+                            class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
+                        >
+                            <a href="#" @click.prevent="changeSort('text')">Text</a>
+                            <span v-if="this.sortField === 'text' && this.sortDirection === 'asc'">&uarr;</span>
+                            <span v-if="this.sortField === 'text' && this.sortDirection === 'desc'">&darr;</span>
+                        </th>
+                        <th
+                            class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
+                        >
+                            <a href="#" @click.prevent="changeSort('created_at')">Created At</a>
+                            <span v-if="this.sortField === 'created_at' && this.sortDirection === 'asc'">&uarr;</span>
+                            <span v-if="this.sortField === 'created_at' && this.sortDirection === 'desc'">&darr;</span>
+                        </th>
 
-            <table class="w-full table-auto rounded-sm">
-                <thead>
-                <tr>
-                    <th
-                        class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
-                    >
-                        <a href="#" @click.prevent="changeSort('title')">Title</a>
-                        <span v-if="this.sortField === 'title' && this.sortDirection === 'asc'">&uarr;</span>
-                        <span v-if="this.sortField === 'title' && this.sortDirection === 'desc'">&darr;</span>
-                    </th>
-                    <th
-                        class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
-                    >
-                        <a href="#" @click.prevent="changeSort('text')">Text</a>
-                        <span v-if="this.sortField === 'text' && this.sortDirection === 'asc'">&uarr;</span>
-                        <span v-if="this.sortField === 'text' && this.sortDirection === 'desc'">&darr;</span>
-                    </th>
-                    <th
-                        class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
-                    >
-                        <a href="#" @click.prevent="changeSort('created_at')">Created At</a>
-                        <span v-if="this.sortField === 'created_at' && this.sortDirection === 'asc'">&uarr;</span>
-                        <span v-if="this.sortField === 'created_at' && this.sortDirection === 'desc'">&darr;</span>
-                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="post in posts" class="border-gray-300">
 
-                </tr>
-                </thead>
-                <tbody>
-                <tr v-for="post in posts" class="border-gray-300">
+                        <td class="px-4 py-8 border-t border-b border-gray-300 text-sm">
+                            {{post.title}}
+                        </td>
+                        <td class="px-4 py-8 border-t border-b border-gray-300 text-sm">
+                            {{post.text.substring(0,50)}}
+                        </td>
+                        <td class="px-4 py-8 border-t border-b border-gray-300 text-sm">
+                            {{post.created_at}}
+                        </td>
+                    </tr>
 
-                    <td class="px-4 py-8 border-t border-b border-gray-300 text-sm">
-                        {{post.title}}
-                    </td>
-                    <td class="px-4 py-8 border-t border-b border-gray-300 text-sm">
-                        {{post.text.substring(0,50)}}
-                    </td>
-                    <td class="px-4 py-8 border-t border-b border-gray-300 text-sm">
-                        {{post.created_at}}
-                    </td>
-                </tr>
+                    </tbody>
+                </table>
+                <VueTailwindPagination
+                    :current="currentPage"
+                    :total="total"
+                    :per-page="perPage"
+                    @page-changed="this.$router.push({query: {page: `${currentPage = $event}`}})"
 
-                </tbody>
-            </table>
-            <VueTailwindPagination
-                :current="currentPage"
-                :total="total"
-                :per-page="perPage"
-                @page-changed="this.$router.push({query: {page: `${currentPage = $event}`}})"
+                    text-before-input="Page"
+                    text-after-input="Go"/>
+            </div>
 
-                text-before-input="Page"
-                text-after-input="Go"/>
         </div>
     </div>
 </template>
@@ -121,7 +123,9 @@ export default {
             this.getPosts()
         },
        async getPosts(page = 1) {
-            const loader = this.$loading.show();
+            const loader = this.$loading.show({
+                // opacity:0.95
+            });
            await axios.get(`/api/posts?page=${page}&category_id=${this.categoryId}&sort_field=${this.sortField}&sort_direction=${this.sortDirection}`)
                 .then(res => {
                     this.posts = res.data.data;

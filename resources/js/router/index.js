@@ -6,7 +6,7 @@ import translations from "../lang/translations";
 
 
 const routerOptions = {
-    history: createWebHistory(),
+    history: createWebHistory(process.env.APP_URL),
     routes: [
         {
             path: '/',
@@ -18,12 +18,17 @@ const routerOptions = {
             name: 'posts',
             component: () => import('../components/Post/Index'),
         },
+        {
+            path: '/posts/create',
+            name: 'posts.create',
+            component: () => import('../components/Post/Create'),
+        },
 
-        // {
-        //     path: '/:pathMatch(.*)*',
-        //     name: '404',
-        //     component: () => import('../views/NotFoundView.vue'),
-        // },
+        {
+            path: '/:pathMatch(.*)*',
+            name: '404',
+            component: () => import('../components/404'),
+        },
     ],
     scrollBehavior(to) {
             return { el:'#app', top: 0, behavior: 'smooth'}

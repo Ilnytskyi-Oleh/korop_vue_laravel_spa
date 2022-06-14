@@ -23032,12 +23032,24 @@ var _hoisted_1 = {
   "class": "container mx-auto flex gap-x-4 my-5"
 };
 var _hoisted_2 = {
-  "class": "py-2 pl-3 md:p-0"
+  "class": "group relative"
 };
 var _hoisted_3 = {
+  "class": "absolute hidden group-hover:block bg-white"
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Create post");
+
+var _hoisted_5 = {
+  "class": "ml-auto"
+};
+var _hoisted_6 = {
+  "class": "py-2 pl-3 md:p-0"
+};
+var _hoisted_7 = {
   "class": "relative group flex lg:block"
 };
-var _hoisted_4 = {
+var _hoisted_8 = {
   "class": "lg:absolute lg:hidden inset-x-0 lg:group-hover:block lg:w-full lg:pt-6"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -23048,19 +23060,22 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_language_switcher = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("language-switcher");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_localized_link, {
+    "active-class": "underline",
     to: {
       name: 'home'
     }
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('nav.home')), 1
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('nav.home')) + ":", 1
       /* TEXT */
       )];
     }),
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_localized_link, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_localized_link, {
+    "active-class": "underline",
+    "class": "",
     to: {
       name: 'posts'
     }
@@ -23073,12 +23088,27 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_language_switcher, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_localized_link, {
+    "active-class": "underline",
+    "class": "w-max",
+    to: {
+      name: 'posts.create'
+    }
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_4];
+    }),
+    _: 1
+    /* STABLE */
+
+  }, 8
+  /* PROPS */
+  , ["to"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_language_switcher, {
     "active-class": ""
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function (_ref) {
       var links = _ref.links;
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(links, function (link) {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(links, function (link) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
           "class": "",
           key: link.langIndex
@@ -23100,7 +23130,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         , ["to"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
       }), 128
       /* KEYED_FRAGMENT */
-      )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(links, function (link) {
+      )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(links, function (link) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
           key: link.langIndex
         }, [!link.activeClass ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_router_link, {
@@ -23126,7 +23156,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })])]);
+  })])])]);
 }
 
 /***/ }),
@@ -23271,12 +23301,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var vue_lang_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-lang-router */ "./node_modules/vue-lang-router/dist/lang-router.esm.js");
 /* harmony import */ var _lang_translations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lang/translations */ "./resources/js/lang/translations/index.js");
+/* provided dependency */ var process = __webpack_require__(/*! process/browser.js */ "./node_modules/process/browser.js");
 
 
  // import localizedURLs from "../lang/localized-urls";
 
 var routerOptions = {
-  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_2__.createWebHistory)(),
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_2__.createWebHistory)(process.env.APP_URL),
   routes: [{
     path: '/',
     name: 'home',
@@ -23289,12 +23320,19 @@ var routerOptions = {
     component: function component() {
       return __webpack_require__.e(/*! import() */ "resources_js_components_Post_Index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/Post/Index */ "./resources/js/components/Post/Index.vue"));
     }
-  } // {
-  //     path: '/:pathMatch(.*)*',
-  //     name: '404',
-  //     component: () => import('../views/NotFoundView.vue'),
-  // },
-  ],
+  }, {
+    path: '/posts/create',
+    name: 'posts.create',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_components_Post_Create_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/Post/Create */ "./resources/js/components/Post/Create.vue"));
+    }
+  }, {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_components_404_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/404 */ "./resources/js/components/404.vue"));
+    }
+  }],
   scrollBehavior: function scrollBehavior(to) {
     return {
       el: '#app',
@@ -47845,7 +47883,7 @@ function compileToFunction(template, options) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_Home_Index_vue":1,"resources_js_components_Post_Index_vue":1,"resources_js_lang_translations_uk_json":1,"resources_js_lang_translations_en_json":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_Home_Index_vue":1,"resources_js_components_Post_Index_vue":1,"resources_js_components_Post_Create_vue":1,"resources_js_components_404_vue":1,"resources_js_lang_translations_uk_json":1,"resources_js_lang_translations_en_json":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

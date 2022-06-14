@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-      <form class="w-full" >
+      <form class="w-full" @submit.prevent="submitForm">
           <div class="my-3">Post title</div>
           <input class="border w-1/3" v-model="fields.title" type="text">
           <div v-if="errors.title" class="text-red-700">{{errors.title[0]}}</div>
@@ -18,7 +18,9 @@
               <div v-if="errors.category_id" class="text-red-700">{{errors.category_id[0]}}</div>
           </div>
           <div class="my-3">
-              <input type="submit" @click.prevent="submitForm" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" value="Save post">
+              <input type="submit" :disabled="formSubmitting"
+                     class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:bg-blue-300 cursor-pointer"
+                     :value="formSubmitting ? 'Saving post...' : 'Save post'">
           </div>
       </form>
   </div>
@@ -35,7 +37,8 @@ export default {
                 text:'',
                 category_id:''
             },
-            errors:{}
+            errors:{},
+            formSubmitting: false
         }
     },
     mounted() {
@@ -49,12 +52,15 @@ export default {
                 });
         },
         async submitForm() {
+            this.formSubmitting = true
             await axios.post('/api/posts', this.fields)
                 .then(res => {
                     this.$router.push({name:'posts'})
+                    this.formSubmitting = false
                 }).catch(err=>{
                     if(err.response.status === 422) {
                         this.errors = err.response.data.errors
+                        this.formSubmitting = false
                     }
                 });
         }

@@ -120,18 +120,20 @@ export default {
 
             this.getPosts()
         },
-        getPosts(page = 1) {
-            axios.get(`/api/posts?page=${page}&category_id=${this.categoryId}&sort_field=${this.sortField}&sort_direction=${this.sortDirection}`)
+       async getPosts(page = 1) {
+            const loader = this.$loading.show();
+           await axios.get(`/api/posts?page=${page}&category_id=${this.categoryId}&sort_field=${this.sortField}&sort_direction=${this.sortDirection}`)
                 .then(res => {
                     this.posts = res.data.data;
                     this.total = res.data.meta.total;
                     this.perPage = res.data.meta.per_page;
                     this.currentPage = res.data.meta.current_page;
                     this.$router.push({query: {page: `${page}`}})
+                    loader.hide()
                 });
         },
-        getCategories() {
-            axios.get('/api/categories')
+        async getCategories() {
+           await axios.get('/api/categories')
                 .then(res => {
                     this.categories = res.data.data;
                 });

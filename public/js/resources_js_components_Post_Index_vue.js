@@ -61,12 +61,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       this.getPosts();
     }
   },
-  computed: {
-    queryPage: function queryPage() {
-      var params = new URLSearchParams(document.location.search);
-      return params.get('page');
-    }
-  },
   beforeRouteUpdate: function beforeRouteUpdate(to, from) {
     var _this = this;
 
@@ -88,9 +82,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }))();
   },
   mounted: function mounted() {
-    var _this$queryPage;
+    var _this$$route$query$pa;
 
-    this.getPosts((_this$queryPage = this.queryPage) !== null && _this$queryPage !== void 0 ? _this$queryPage : 1);
+    this.getPosts((_this$$route$query$pa = this.$route.query.page) !== null && _this$$route$query$pa !== void 0 ? _this$$route$query$pa : 1);
     this.getCategories();
   },
   methods: {
@@ -102,7 +96,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         this.sortDirection = 'asc';
       }
 
-      this.getPosts();
+      this.getPosts(this.currentPage);
     },
     getPosts: function getPosts() {
       var _arguments = arguments,
@@ -123,13 +117,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   _this2.total = res.data.meta.total;
                   _this2.perPage = res.data.meta.per_page;
                   _this2.currentPage = res.data.meta.current_page;
-
-                  _this2.$router.push({
-                    query: {
-                      page: "".concat(page)
-                    }
-                  });
-
                   loader.hide();
                 });
 

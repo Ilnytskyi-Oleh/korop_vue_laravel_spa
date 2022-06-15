@@ -96,19 +96,13 @@ export default {
             this.getPosts();
         }
     },
-    computed:{
-        queryPage() {
-            let params = new URLSearchParams(document.location.search)
-            return params.get('page');
-        },
-    },
     async beforeRouteUpdate(to, from) {
         if(to.query.page){
             this.getPosts(to.query.page)
         }
     },
     mounted() {
-        this.getPosts(this.queryPage ?? 1);
+        this.getPosts(this.$route.query.page ?? 1);
         this.getCategories()
     },
     methods: {
@@ -120,7 +114,7 @@ export default {
                 this.sortDirection = 'asc'
             }
 
-            this.getPosts()
+            this.getPosts(this.currentPage)
         },
        async getPosts(page = 1) {
             const loader = this.$loading.show({
@@ -132,7 +126,6 @@ export default {
                     this.total = res.data.meta.total;
                     this.perPage = res.data.meta.per_page;
                     this.currentPage = res.data.meta.current_page;
-                    this.$router.push({query: {page: `${page}`}})
                     loader.hide()
                 });
         },

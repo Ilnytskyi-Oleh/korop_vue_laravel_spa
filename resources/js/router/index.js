@@ -23,7 +23,11 @@ const routerOptions = {
             name: 'posts.create',
             component: () => import('../components/Post/Create'),
         },
-
+        {
+            path: '/posts/:id/edit',
+            name: 'posts.edit',
+            component: () => import('../components/Post/Edit'),
+        },
         {
             path: '/:pathMatch(.*)*',
             name: '404',

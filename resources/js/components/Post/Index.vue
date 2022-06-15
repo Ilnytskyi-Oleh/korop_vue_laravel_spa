@@ -36,6 +36,12 @@
                             <span v-if="this.sortField === 'created_at' && this.sortDirection === 'asc'">&uarr;</span>
                             <span v-if="this.sortField === 'created_at' && this.sortDirection === 'desc'">&darr;</span>
                         </th>
+                        <th
+                            class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
+                        >
+                            Actions
+
+                        </th>
 
                     </tr>
                     </thead>
@@ -50,6 +56,10 @@
                         </td>
                         <td class="px-4 py-8 border-t border-b border-gray-300 text-sm">
                             {{post.created_at}}
+                        </td>
+                        <td class="px-4 py-8 border-t border-b border-gray-300 text-sm space-x-4">
+                            <localized-link :to="{name:'posts.edit', params:{ id: post.id}}">Edit</localized-link>
+<!--                            <localized-link href="">Delete</localized-link>-->
                         </td>
                     </tr>
 

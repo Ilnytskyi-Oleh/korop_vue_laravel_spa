@@ -33,7 +33,7 @@
 
 <script>
 export default {
-    name: "Create",
+    name: "Edit",
     data(){
         return {
             categories: {},
@@ -49,8 +49,16 @@ export default {
     },
     mounted() {
         this.getCategories()
+        this.getPost()
+
     },
     methods:{
+        async getPost() {
+            await axios.get(`/api/posts/${this.$route.params.id}`)
+                .then(res => {
+                    this.fields = res.data.data;
+                });
+        },
         async getCategories() {
             await axios.get('/api/categories')
                 .then(res => {
@@ -66,7 +74,7 @@ export default {
                 fields.append(key, this.fields[key])
             }
 
-            await axios.post('/api/posts', fields)
+            await axios.patch(`/api/posts/${this.fields.id}`, fields)
                 .then(res => {
                     this.$router.push({name:'posts'})
                     this.formSubmitting = false

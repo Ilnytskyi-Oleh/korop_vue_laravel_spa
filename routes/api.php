@@ -20,7 +20,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'posts'], function (){
     Route::get('/',\App\Http\Controllers\Api\Post\IndexController::class);
+    Route::get('/{post}',\App\Http\Controllers\Api\Post\ShowController::class);
     Route::post('/',\App\Http\Controllers\Api\Post\StoreController::class);
+    Route::patch('/{post}',\App\Http\Controllers\Api\Post\UpdateController::class);
 });
 
 Route::group(['prefix' => 'categories'], function (){

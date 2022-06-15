@@ -23327,6 +23327,12 @@ var routerOptions = {
       return __webpack_require__.e(/*! import() */ "resources_js_components_Post_Create_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/Post/Create */ "./resources/js/components/Post/Create.vue"));
     }
   }, {
+    path: '/posts/:id/edit',
+    name: 'posts.edit',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_components_Post_Edit_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/Post/Edit */ "./resources/js/components/Post/Edit.vue"));
+    }
+  }, {
     path: '/:pathMatch(.*)*',
     name: '404',
     component: function component() {
@@ -47883,7 +47889,7 @@ function compileToFunction(template, options) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_Home_Index_vue":1,"resources_js_components_Post_Index_vue":1,"resources_js_components_Post_Create_vue":1,"resources_js_components_404_vue":1,"resources_js_lang_translations_uk_json":1,"resources_js_lang_translations_en_json":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_Home_Index_vue":1,"resources_js_components_Post_Index_vue":1,"resources_js_components_Post_Create_vue":1,"resources_js_components_Post_Edit_vue":1,"resources_js_components_404_vue":1,"resources_js_lang_translations_uk_json":1,"resources_js_lang_translations_en_json":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

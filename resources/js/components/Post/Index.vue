@@ -1,17 +1,22 @@
 <template>
     <div>
         <div class="w-full max-w-screen-md mx-auto">
-            <div class="my-5">
-                <select v-model="categoryId">
-                    <option value="" >-- select a category --</option>
-                    <option v-for="category in categories"
-                            :value="category.id"
-                    >
-                        {{category.name}}
-                    </option>
-                </select>
+            <div class="my-5 flex">
+                <div>
+                    <select v-model="params.categoryId">
+                        <option value="" >-- select a category --</option>
+                        <option v-for="category in categories"
+                                :value="category.id"
+                        >
+                            {{category.name}}
+                        </option>
+                    </select>
+                </div>
+
+                <div class="ml-12 border p-2"><input type="text"  v-model="search"></div>
             </div>
             <div >
+
                 <table  class="w-full table-auto rounded-sm">
                     <thead>
                     <tr>
@@ -19,22 +24,22 @@
                             class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
                         >
                             <a href="#" @click.prevent="changeSort('title')">Title</a>
-                            <span v-if="this.sortField === 'title' && this.sortDirection === 'asc'">&uarr;</span>
-                            <span v-if="this.sortField === 'title' && this.sortDirection === 'desc'">&darr;</span>
+                            <span v-if="this.params.sortField === 'title' && this.params.sortDirection === 'asc'">&uarr;</span>
+                            <span v-if="this.params.sortField === 'title' && this.params.sortDirection === 'desc'">&darr;</span>
                         </th>
                         <th
                             class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
                         >
                             <a href="#" @click.prevent="changeSort('text')">Text</a>
-                            <span v-if="this.sortField === 'text' && this.sortDirection === 'asc'">&uarr;</span>
-                            <span v-if="this.sortField === 'text' && this.sortDirection === 'desc'">&darr;</span>
+                            <span v-if="this.params.sortField === 'text' && this.params.sortDirection === 'asc'">&uarr;</span>
+                            <span v-if="this.params.sortField === 'text' && this.params.sortDirection === 'desc'">&darr;</span>
                         </th>
                         <th
                             class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
                         >
                             <a href="#" @click.prevent="changeSort('created_at')">Created At</a>
-                            <span v-if="this.sortField === 'created_at' && this.sortDirection === 'asc'">&uarr;</span>
-                            <span v-if="this.sortField === 'created_at' && this.sortDirection === 'desc'">&darr;</span>
+                            <span v-if="this.params.sortField === 'created_at' && this.params.sortDirection === 'asc'">&uarr;</span>
+                            <span v-if="this.params.sortField === 'created_at' && this.params.sortDirection === 'desc'">&darr;</span>
                         </th>
                         <th
                             class="px-4 py-4 text-left bg-blue-900 text-white text-sm font-medium"
@@ -43,6 +48,11 @@
 
                         </th>
 
+                    </tr>
+                    <tr class="border-gray-300">
+                        <th class="px-4 py-8 border-t border-b border-gray-300 text-sm"><input class="border" type="text" v-model="this.params.title"></th>
+                        <th class="px-4 py-8 border-t border-b border-gray-300 text-sm"><input class="border" type="text" v-model="params.text"></th>
+                        <th class="px-4 py-8 border-t border-b border-gray-300 text-sm"><input class="border" type="text" v-model="params.created_at"></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -93,9 +103,15 @@ export default {
         return {
             posts:[],
             categories:[],
-            categoryId:'',
-            sortField:'created_at',
-            sortDirection:'desc',
+            params:{
+                categoryId:'',
+                sortField:'created_at',
+                sortDirection:'desc',
+                title:'',
+                text:'',
+                created_at:''
+            },
+            search:'',
             currentPage: 1,
             perPage: 5,
             total: 20,
@@ -104,6 +120,17 @@ export default {
     watch:{
         categoryId(){
             this.getPosts();
+        },
+        params:{
+            handler(){
+                this.getPosts(this.$route.query.page ?? 1);
+            },
+            deep: true
+        },
+        search(val, old){
+            if(val.length >= 4 || old.length >= 4) {
+                this.getPosts(this.$route.query.page ?? 1);
+            }
         }
     },
     async beforeRouteUpdate(to, from) {
@@ -117,11 +144,11 @@ export default {
     },
     methods: {
         changeSort(field){
-            if(this.sortField === field ){
-                this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc'
+            if(this.params.sortField === field ){
+                this.params.sortDirection = this.params.sortDirection === 'asc' ? 'desc' : 'asc'
             } else {
-                this.sortField = field
-                this.sortDirection = 'asc'
+                this.params.sortField = field
+                this.params.sortDirection = 'asc'
             }
 
             this.getPosts(this.currentPage)
@@ -130,7 +157,13 @@ export default {
             const loader = this.$loading.show({
                 // opacity:0.95
             });
-           await axios.get(`/api/posts?page=${page}&category_id=${this.categoryId}&sort_field=${this.sortField}&sort_direction=${this.sortDirection}`)
+           await axios.get(`/api/posts`, {
+               params:{
+                   page,
+                   search: this.search.length >=4 ? this.search : '',
+                   ...this.params
+               }
+           })
                 .then(res => {
                     this.posts = res.data.data;
                     this.total = res.data.meta.total;

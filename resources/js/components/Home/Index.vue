@@ -9,7 +9,10 @@
 
 <script>
 export default {
-    name: "Index"
+    name: "Index",
+    mounted() {
+        // this.$swal('Hello Vue world!!!');
+    }
 }
 </script>
 

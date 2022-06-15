@@ -148,6 +148,36 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           }
         }, _callee3);
       }))();
+    },
+    deletePost: function deletePost(id) {
+      var _this4 = this;
+
+      this.$swal({
+        title: "Are you sure?",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Yes, do it!",
+        cancelButtonText: "No, cancel please!",
+        closeOnConfirm: false,
+        closeOnCancel: false
+      }).then(function (res) {
+        if (res.value) {
+          axios["delete"]("/api/posts/".concat(id)).then(function (res) {
+            var _this4$$route$query$p;
+
+            _this4.$swal('Post deleted!'); // this.posts = this.posts.filter(post => post.id !== id)
+
+
+            _this4.getPosts((_this4$$route$query$p = _this4.$route.query.page) !== null && _this4$$route$query$p !== void 0 ? _this4$$route$query$p : 1);
+          })["catch"](function (err) {
+            _this4.$swal({
+              icon: 'error',
+              title: 'Error has happened'
+            });
+          });
+        }
+      });
     }
   }
 });
@@ -235,6 +265,7 @@ var _hoisted_20 = {
 
 var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Edit");
 
+var _hoisted_22 = ["onClick"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _this = this;
 
@@ -294,7 +325,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
     }, 1032
     /* PROPS, DYNAMIC_SLOTS */
-    , ["to"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <localized-link href=\"\">Delete</localized-link>")])]);
+    , ["to"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+      href: "#",
+      "class": "text-red-700",
+      onClick: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
+        return $options.deletePost(post.id);
+      }, ["prevent"])
+    }, "Delete", 8
+    /* PROPS */
+    , _hoisted_22)])]);
   }), 256
   /* UNKEYED_FRAGMENT */
   ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_VueTailwindPagination, {

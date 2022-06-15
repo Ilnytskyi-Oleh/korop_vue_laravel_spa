@@ -73,9 +73,10 @@ export default {
             for(let key in this.fields){
                 fields.append(key, this.fields[key])
             }
-
-            await axios.patch(`/api/posts/${this.fields.id}`, fields)
+            fields.append('_method', 'PATCH');
+            await axios.post(`/api/posts/${this.fields.id}`, fields)
                 .then(res => {
+                    this.$swal('Post updated!');
                     this.$router.push({name:'posts'})
                     this.formSubmitting = false
                 }).catch(err=>{
@@ -83,12 +84,11 @@ export default {
                         this.errors = err.response.data.errors
                     }
                     this.formSubmitting = false
+                    this.$swal({icon:'error', title: 'Error has happened'});
                 });
         },
         selectFile(event){
-            console.log(event.target.files[0])
             this.fields.thumbnail = event.target.files[0]
-            // this.fields.thumbnail = 'test'
         }
     }
 }

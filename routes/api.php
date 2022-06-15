@@ -23,6 +23,7 @@ Route::group(['prefix' => 'posts'], function (){
     Route::get('/{post}',\App\Http\Controllers\Api\Post\ShowController::class);
     Route::post('/',\App\Http\Controllers\Api\Post\StoreController::class);
     Route::patch('/{post}',\App\Http\Controllers\Api\Post\UpdateController::class);
+    Route::delete('/{post}',\App\Http\Controllers\Api\Post\DeleteController::class);
 });
 
 Route::group(['prefix' => 'categories'], function (){

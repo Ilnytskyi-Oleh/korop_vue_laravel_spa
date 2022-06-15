@@ -59,7 +59,7 @@
                         </td>
                         <td class="px-4 py-8 border-t border-b border-gray-300 text-sm space-x-4">
                             <localized-link :to="{name:'posts.edit', params:{ id: post.id}}">Edit</localized-link>
-<!--                            <localized-link href="">Delete</localized-link>-->
+                            <a href="#" class="text-red-700" @click.prevent="deletePost(post.id)">Delete</a>
                         </td>
                     </tr>
 
@@ -126,7 +126,7 @@ export default {
 
             this.getPosts(this.currentPage)
         },
-       async getPosts(page = 1) {
+        async getPosts(page = 1) {
             const loader = this.$loading.show({
                 // opacity:0.95
             });
@@ -144,6 +144,29 @@ export default {
                 .then(res => {
                     this.categories = res.data.data;
                 });
+        },
+        deletePost(id) {
+            this.$swal({
+                    title: "Are you sure?",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Yes, do it!",
+                    cancelButtonText: "No, cancel please!",
+                    closeOnConfirm: false,
+                    closeOnCancel: false
+                }).then((res) => {
+                if (res.value) {
+                    axios.delete(`/api/posts/${id}`)
+                        .then(res => {
+                            this.$swal('Post deleted!');
+                            // this.posts = this.posts.filter(post => post.id !== id)
+                            this.getPosts(this.$route.query.page ?? 1);
+                        }).catch(err=>{
+                        this.$swal({icon:'error', title: 'Error has happened'});
+                    });
+                }
+            })
         }
     }
 }

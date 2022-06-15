@@ -97,8 +97,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   fields.append(key, _this3.fields[key]);
                 }
 
-                _context3.next = 5;
-                return axios.patch("/api/posts/".concat(_this3.fields.id), fields).then(function (res) {
+                fields.append('_method', 'PATCH');
+                _context3.next = 6;
+                return axios.post("/api/posts/".concat(_this3.fields.id), fields).then(function (res) {
+                  _this3.$swal('Post updated!');
+
                   _this3.$router.push({
                     name: 'posts'
                   });
@@ -110,9 +113,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
 
                   _this3.formSubmitting = false;
+
+                  _this3.$swal({
+                    icon: 'error',
+                    title: 'Error has happened'
+                  });
                 });
 
-              case 5:
+              case 6:
               case "end":
                 return _context3.stop();
             }
@@ -121,8 +129,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }))();
     },
     selectFile: function selectFile(event) {
-      console.log(event.target.files[0]);
-      this.fields.thumbnail = event.target.files[0]; // this.fields.thumbnail = 'test'
+      this.fields.thumbnail = event.target.files[0];
     }
   }
 });

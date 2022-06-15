@@ -2,7 +2,7 @@
     <header>
         <div class="container mx-auto flex gap-x-4 my-5">
             <localized-link active-class="underline"
-                            :to="{name:'home'}">{{$t('nav.home')}}:</localized-link>
+                            :to="{name:'home'}">{{$t('nav.home')}}</localized-link>
             <div class="group relative">
             <localized-link  active-class="underline" class=""
                             :to="{name:'posts'}">{{$t('nav.posts')}}</localized-link>
